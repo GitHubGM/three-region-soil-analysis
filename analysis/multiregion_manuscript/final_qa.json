@@ -1,0 +1,34 @@
+{
+  "document": "C:\\proj\\papers\\ERA-5\\Machine_Learning_Soil_Moisture_Three_Domains.docx",
+  "sha256": "2ee666f6583d63cc4e13bd263cb420b90d1747b5b0916e72492359125f38a01d",
+  "checked_at": "2026-10-05T12:20:02.7530693+05:00",
+  "render": "render_v3",
+  "page_count": 15,
+  "all_pages_visually_reviewed": true,
+  "pages_rechecked_after_final_edits": [
+    10,
+    11,
+    14,
+    15
+  ],
+  "pages_pixel_identical_to_reviewed_v2": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    12,
+    13
+  ],
+  "layout_status": "passed",
+  "primary_checks_passed": 1258,
+  "sensitivity_checks_passed": 783,
+  "total_checks_passed": 2041,
+  "checks_failed": 0,
+  "input_data_unchanged": true,
+  "note": "Final pages reviewed at full raster resolution; figures, labels, tables, captions and references are readable and unclipped."
+}

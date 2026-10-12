@@ -1,0 +1,14 @@
+{
+  "plan_sha256": "1c31841f8ab111d08111528c4627d2e526ea06aef1e4aaff03fbfe864f226d67",
+  "additional_fits": 192,
+  "additional_predictions": 251840,
+  "additional_splits": 96,
+  "primary_unchanged": true,
+  "primary_hashes": {
+    "summary.json": "31ba3e7b225dae81810bff0e447807353bb7f53688efadb6cd9478a698381744",
+    "main_predictions.csv.gz": "07d3bf0bfa540b9641b457eb62d2aafdbb28d84dae29e18c690a13b5d0d532c8",
+    "adaptation_predictions.csv.gz": "5e056bc4d670ac0b2096e16de80fc23cc1a1b277409e1d33b4266eb5f82b6e3c",
+    "adaptation_region_metrics.csv": "d061af612e57a926bf76f6a1add9c398136c12229871d32c065b1df20e8aa5cc"
+  },
+  "runtime_seconds": 222.8996125999838
+}

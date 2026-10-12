@@ -1,0 +1,23 @@
+{
+  "adaptation_fold_metrics.csv": "5220bd6afce94f76941a0e8e11ba5df01b228890a1447543e379b527d595c53b",
+  "adaptation_macro_metrics.csv": "efd22711b8c7ff0f888992f732ed5d389ffab9fa8701cf2e335b850ddb974092",
+  "adaptation_predictions.csv.gz": "5e056bc4d670ac0b2096e16de80fc23cc1a1b277409e1d33b4266eb5f82b6e3c",
+  "adaptation_region_metrics.csv": "d061af612e57a926bf76f6a1add9c398136c12229871d32c065b1df20e8aa5cc",
+  "adaptation_split_definitions.csv": "9aa30c745d8e4d6fe6a7ea443240576d9417d9cd1ce6758c0d55acac2bdac428",
+  "adaptation_split_membership.csv.gz": "12b8efc08194959504bb5f6e181cb458e32ca8cc1ccc7e947d217b73fa49c31a",
+  "analysis_grid.csv.gz": "109b78fd8ac0132a59afd083cfd0b0e117ccd63bad2d19319629c5659520e903",
+  "feature_shift.csv": "dfb747c3e668e9a370be84b00cb0c669a405d1d9ffce74126662f833ee5ad701",
+  "input_hashes.json": "c4f69ca20569daa2aeb7124f91917ecc6fc1be00cc33fa31a07cc33bed2dca32",
+  "main_fold_metrics.csv": "ea8b27069ff584e40a837d35d4d79d7a221bc59181567308b1350c221c1adedf",
+  "main_macro_metrics.csv": "a66d5f24362ad761c2179b65faa5b95bc3b542dcdc1840a5631a808a55bd53b0",
+  "main_predictions.csv.gz": "07d3bf0bfa540b9641b457eb62d2aafdbb28d84dae29e18c690a13b5d0d532c8",
+  "main_region_metrics.csv": "50cccae9d5ec97e76923ad95fbd24a87e44ddff33d4fe97a750a968817ad2b93",
+  "main_split_definitions.csv": "0c190d250054aacc837f4aeba3a3c30d28eaf4339eeebfcade8bb73c1ae82b68",
+  "main_split_membership.csv.gz": "120ff0fc594a4e9ad0da47f9647fe46b5476235e311956934661562584435128",
+  "raw_grid.csv.gz": "036276c8441d477c178c5015a5644d4c7be13360d2955f66f142e81828c6879e",
+  "regional_distributions.csv": "bcc98d5ffb6587fe49451fe90e1e2302908bedc7b9f1975827351003a9f2050d",
+  "runtime.csv": "dcb47a8ed630a7dd9d8c8f9f70b44608e761625995401d632096ff19f48a838a",
+  "summary.json": "31ba3e7b225dae81810bff0e447807353bb7f53688efadb6cd9478a698381744",
+  "transfer_support_metrics.csv": "e1424fa1bfb7e4b5857d3a65d354270f64edcdfc50e075bc138efebf79c3a0ef",
+  "verification.json": "4bd044d77d01d87069bd1fb7e6101c97be5724a3c308f36212116e2bc7f9b144"
+}

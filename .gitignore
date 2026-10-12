@@ -1,0 +1,8 @@
+.analysis_deps/
+__pycache__/
+analysis/mplconfig/
+analysis/paper_render/
+multiregional_manuscript/
+Aral_Sea_Soil_Moisture_Revised.docx
+Hybrid_Early_Warning_Soil_Degradation_Kazakhstan_EcolInform.docx
+Machine_Learning_Soil_Moisture_Three_Domains.docx

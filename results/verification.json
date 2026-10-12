@@ -1,0 +1,465 @@
+{
+  "status": "passed",
+  "method": "Independent Python standard-library recomputation from exported CSVs, plus SHA-256 checks against the pre-experiment NetCDF audit. No NumPy, pandas, xarray or scikit-learn used.",
+  "interpretation": "Spatial validation pools two dates while holding each site out on both dates. Persistence is a separate descriptive eight-day benchmark.",
+  "limits": [
+    "Training membership is reconstructed from the audited script and corroborated by fold counts and exact training-mean predictions; estimators were not retrained.",
+    "Individual raw NetCDF array elements were not independently decoded; raw CSV extrema/counts were checked against input_metadata.json and input file hashes were rechecked.",
+    "Float32 CSV roundtrips were reconstructed using struct; numerical tolerances reflect CSV formatting and float32 arithmetic.",
+    "Figure hashes identify the current files; this script performs no visual assessment of them."
+  ],
+  "checks_passed": 20,
+  "checks_total": 20,
+  "script_sha256": "fa22bc00808bffcb4b667f89cbe1e6064fd907c3bb1f51a0b86e03227dac1375",
+  "verification_script_sha256": "7710b60923f5daf2ecc89223808325e0b1f2b923c259272cd83000df9b232b6d",
+  "figure_sha256": {
+    "moisture_change.png": "76ec0c2953d6005756e021d5c699b263af4992d17db62873498e42804c735e9c",
+    "native_grid_maps.png": "33a33248ad7328d02c3b77b62bf9288699924c19ecd3e2a06d3dae7f27969e0b",
+    "spatial_correlations.png": "8eef77c7da637fb9e3774e53b77fe845a41f04172ba3446ba7810363f5db5d57",
+    "spatial_model_comparison.png": "3c208f802832427b68476339b5fa2584f16065cae45ab1197e0ff986898d142d",
+    "spatial_validation.png": "e899ab2d89720b4638bf2a47b73e4c7a88cf9d95ca9d157e499640d9b726b74d"
+  },
+  "checks": [
+    {
+      "check": "All eight supplied NetCDF SHA-256 hashes unchanged",
+      "passed": true,
+      "details": [
+        {
+          "file": "10m_u_component_of_wind_0_daily-mean.nc",
+          "recorded_sha256": "5396821d181ad70c9e5bd5d67f4242e2a277ff0dc472d62013a6ccda3382983d",
+          "current_sha256": "5396821d181ad70c9e5bd5d67f4242e2a277ff0dc472d62013a6ccda3382983d",
+          "unchanged": true
+        },
+        {
+          "file": "lake_bottom_temperature_0_daily-mean.nc",
+          "recorded_sha256": "de2373ee57675d9ce5923f6a24f16e5d811d8d55d0047c8ff26bf04c8bbb8be9",
+          "current_sha256": "de2373ee57675d9ce5923f6a24f16e5d811d8d55d0047c8ff26bf04c8bbb8be9",
+          "unchanged": true
+        },
+        {
+          "file": "lake_ice_depth_0_daily-mean.nc",
+          "recorded_sha256": "e0aa984c2ac501cd408643b4fdfbd7db72a41b66845336b29c4eeb6650772544",
+          "current_sha256": "e0aa984c2ac501cd408643b4fdfbd7db72a41b66845336b29c4eeb6650772544",
+          "unchanged": true
+        },
+        {
+          "file": "leaf_area_index_low_vegetation_0_daily-mean.nc",
+          "recorded_sha256": "beaec3caa33627895dd9b4b19857ec550fff4461d47b2e3ec177abffe13bdaa9",
+          "current_sha256": "beaec3caa33627895dd9b4b19857ec550fff4461d47b2e3ec177abffe13bdaa9",
+          "unchanged": true
+        },
+        {
+          "file": "snow_cover_0_daily-mean.nc",
+          "recorded_sha256": "c19afc4cb035f5303d521a7a56a827bc91f629756a5e4556ed71f4a142f8de7d",
+          "current_sha256": "c19afc4cb035f5303d521a7a56a827bc91f629756a5e4556ed71f4a142f8de7d",
+          "unchanged": true
+        },
+        {
+          "file": "soil_temperature_level_1_0_daily-mean.nc",
+          "recorded_sha256": "d075a38392043a642eda8dc2dc29491bf6cfbc02aa1acd252275527139aa2ba0",
+          "current_sha256": "d075a38392043a642eda8dc2dc29491bf6cfbc02aa1acd252275527139aa2ba0",
+          "unchanged": true
+        },
+        {
+          "file": "soil_temperature_level_2_0_daily-mean.nc",
+          "recorded_sha256": "c4b982d3a7540f8ec84bea3cc07105159255a3b8b7d798ff955643d2e5744ba3",
+          "current_sha256": "c4b982d3a7540f8ec84bea3cc07105159255a3b8b7d798ff955643d2e5744ba3",
+          "unchanged": true
+        },
+        {
+          "file": "volumetric_soil_water_layer_1_0_daily-mean.nc",
+          "recorded_sha256": "afe32f0e3acfbe44f11ba31c82560ddc0996298946005723e09c00f8f408a624",
+          "current_sha256": "afe32f0e3acfbe44f11ba31c82560ddc0996298946005723e09c00f8f408a624",
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "check": "Native CSV covers both dates and every native site exactly once",
+      "passed": true,
+      "details": {
+        "rows": 4386,
+        "unique_sites": 2193,
+        "shape": [
+          43,
+          51
+        ],
+        "dates": [
+          "2026-08-10",
+          "2026-08-18"
+        ]
+      }
+    },
+    {
+      "check": "Native grid is uniformly spaced at 0.1 degrees",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Raw native variables are finite",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Raw CSV preserves tiny negative values and summary records normalization",
+      "passed": true,
+      "details": {
+        "swvl1": 37,
+        "licd": 4386
+      }
+    },
+    {
+      "check": "Prediction coverage has 78948 unique model-design-cell-date rows",
+      "passed": true,
+      "details": {
+        "rows": 78948,
+        "expected_rows": 78948,
+        "duplicate_keys": 0
+      }
+    },
+    {
+      "check": "Every model-design predicts every native cell-date exactly once",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Prediction targets match normalized raw CSV",
+      "passed": true,
+      "details": {
+        "max_absolute_csv_rounding_error": 1.4013671889578916e-08
+      }
+    },
+    {
+      "check": "Prediction weights equal cosine latitude",
+      "passed": true,
+      "details": {
+        "max_absolute_error": 0.0
+      }
+    },
+    {
+      "check": "Every test prediction belongs to the declared geographic block",
+      "passed": true,
+      "details": {
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "Both dates of each site are held out together in every model-design",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "All twelve reconstructed splits have disjoint sites, correct buffers and recorded counts",
+      "passed": true,
+      "details": [
+        {
+          "design": "quadrants_buffer_0.3",
+          "fold": 0,
+          "test_sites": 550,
+          "training_sites": 1493,
+          "test_rows": 1100,
+          "training_rows": 2986,
+          "excluded_buffer_rows": 300,
+          "minimum_training_distance_to_test_rectangle_degrees": 0.4000000000000057,
+          "same_site_train_test_overlap": 0,
+          "baseline_max_error": 0.0,
+          "counts_match": true,
+          "bounds_match": true
+        },
+        {
+          "design": "quadrants_buffer_0.3",
+          "fold": 1,
+          "test_sites": 572,
+          "training_sites": 1468,
+          "test_rows": 1144,
+          "training_rows": 2936,
+          "excluded_buffer_rows": 306,
+          "minimum_training_distance_to_test_rectangle_degrees": 0.4000000000000057,
+          "same_site_train_test_overlap": 0,
+          "baseline_max_error": 0.0,
+          "counts_match": true,
+          "bounds_match": true
+        },
+        {
+          "design": "quadrants_buffer_0.3",
+          "fold": 2,
+          "test_sites": 525,
+          "training_sites": 1521,
+          "test_rows": 1050,
+          "training_rows": 3042,
+          "excluded_buffer_rows": 294,
+          "minimum_training_distance_to_test_rectangle_degrees": 0.4000000000000057,
+          "same_site_train_test_overlap": 0,
+          "baseline_max_error": 6.938893903907228e-18,
+          "counts_match": true,
+          "bounds_match": true
+        },
+        {
+          "design": "quadrants_buffer_0.3",
+          "fold": 3,
+          "test_sites": 546,
+          "training_sites": 1497,
+          "test_rows": 1092,
+          "training_rows": 2994,
+          "excluded_buffer_rows": 300,
+          "minimum_training_distance_to_test_rectangle_degrees": 0.4000000000000057,
+          "same_site_train_test_overlap": 0,
+          "baseline_max_error": 0.0,
+          "counts_match": true,
+          "bounds_match": true
+        },
+        {
+          "design": "quadrants_buffer_0.6",
+          "fold": 0,
+          "test_sites": 550,
+          "training_sites": 1325,
+          "test_rows": 1100,
+          "training_rows": 2650,
+          "excluded_buffer_rows": 636,
+          "minimum_training_distance_to_test_rectangle_degrees": 0.70000000000001,
+          "same_site_train_test_overlap": 0,
+          "baseline_max_error": 2.7755575615628914e-17,
+          "counts_match": true,
+          "bounds_match": true
+        },
+        {
+          "design": "quadrants_buffer_0.6",
+          "fold": 1,
+          "test_sites": 572,
+          "training_sites": 1297,
+          "test_rows": 1144,
+          "training_rows": 2594,
+          "excluded_buffer_rows": 648,
+          "minimum_training_distance_to_test_rectangle_degrees": 0.70000000000001,
+          "same_site_train_test_overlap": 0,
+          "baseline_max_error": 1.3877787807814457e-17,
+          "counts_match": true,
+          "bounds_match": true
+        },
+        {
+          "design": "quadrants_buffer_0.6",
+          "fold": 2,
+          "test_sites": 525,
+          "training_sites": 1356,
+          "test_rows": 1050,
+          "training_rows": 2712,
+          "excluded_buffer_rows": 624,
+          "minimum_training_distance_to_test_rectangle_degrees": 0.70000000000001,
+          "same_site_train_test_overlap": 0,
+          "baseline_max_error": 0.0,
+          "counts_match": true,
+          "bounds_match": true
+        },
+        {
+          "design": "quadrants_buffer_0.6",
+          "fold": 3,
+          "test_sites": 546,
+          "training_sites": 1329,
+          "test_rows": 1092,
+          "training_rows": 2658,
+          "excluded_buffer_rows": 636,
+          "minimum_training_distance_to_test_rectangle_degrees": 0.70000000000001,
+          "same_site_train_test_overlap": 0,
+          "baseline_max_error": 0.0,
+          "counts_match": true,
+          "bounds_match": true
+        },
+        {
+          "design": "longitude_strips_buffer_0.3",
+          "fold": 0,
+          "test_sites": 559,
+          "training_sites": 1505,
+          "test_rows": 1118,
+          "training_rows": 3010,
+          "excluded_buffer_rows": 258,
+          "minimum_training_distance_to_test_rectangle_degrees": 0.4000000000000057,
+          "same_site_train_test_overlap": 0,
+          "baseline_max_error": 6.938893903907228e-18,
+          "counts_match": true,
+          "bounds_match": true
+        },
+        {
+          "design": "longitude_strips_buffer_0.3",
+          "fold": 1,
+          "test_sites": 516,
+          "training_sites": 1419,
+          "test_rows": 1032,
+          "training_rows": 2838,
+          "excluded_buffer_rows": 516,
+          "minimum_training_distance_to_test_rectangle_degrees": 0.4000000000000057,
+          "same_site_train_test_overlap": 0,
+          "baseline_max_error": 0.0,
+          "counts_match": true,
+          "bounds_match": true
+        },
+        {
+          "design": "longitude_strips_buffer_0.3",
+          "fold": 2,
+          "test_sites": 559,
+          "training_sites": 1376,
+          "test_rows": 1118,
+          "training_rows": 2752,
+          "excluded_buffer_rows": 516,
+          "minimum_training_distance_to_test_rectangle_degrees": 0.4000000000000057,
+          "same_site_train_test_overlap": 0,
+          "baseline_max_error": 1.3877787807814457e-17,
+          "counts_match": true,
+          "bounds_match": true
+        },
+        {
+          "design": "longitude_strips_buffer_0.3",
+          "fold": 3,
+          "test_sites": 559,
+          "training_sites": 1505,
+          "test_rows": 1118,
+          "training_rows": 3010,
+          "excluded_buffer_rows": 258,
+          "minimum_training_distance_to_test_rectangle_degrees": 0.4000000000000057,
+          "same_site_train_test_overlap": 0,
+          "baseline_max_error": 0.0,
+          "counts_match": true,
+          "bounds_match": true
+        }
+      ]
+    },
+    {
+      "check": "Training-mean predictions reproduce independently reconstructed buffered training sets",
+      "passed": true,
+      "details": {
+        "maximum_absolute_error": 2.7755575615628914e-17
+      }
+    },
+    {
+      "check": "All 72 fold scores independently recomputed from raw targets and predictions",
+      "passed": true,
+      "details": {
+        "max_absolute_differences": {
+          "rmse": 2.5655987750949905e-10,
+          "mae": 9.713956028445381e-11,
+          "bias": 9.713956028445381e-11,
+          "r2": 8.36372415768949e-09
+        },
+        "absolute_and_relative_tolerance": 1e-07
+      }
+    },
+    {
+      "check": "All 18 pooled scores, fold ranges and MSE skill independently recomputed",
+      "passed": true,
+      "details": {
+        "max_absolute_differences": {
+          "rmse": 6.938893903907228e-18,
+          "mae": 6.938893903907228e-18,
+          "bias": 1.734723475976807e-18,
+          "r2": 2.220446049250313e-16,
+          "mse_skill_vs_training_mean": 1.1102230246251565e-16
+        },
+        "absolute_and_relative_tolerance": 1e-07
+      }
+    },
+    {
+      "check": "Paired change CSV covers every site once and preserves date ordering",
+      "passed": true,
+      "details": {
+        "paired_sites": 2193,
+        "max_absolute_value_error_due_to_csv_rounding": 1.9042968730786924e-06,
+        "tolerance": 5e-06
+      }
+    },
+    {
+      "check": "Paired change summaries independently recomputed with area weights",
+      "passed": true,
+      "details": {
+        "max_absolute_difference": 7.105427357601002e-15,
+        "tolerance": 1e-07
+      }
+    },
+    {
+      "check": "Eight-day persistence benchmark independently recomputed",
+      "passed": true,
+      "details": {
+        "independent_metrics": {
+          "rmse": 0.004946870009186662,
+          "mae": 0.002588582285858563,
+          "bias": -0.0017825855562998286,
+          "r2": 0.9932351427364098
+        },
+        "max_absolute_differences": {
+          "rmse": 2.4012327716482762e-11,
+          "mae": 8.673617379884035e-19,
+          "bias": 2.168404344971009e-19,
+          "r2": 6.567379973176912e-11
+        }
+      }
+    },
+    {
+      "check": "Ten daily variable summaries independently recomputed",
+      "passed": true,
+      "details": {
+        "max_absolute_difference": 3.552713678800501e-15,
+        "tolerance": 1e-07
+      }
+    },
+    {
+      "check": "Raw CSV extrema, unique counts and sample counts agree with NetCDF audit",
+      "passed": true,
+      "details": [
+        {
+          "variable": "u10",
+          "min_matches": true,
+          "max_matches": true,
+          "unique_count_matches": true,
+          "n_matches": true
+        },
+        {
+          "variable": "lblt",
+          "min_matches": true,
+          "max_matches": true,
+          "unique_count_matches": true,
+          "n_matches": true
+        },
+        {
+          "variable": "licd",
+          "min_matches": true,
+          "max_matches": true,
+          "unique_count_matches": true,
+          "n_matches": true
+        },
+        {
+          "variable": "lai_lv",
+          "min_matches": true,
+          "max_matches": true,
+          "unique_count_matches": true,
+          "n_matches": true
+        },
+        {
+          "variable": "snowc",
+          "min_matches": true,
+          "max_matches": true,
+          "unique_count_matches": true,
+          "n_matches": true
+        },
+        {
+          "variable": "stl1",
+          "min_matches": true,
+          "max_matches": true,
+          "unique_count_matches": true,
+          "n_matches": true
+        },
+        {
+          "variable": "stl2",
+          "min_matches": true,
+          "max_matches": true,
+          "unique_count_matches": true,
+          "n_matches": true
+        },
+        {
+          "variable": "swvl1",
+          "min_matches": true,
+          "max_matches": true,
+          "unique_count_matches": true,
+          "n_matches": true
+        }
+      ]
+    }
+  ]
+}

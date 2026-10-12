@@ -1,0 +1,78 @@
+{
+  "verified_on": "2026-10-05",
+  "references": [
+    {
+      "id": "smola2004",
+      "authors": "Smola, A. J., and Schölkopf, B.",
+      "year": 2004,
+      "title": "A tutorial on support vector regression",
+      "venue": "Statistics and Computing",
+      "volume": "14",
+      "pages": "199–222",
+      "doi": "10.1023/B:STCO.0000035301.49549.88",
+      "url": "https://doi.org/10.1023/B:STCO.0000035301.49549.88",
+      "verified_source": "https://link.springer.com/article/10.1023/B:STCO.0000035301.49549.88",
+      "verification": "Publisher metadata and abstract read.",
+      "supports": "Support-vector function estimation, regression training and regularization; suitable method citation for SVR."
+    },
+    {
+      "id": "hoerl1970",
+      "authors": "Hoerl, A. E., and Kennard, R. W.",
+      "year": 1970,
+      "title": "Ridge Regression: Biased Estimation for Nonorthogonal Problems",
+      "venue": "Technometrics",
+      "volume": "12",
+      "issue": "1",
+      "pages": "55–67",
+      "doi": "10.1080/00401706.1970.10488634",
+      "url": "https://doi.org/10.1080/00401706.1970.10488634",
+      "verified_source": "https://www.tandfonline.com/doi/abs/10.1080/00401706.1970.10488634",
+      "verification": "Publisher record and abstract retrieved through search; direct open returned an internal error. Cite original issue year 1970, not the online-hosting date 2012.",
+      "supports": "Ridge estimation adds a positive diagonal adjustment to the least-squares normal matrix to regularize nonorthogonal predictors."
+    },
+    {
+      "id": "breiman2001",
+      "authors": "Breiman, L.",
+      "year": 2001,
+      "title": "Random Forests",
+      "venue": "Machine Learning",
+      "volume": "45",
+      "pages": "5–32",
+      "doi": "10.1023/A:1010933404324",
+      "url": "https://doi.org/10.1023/A:1010933404324",
+      "verified_source": "https://link.springer.com/article/10.1023/A:1010933404324",
+      "verification": "Publisher metadata and abstract read.",
+      "supports": "Tree-ensemble method background. Report the implemented bootstrap and feature-sampling settings separately."
+    },
+    {
+      "id": "friedman2001",
+      "authors": "Friedman, J. H.",
+      "year": 2001,
+      "title": "Greedy function approximation: A gradient boosting machine",
+      "venue": "The Annals of Statistics",
+      "volume": "29",
+      "issue": "5",
+      "pages": "1189–1232",
+      "doi": "10.1214/aos/1013203451",
+      "url": "https://doi.org/10.1214/aos/1013203451",
+      "verified_source": "https://projecteuclid.org/journals/annals-of-statistics/volume-29/issue-5/Greedy-function-approximation-A-gradient-boosting-machine/10.1214/aos/1013203451.full",
+      "verification": "Journal-hosted metadata and abstract retrieved through DOI search.",
+      "supports": "Stagewise additive fitting as gradient descent in function space, including squared-error regression-tree boosting."
+    },
+    {
+      "id": "pedregosa2011",
+      "authors": "Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J., Passos, A., Cournapeau, D., Brucher, M., Perrot, M., and Duchesnay, É.",
+      "year": 2011,
+      "title": "Scikit-learn: Machine Learning in Python",
+      "venue": "Journal of Machine Learning Research",
+      "volume": "12",
+      "article": "85",
+      "pages": "2825–2830",
+      "doi": null,
+      "url": "https://jmlr.org/papers/v12/pedregosa11a.html",
+      "verified_source": "https://jmlr.org/papers/v12/pedregosa11a.html",
+      "verification": "Official JMLR metadata and abstract read. No DOI listed on the official page.",
+      "supports": "Citation for the scikit-learn software framework; specify the actual installed version independently."
+    }
+  ]
+}

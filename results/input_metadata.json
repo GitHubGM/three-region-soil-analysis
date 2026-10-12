@@ -1,0 +1,1758 @@
+[
+  {
+    "file": "10m_u_component_of_wind_0_daily-mean.nc",
+    "bytes": 35094,
+    "sha256": "5396821d181ad70c9e5bd5d67f4242e2a277ff0dc472d62013a6ccda3382983d",
+    "dimensions": {
+      "valid_time": 2,
+      "latitude": 43,
+      "longitude": 51
+    },
+    "attributes": {
+      "GRIB_centre": "ecmf",
+      "GRIB_centreDescription": "European Centre for Medium-Range Weather Forecasts",
+      "GRIB_subCentre": 0,
+      "Conventions": "CF-1.7",
+      "institution": "European Centre for Medium-Range Weather Forecasts",
+      "history": "2026-09-28T10:01 GRIB to CDM+CF via cfgrib-0.9.15.1/ecCodes-2.48.2 with {\"source\": \"10m_u_component_of_wind.grib\", \"filter_by_keys\": {}, \"encode_cf\": [\"parameter\", \"time\", \"geography\", \"vertical\"]}\nearthkit.transforms.temporal.daily_reduce(10m_u_component_of_wind_0, how=mean, **{'time_shift': {'hours': 5}})"
+    },
+    "coordinates": {
+      "latitude": {
+        "dimensions": [
+          "latitude"
+        ],
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude",
+          "long_name": "latitude",
+          "stored_direction": "decreasing"
+        },
+        "values": [
+          "47.5",
+          "47.4",
+          "47.3",
+          "47.199999999999996",
+          "47.099999999999994",
+          "46.99999999999999",
+          "46.89999999999999",
+          "46.79999999999999",
+          "46.69999999999999",
+          "46.59999999999999",
+          "46.499999999999986",
+          "46.399999999999984",
+          "46.29999999999998",
+          "46.19999999999998",
+          "46.09999999999998",
+          "45.99999999999998",
+          "45.89999999999998",
+          "45.799999999999976",
+          "45.699999999999974",
+          "45.59999999999997",
+          "45.49999999999997",
+          "45.39999999999997",
+          "45.29999999999997",
+          "45.19999999999997",
+          "45.099999999999966",
+          "44.999999999999964",
+          "44.89999999999996",
+          "44.79999999999996",
+          "44.69999999999996",
+          "44.59999999999996",
+          "44.49999999999996",
+          "44.399999999999956",
+          "44.299999999999955",
+          "44.19999999999995",
+          "44.09999999999995",
+          "43.99999999999995",
+          "43.89999999999995",
+          "43.79999999999995",
+          "43.699999999999946",
+          "43.599999999999945",
+          "43.49999999999994",
+          "43.39999999999994",
+          "43.3"
+        ]
+      },
+      "longitude": {
+        "dimensions": [
+          "longitude"
+        ],
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude",
+          "long_name": "longitude"
+        },
+        "values": [
+          "58.1",
+          "58.2",
+          "58.300000000000004",
+          "58.400000000000006",
+          "58.50000000000001",
+          "58.60000000000001",
+          "58.70000000000001",
+          "58.80000000000001",
+          "58.90000000000001",
+          "59.000000000000014",
+          "59.100000000000016",
+          "59.20000000000002",
+          "59.30000000000002",
+          "59.40000000000002",
+          "59.50000000000002",
+          "59.60000000000002",
+          "59.700000000000024",
+          "59.800000000000026",
+          "59.90000000000003",
+          "60.00000000000003",
+          "60.10000000000003",
+          "60.20000000000003",
+          "60.30000000000003",
+          "60.400000000000034",
+          "60.500000000000036",
+          "60.60000000000004",
+          "60.70000000000004",
+          "60.80000000000004",
+          "60.90000000000004",
+          "61.00000000000004",
+          "61.100000000000044",
+          "61.200000000000045",
+          "61.30000000000005",
+          "61.40000000000005",
+          "61.50000000000005",
+          "61.60000000000005",
+          "61.70000000000005",
+          "61.800000000000054",
+          "61.900000000000055",
+          "62.00000000000006",
+          "62.10000000000006",
+          "62.20000000000006",
+          "62.30000000000006",
+          "62.40000000000006",
+          "62.500000000000064",
+          "62.600000000000065",
+          "62.70000000000007",
+          "62.80000000000007",
+          "62.90000000000007",
+          "63.00000000000007",
+          "63.1"
+        ]
+      },
+      "valid_time": {
+        "dimensions": [
+          "valid_time"
+        ],
+        "attributes": {
+          "long_name": "time",
+          "standard_name": "time",
+          "time_shift": "0 days 05:00:00"
+        },
+        "values": [
+          "2026-08-10T00:00:00.000000000",
+          "2026-08-18T00:00:00.000000000"
+        ]
+      },
+      "number": {
+        "dimensions": [],
+        "attributes": {
+          "long_name": "ensemble member numerical id",
+          "units": "1",
+          "standard_name": "realization"
+        },
+        "values": [
+          "0"
+        ]
+      }
+    },
+    "variables": {
+      "u10": {
+        "dimensions": [
+          "valid_time",
+          "latitude",
+          "longitude"
+        ],
+        "shape": [
+          2,
+          43,
+          51
+        ],
+        "attributes": {
+          "GRIB_paramId": 165,
+          "GRIB_dataType": "fc",
+          "GRIB_numberOfPoints": 2193,
+          "GRIB_typeOfLevel": "surface",
+          "GRIB_stepUnits": 1,
+          "GRIB_stepType": "instant",
+          "GRIB_gridType": "regular_ll",
+          "GRIB_uvRelativeToGrid": 0,
+          "GRIB_NV": 0,
+          "GRIB_Nx": 51,
+          "GRIB_Ny": 43,
+          "GRIB_cfName": "unknown",
+          "GRIB_cfVarName": "u10",
+          "GRIB_gridDefinitionDescription": "Latitude/Longitude Grid",
+          "GRIB_iDirectionIncrementInDegrees": 0.1,
+          "GRIB_iScansNegatively": 0,
+          "GRIB_jDirectionIncrementInDegrees": 0.1,
+          "GRIB_jPointsAreConsecutive": 0,
+          "GRIB_jScansPositively": 0,
+          "GRIB_latitudeOfFirstGridPointInDegrees": 47.5,
+          "GRIB_latitudeOfLastGridPointInDegrees": 43.3,
+          "GRIB_longitudeOfFirstGridPointInDegrees": 58.1,
+          "GRIB_longitudeOfLastGridPointInDegrees": 63.1,
+          "GRIB_missingValue": 3.4028234663852886e+38,
+          "GRIB_name": "10 metre U wind component",
+          "GRIB_shortName": "10u",
+          "GRIB_totalNumber": 0,
+          "GRIB_units": "m s**-1",
+          "long_name": "10 metre U wind component",
+          "units": "m s**-1",
+          "standard_name": "unknown",
+          "GRIB_surface": 0.0
+        },
+        "dtype": "float32",
+        "n_total": 4386,
+        "n_valid": 4386,
+        "missing_percent": 0.0,
+        "min": -6.7887115478515625,
+        "max": 1.3468399047851562,
+        "mean": -2.0491607189178467,
+        "std": 1.9929877519607544,
+        "unique_count": 4134
+      }
+    }
+  },
+  {
+    "file": "lake_bottom_temperature_0_daily-mean.nc",
+    "bytes": 35297,
+    "sha256": "de2373ee57675d9ce5923f6a24f16e5d811d8d55d0047c8ff26bf04c8bbb8be9",
+    "dimensions": {
+      "valid_time": 2,
+      "latitude": 43,
+      "longitude": 51
+    },
+    "attributes": {
+      "GRIB_centre": "ecmf",
+      "GRIB_centreDescription": "European Centre for Medium-Range Weather Forecasts",
+      "GRIB_subCentre": 0,
+      "Conventions": "CF-1.7",
+      "institution": "European Centre for Medium-Range Weather Forecasts",
+      "history": "2026-09-28T10:00 GRIB to CDM+CF via cfgrib-0.9.15.1/ecCodes-2.48.2 with {\"source\": \"lake_bottom_temperature.grib\", \"filter_by_keys\": {}, \"encode_cf\": [\"parameter\", \"time\", \"geography\", \"vertical\"]}\nearthkit.transforms.temporal.daily_reduce(lake_bottom_temperature_0, how=mean, **{'time_shift': {'hours': 5}})"
+    },
+    "coordinates": {
+      "latitude": {
+        "dimensions": [
+          "latitude"
+        ],
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude",
+          "long_name": "latitude",
+          "stored_direction": "decreasing"
+        },
+        "values": [
+          "47.5",
+          "47.4",
+          "47.3",
+          "47.199999999999996",
+          "47.099999999999994",
+          "46.99999999999999",
+          "46.89999999999999",
+          "46.79999999999999",
+          "46.69999999999999",
+          "46.59999999999999",
+          "46.499999999999986",
+          "46.399999999999984",
+          "46.29999999999998",
+          "46.19999999999998",
+          "46.09999999999998",
+          "45.99999999999998",
+          "45.89999999999998",
+          "45.799999999999976",
+          "45.699999999999974",
+          "45.59999999999997",
+          "45.49999999999997",
+          "45.39999999999997",
+          "45.29999999999997",
+          "45.19999999999997",
+          "45.099999999999966",
+          "44.999999999999964",
+          "44.89999999999996",
+          "44.79999999999996",
+          "44.69999999999996",
+          "44.59999999999996",
+          "44.49999999999996",
+          "44.399999999999956",
+          "44.299999999999955",
+          "44.19999999999995",
+          "44.09999999999995",
+          "43.99999999999995",
+          "43.89999999999995",
+          "43.79999999999995",
+          "43.699999999999946",
+          "43.599999999999945",
+          "43.49999999999994",
+          "43.39999999999994",
+          "43.3"
+        ]
+      },
+      "longitude": {
+        "dimensions": [
+          "longitude"
+        ],
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude",
+          "long_name": "longitude"
+        },
+        "values": [
+          "58.1",
+          "58.2",
+          "58.300000000000004",
+          "58.400000000000006",
+          "58.50000000000001",
+          "58.60000000000001",
+          "58.70000000000001",
+          "58.80000000000001",
+          "58.90000000000001",
+          "59.000000000000014",
+          "59.100000000000016",
+          "59.20000000000002",
+          "59.30000000000002",
+          "59.40000000000002",
+          "59.50000000000002",
+          "59.60000000000002",
+          "59.700000000000024",
+          "59.800000000000026",
+          "59.90000000000003",
+          "60.00000000000003",
+          "60.10000000000003",
+          "60.20000000000003",
+          "60.30000000000003",
+          "60.400000000000034",
+          "60.500000000000036",
+          "60.60000000000004",
+          "60.70000000000004",
+          "60.80000000000004",
+          "60.90000000000004",
+          "61.00000000000004",
+          "61.100000000000044",
+          "61.200000000000045",
+          "61.30000000000005",
+          "61.40000000000005",
+          "61.50000000000005",
+          "61.60000000000005",
+          "61.70000000000005",
+          "61.800000000000054",
+          "61.900000000000055",
+          "62.00000000000006",
+          "62.10000000000006",
+          "62.20000000000006",
+          "62.30000000000006",
+          "62.40000000000006",
+          "62.500000000000064",
+          "62.600000000000065",
+          "62.70000000000007",
+          "62.80000000000007",
+          "62.90000000000007",
+          "63.00000000000007",
+          "63.1"
+        ]
+      },
+      "valid_time": {
+        "dimensions": [
+          "valid_time"
+        ],
+        "attributes": {
+          "long_name": "time",
+          "standard_name": "time",
+          "time_shift": "0 days 05:00:00"
+        },
+        "values": [
+          "2026-08-10T00:00:00.000000000",
+          "2026-08-18T00:00:00.000000000"
+        ]
+      },
+      "number": {
+        "dimensions": [],
+        "attributes": {
+          "long_name": "ensemble member numerical id",
+          "units": "1",
+          "standard_name": "realization"
+        },
+        "values": [
+          "0"
+        ]
+      }
+    },
+    "variables": {
+      "lblt": {
+        "dimensions": [
+          "valid_time",
+          "latitude",
+          "longitude"
+        ],
+        "shape": [
+          2,
+          43,
+          51
+        ],
+        "attributes": {
+          "GRIB_paramId": 228010,
+          "GRIB_dataType": "an",
+          "GRIB_numberOfPoints": 2193,
+          "GRIB_typeOfLevel": "surface",
+          "GRIB_stepUnits": 1,
+          "GRIB_stepType": "instant",
+          "GRIB_gridType": "regular_ll",
+          "GRIB_uvRelativeToGrid": 0,
+          "GRIB_NV": 0,
+          "GRIB_Nx": 51,
+          "GRIB_Ny": 43,
+          "GRIB_cfName": "unknown",
+          "GRIB_cfVarName": "lblt",
+          "GRIB_gridDefinitionDescription": "Latitude/Longitude Grid",
+          "GRIB_iDirectionIncrementInDegrees": 0.1,
+          "GRIB_iScansNegatively": 0,
+          "GRIB_jDirectionIncrementInDegrees": 0.1,
+          "GRIB_jPointsAreConsecutive": 0,
+          "GRIB_jScansPositively": 0,
+          "GRIB_latitudeOfFirstGridPointInDegrees": 47.5,
+          "GRIB_latitudeOfLastGridPointInDegrees": 43.3,
+          "GRIB_longitudeOfFirstGridPointInDegrees": 58.1,
+          "GRIB_longitudeOfLastGridPointInDegrees": 63.1,
+          "GRIB_missingValue": 3.4028234663852886e+38,
+          "GRIB_name": "Lake bottom temperature",
+          "GRIB_shortName": "lblt",
+          "GRIB_totalNumber": 0,
+          "GRIB_units": "K",
+          "long_name": "Lake bottom temperature",
+          "units": "K",
+          "standard_name": "unknown",
+          "GRIB_surface": 0.0
+        },
+        "dtype": "float32",
+        "n_total": 4386,
+        "n_valid": 4386,
+        "missing_percent": 0.0,
+        "min": 279.062744140625,
+        "max": 299.72802734375,
+        "mean": 284.81890869140625,
+        "std": 6.2577385902404785,
+        "unique_count": 3916
+      }
+    }
+  },
+  {
+    "file": "lake_ice_depth_0_daily-mean.nc",
+    "bytes": 25167,
+    "sha256": "e0aa984c2ac501cd408643b4fdfbd7db72a41b66845336b29c4eeb6650772544",
+    "dimensions": {
+      "valid_time": 2,
+      "latitude": 43,
+      "longitude": 51
+    },
+    "attributes": {
+      "GRIB_centre": "ecmf",
+      "GRIB_centreDescription": "European Centre for Medium-Range Weather Forecasts",
+      "GRIB_subCentre": 0,
+      "Conventions": "CF-1.7",
+      "institution": "European Centre for Medium-Range Weather Forecasts",
+      "history": "2026-09-28T10:00 GRIB to CDM+CF via cfgrib-0.9.15.1/ecCodes-2.48.2 with {\"source\": \"lake_ice_depth.grib\", \"filter_by_keys\": {}, \"encode_cf\": [\"parameter\", \"time\", \"geography\", \"vertical\"]}\nearthkit.transforms.temporal.daily_reduce(lake_ice_depth_0, how=mean, **{'time_shift': {'hours': 5}})"
+    },
+    "coordinates": {
+      "latitude": {
+        "dimensions": [
+          "latitude"
+        ],
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude",
+          "long_name": "latitude",
+          "stored_direction": "decreasing"
+        },
+        "values": [
+          "47.5",
+          "47.4",
+          "47.3",
+          "47.199999999999996",
+          "47.099999999999994",
+          "46.99999999999999",
+          "46.89999999999999",
+          "46.79999999999999",
+          "46.69999999999999",
+          "46.59999999999999",
+          "46.499999999999986",
+          "46.399999999999984",
+          "46.29999999999998",
+          "46.19999999999998",
+          "46.09999999999998",
+          "45.99999999999998",
+          "45.89999999999998",
+          "45.799999999999976",
+          "45.699999999999974",
+          "45.59999999999997",
+          "45.49999999999997",
+          "45.39999999999997",
+          "45.29999999999997",
+          "45.19999999999997",
+          "45.099999999999966",
+          "44.999999999999964",
+          "44.89999999999996",
+          "44.79999999999996",
+          "44.69999999999996",
+          "44.59999999999996",
+          "44.49999999999996",
+          "44.399999999999956",
+          "44.299999999999955",
+          "44.19999999999995",
+          "44.09999999999995",
+          "43.99999999999995",
+          "43.89999999999995",
+          "43.79999999999995",
+          "43.699999999999946",
+          "43.599999999999945",
+          "43.49999999999994",
+          "43.39999999999994",
+          "43.3"
+        ]
+      },
+      "longitude": {
+        "dimensions": [
+          "longitude"
+        ],
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude",
+          "long_name": "longitude"
+        },
+        "values": [
+          "58.1",
+          "58.2",
+          "58.300000000000004",
+          "58.400000000000006",
+          "58.50000000000001",
+          "58.60000000000001",
+          "58.70000000000001",
+          "58.80000000000001",
+          "58.90000000000001",
+          "59.000000000000014",
+          "59.100000000000016",
+          "59.20000000000002",
+          "59.30000000000002",
+          "59.40000000000002",
+          "59.50000000000002",
+          "59.60000000000002",
+          "59.700000000000024",
+          "59.800000000000026",
+          "59.90000000000003",
+          "60.00000000000003",
+          "60.10000000000003",
+          "60.20000000000003",
+          "60.30000000000003",
+          "60.400000000000034",
+          "60.500000000000036",
+          "60.60000000000004",
+          "60.70000000000004",
+          "60.80000000000004",
+          "60.90000000000004",
+          "61.00000000000004",
+          "61.100000000000044",
+          "61.200000000000045",
+          "61.30000000000005",
+          "61.40000000000005",
+          "61.50000000000005",
+          "61.60000000000005",
+          "61.70000000000005",
+          "61.800000000000054",
+          "61.900000000000055",
+          "62.00000000000006",
+          "62.10000000000006",
+          "62.20000000000006",
+          "62.30000000000006",
+          "62.40000000000006",
+          "62.500000000000064",
+          "62.600000000000065",
+          "62.70000000000007",
+          "62.80000000000007",
+          "62.90000000000007",
+          "63.00000000000007",
+          "63.1"
+        ]
+      },
+      "valid_time": {
+        "dimensions": [
+          "valid_time"
+        ],
+        "attributes": {
+          "long_name": "time",
+          "standard_name": "time",
+          "time_shift": "0 days 05:00:00"
+        },
+        "values": [
+          "2026-08-10T00:00:00.000000000",
+          "2026-08-18T00:00:00.000000000"
+        ]
+      },
+      "number": {
+        "dimensions": [],
+        "attributes": {
+          "long_name": "ensemble member numerical id",
+          "units": "1",
+          "standard_name": "realization"
+        },
+        "values": [
+          "0"
+        ]
+      }
+    },
+    "variables": {
+      "licd": {
+        "dimensions": [
+          "valid_time",
+          "latitude",
+          "longitude"
+        ],
+        "shape": [
+          2,
+          43,
+          51
+        ],
+        "attributes": {
+          "GRIB_paramId": 228014,
+          "GRIB_dataType": "an",
+          "GRIB_numberOfPoints": 2193,
+          "GRIB_typeOfLevel": "surface",
+          "GRIB_stepUnits": 1,
+          "GRIB_stepType": "instant",
+          "GRIB_gridType": "regular_ll",
+          "GRIB_uvRelativeToGrid": 0,
+          "GRIB_NV": 0,
+          "GRIB_Nx": 51,
+          "GRIB_Ny": 43,
+          "GRIB_cfName": "unknown",
+          "GRIB_cfVarName": "licd",
+          "GRIB_gridDefinitionDescription": "Latitude/Longitude Grid",
+          "GRIB_iDirectionIncrementInDegrees": 0.1,
+          "GRIB_iScansNegatively": 0,
+          "GRIB_jDirectionIncrementInDegrees": 0.1,
+          "GRIB_jPointsAreConsecutive": 0,
+          "GRIB_jScansPositively": 0,
+          "GRIB_latitudeOfFirstGridPointInDegrees": 47.5,
+          "GRIB_latitudeOfLastGridPointInDegrees": 43.3,
+          "GRIB_longitudeOfFirstGridPointInDegrees": 58.1,
+          "GRIB_longitudeOfLastGridPointInDegrees": 63.1,
+          "GRIB_missingValue": 3.4028234663852886e+38,
+          "GRIB_name": "Lake ice total depth",
+          "GRIB_shortName": "licd",
+          "GRIB_totalNumber": 0,
+          "GRIB_units": "m",
+          "long_name": "Lake ice total depth",
+          "units": "m",
+          "standard_name": "unknown",
+          "GRIB_surface": 0.0
+        },
+        "dtype": "float32",
+        "n_total": 4386,
+        "n_valid": 4386,
+        "missing_percent": 0.0,
+        "min": -2.507218040860612e-19,
+        "max": -1.7618289180298568e-19,
+        "mean": -2.1345232855747783e-19,
+        "std": 3.7269449679189215e-20,
+        "unique_count": 2
+      }
+    }
+  },
+  {
+    "file": "leaf_area_index_low_vegetation_0_daily-mean.nc",
+    "bytes": 28959,
+    "sha256": "beaec3caa33627895dd9b4b19857ec550fff4461d47b2e3ec177abffe13bdaa9",
+    "dimensions": {
+      "valid_time": 2,
+      "latitude": 43,
+      "longitude": 51
+    },
+    "attributes": {
+      "GRIB_centre": "ecmf",
+      "GRIB_centreDescription": "European Centre for Medium-Range Weather Forecasts",
+      "GRIB_subCentre": 0,
+      "Conventions": "CF-1.7",
+      "institution": "European Centre for Medium-Range Weather Forecasts",
+      "history": "2026-09-28T10:01 GRIB to CDM+CF via cfgrib-0.9.15.1/ecCodes-2.48.2 with {\"source\": \"leaf_area_index_low_vegetation.grib\", \"filter_by_keys\": {}, \"encode_cf\": [\"parameter\", \"time\", \"geography\", \"vertical\"]}\nearthkit.transforms.temporal.daily_reduce(leaf_area_index_low_vegetation_0, how=mean, **{'time_shift': {'hours': 5}})"
+    },
+    "coordinates": {
+      "latitude": {
+        "dimensions": [
+          "latitude"
+        ],
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude",
+          "long_name": "latitude",
+          "stored_direction": "decreasing"
+        },
+        "values": [
+          "47.5",
+          "47.4",
+          "47.3",
+          "47.199999999999996",
+          "47.099999999999994",
+          "46.99999999999999",
+          "46.89999999999999",
+          "46.79999999999999",
+          "46.69999999999999",
+          "46.59999999999999",
+          "46.499999999999986",
+          "46.399999999999984",
+          "46.29999999999998",
+          "46.19999999999998",
+          "46.09999999999998",
+          "45.99999999999998",
+          "45.89999999999998",
+          "45.799999999999976",
+          "45.699999999999974",
+          "45.59999999999997",
+          "45.49999999999997",
+          "45.39999999999997",
+          "45.29999999999997",
+          "45.19999999999997",
+          "45.099999999999966",
+          "44.999999999999964",
+          "44.89999999999996",
+          "44.79999999999996",
+          "44.69999999999996",
+          "44.59999999999996",
+          "44.49999999999996",
+          "44.399999999999956",
+          "44.299999999999955",
+          "44.19999999999995",
+          "44.09999999999995",
+          "43.99999999999995",
+          "43.89999999999995",
+          "43.79999999999995",
+          "43.699999999999946",
+          "43.599999999999945",
+          "43.49999999999994",
+          "43.39999999999994",
+          "43.3"
+        ]
+      },
+      "longitude": {
+        "dimensions": [
+          "longitude"
+        ],
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude",
+          "long_name": "longitude"
+        },
+        "values": [
+          "58.1",
+          "58.2",
+          "58.300000000000004",
+          "58.400000000000006",
+          "58.50000000000001",
+          "58.60000000000001",
+          "58.70000000000001",
+          "58.80000000000001",
+          "58.90000000000001",
+          "59.000000000000014",
+          "59.100000000000016",
+          "59.20000000000002",
+          "59.30000000000002",
+          "59.40000000000002",
+          "59.50000000000002",
+          "59.60000000000002",
+          "59.700000000000024",
+          "59.800000000000026",
+          "59.90000000000003",
+          "60.00000000000003",
+          "60.10000000000003",
+          "60.20000000000003",
+          "60.30000000000003",
+          "60.400000000000034",
+          "60.500000000000036",
+          "60.60000000000004",
+          "60.70000000000004",
+          "60.80000000000004",
+          "60.90000000000004",
+          "61.00000000000004",
+          "61.100000000000044",
+          "61.200000000000045",
+          "61.30000000000005",
+          "61.40000000000005",
+          "61.50000000000005",
+          "61.60000000000005",
+          "61.70000000000005",
+          "61.800000000000054",
+          "61.900000000000055",
+          "62.00000000000006",
+          "62.10000000000006",
+          "62.20000000000006",
+          "62.30000000000006",
+          "62.40000000000006",
+          "62.500000000000064",
+          "62.600000000000065",
+          "62.70000000000007",
+          "62.80000000000007",
+          "62.90000000000007",
+          "63.00000000000007",
+          "63.1"
+        ]
+      },
+      "valid_time": {
+        "dimensions": [
+          "valid_time"
+        ],
+        "attributes": {
+          "long_name": "time",
+          "standard_name": "time",
+          "time_shift": "0 days 05:00:00"
+        },
+        "values": [
+          "2026-08-10T00:00:00.000000000",
+          "2026-08-18T00:00:00.000000000"
+        ]
+      },
+      "number": {
+        "dimensions": [],
+        "attributes": {
+          "long_name": "ensemble member numerical id",
+          "units": "1",
+          "standard_name": "realization"
+        },
+        "values": [
+          "0"
+        ]
+      }
+    },
+    "variables": {
+      "lai_lv": {
+        "dimensions": [
+          "valid_time",
+          "latitude",
+          "longitude"
+        ],
+        "shape": [
+          2,
+          43,
+          51
+        ],
+        "attributes": {
+          "GRIB_paramId": 66,
+          "GRIB_dataType": "fc",
+          "GRIB_numberOfPoints": 2193,
+          "GRIB_typeOfLevel": "surface",
+          "GRIB_stepUnits": 1,
+          "GRIB_stepType": "instant",
+          "GRIB_gridType": "regular_ll",
+          "GRIB_uvRelativeToGrid": 0,
+          "GRIB_NV": 0,
+          "GRIB_Nx": 51,
+          "GRIB_Ny": 43,
+          "GRIB_cfName": "unknown",
+          "GRIB_cfVarName": "lai_lv",
+          "GRIB_gridDefinitionDescription": "Latitude/Longitude Grid",
+          "GRIB_iDirectionIncrementInDegrees": 0.1,
+          "GRIB_iScansNegatively": 0,
+          "GRIB_jDirectionIncrementInDegrees": 0.1,
+          "GRIB_jPointsAreConsecutive": 0,
+          "GRIB_jScansPositively": 0,
+          "GRIB_latitudeOfFirstGridPointInDegrees": 47.5,
+          "GRIB_latitudeOfLastGridPointInDegrees": 43.3,
+          "GRIB_longitudeOfFirstGridPointInDegrees": 58.1,
+          "GRIB_longitudeOfLastGridPointInDegrees": 63.1,
+          "GRIB_missingValue": 3.4028234663852886e+38,
+          "GRIB_name": "Leaf area index, low vegetation",
+          "GRIB_shortName": "lai_lv",
+          "GRIB_totalNumber": 0,
+          "GRIB_units": "m**2 m**-2",
+          "long_name": "Leaf area index, low vegetation",
+          "units": "m**2 m**-2",
+          "standard_name": "unknown",
+          "GRIB_surface": 0.0
+        },
+        "dtype": "float32",
+        "n_total": 4386,
+        "n_valid": 4386,
+        "missing_percent": 0.0,
+        "min": 0.0,
+        "max": 2.329925537109375,
+        "mean": 0.45677024126052856,
+        "std": 0.33394327759742737,
+        "unique_count": 1059
+      }
+    }
+  },
+  {
+    "file": "snow_cover_0_daily-mean.nc",
+    "bytes": 25039,
+    "sha256": "c19afc4cb035f5303d521a7a56a827bc91f629756a5e4556ed71f4a142f8de7d",
+    "dimensions": {
+      "valid_time": 2,
+      "latitude": 43,
+      "longitude": 51
+    },
+    "attributes": {
+      "GRIB_centre": "ecmf",
+      "GRIB_centreDescription": "European Centre for Medium-Range Weather Forecasts",
+      "GRIB_subCentre": 0,
+      "Conventions": "CF-1.7",
+      "institution": "European Centre for Medium-Range Weather Forecasts",
+      "history": "2026-09-28T10:01 GRIB to CDM+CF via cfgrib-0.9.15.1/ecCodes-2.48.2 with {\"source\": \"snow_cover.grib\", \"filter_by_keys\": {}, \"encode_cf\": [\"parameter\", \"time\", \"geography\", \"vertical\"]}\nearthkit.transforms.temporal.daily_reduce(snow_cover_0, how=mean, **{'time_shift': {'hours': 5}})"
+    },
+    "coordinates": {
+      "latitude": {
+        "dimensions": [
+          "latitude"
+        ],
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude",
+          "long_name": "latitude",
+          "stored_direction": "decreasing"
+        },
+        "values": [
+          "47.5",
+          "47.4",
+          "47.3",
+          "47.199999999999996",
+          "47.099999999999994",
+          "46.99999999999999",
+          "46.89999999999999",
+          "46.79999999999999",
+          "46.69999999999999",
+          "46.59999999999999",
+          "46.499999999999986",
+          "46.399999999999984",
+          "46.29999999999998",
+          "46.19999999999998",
+          "46.09999999999998",
+          "45.99999999999998",
+          "45.89999999999998",
+          "45.799999999999976",
+          "45.699999999999974",
+          "45.59999999999997",
+          "45.49999999999997",
+          "45.39999999999997",
+          "45.29999999999997",
+          "45.19999999999997",
+          "45.099999999999966",
+          "44.999999999999964",
+          "44.89999999999996",
+          "44.79999999999996",
+          "44.69999999999996",
+          "44.59999999999996",
+          "44.49999999999996",
+          "44.399999999999956",
+          "44.299999999999955",
+          "44.19999999999995",
+          "44.09999999999995",
+          "43.99999999999995",
+          "43.89999999999995",
+          "43.79999999999995",
+          "43.699999999999946",
+          "43.599999999999945",
+          "43.49999999999994",
+          "43.39999999999994",
+          "43.3"
+        ]
+      },
+      "longitude": {
+        "dimensions": [
+          "longitude"
+        ],
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude",
+          "long_name": "longitude"
+        },
+        "values": [
+          "58.1",
+          "58.2",
+          "58.300000000000004",
+          "58.400000000000006",
+          "58.50000000000001",
+          "58.60000000000001",
+          "58.70000000000001",
+          "58.80000000000001",
+          "58.90000000000001",
+          "59.000000000000014",
+          "59.100000000000016",
+          "59.20000000000002",
+          "59.30000000000002",
+          "59.40000000000002",
+          "59.50000000000002",
+          "59.60000000000002",
+          "59.700000000000024",
+          "59.800000000000026",
+          "59.90000000000003",
+          "60.00000000000003",
+          "60.10000000000003",
+          "60.20000000000003",
+          "60.30000000000003",
+          "60.400000000000034",
+          "60.500000000000036",
+          "60.60000000000004",
+          "60.70000000000004",
+          "60.80000000000004",
+          "60.90000000000004",
+          "61.00000000000004",
+          "61.100000000000044",
+          "61.200000000000045",
+          "61.30000000000005",
+          "61.40000000000005",
+          "61.50000000000005",
+          "61.60000000000005",
+          "61.70000000000005",
+          "61.800000000000054",
+          "61.900000000000055",
+          "62.00000000000006",
+          "62.10000000000006",
+          "62.20000000000006",
+          "62.30000000000006",
+          "62.40000000000006",
+          "62.500000000000064",
+          "62.600000000000065",
+          "62.70000000000007",
+          "62.80000000000007",
+          "62.90000000000007",
+          "63.00000000000007",
+          "63.1"
+        ]
+      },
+      "valid_time": {
+        "dimensions": [
+          "valid_time"
+        ],
+        "attributes": {
+          "long_name": "time",
+          "standard_name": "time",
+          "time_shift": "0 days 05:00:00"
+        },
+        "values": [
+          "2026-08-10T00:00:00.000000000",
+          "2026-08-18T00:00:00.000000000"
+        ]
+      }
+    },
+    "variables": {
+      "snowc": {
+        "dimensions": [
+          "valid_time",
+          "latitude",
+          "longitude"
+        ],
+        "shape": [
+          2,
+          43,
+          51
+        ],
+        "attributes": {
+          "GRIB_paramId": 260038,
+          "GRIB_dataType": "fc",
+          "GRIB_numberOfPoints": 2193,
+          "GRIB_typeOfLevel": "surface",
+          "GRIB_stepUnits": 1,
+          "GRIB_stepType": "instant",
+          "GRIB_gridType": "regular_ll",
+          "GRIB_uvRelativeToGrid": 0,
+          "GRIB_NV": 0,
+          "GRIB_Nx": 51,
+          "GRIB_Ny": 43,
+          "GRIB_cfName": "unknown",
+          "GRIB_cfVarName": "snowc",
+          "GRIB_gridDefinitionDescription": "Latitude/longitude",
+          "GRIB_iDirectionIncrementInDegrees": 0.1,
+          "GRIB_iScansNegatively": 0,
+          "GRIB_jDirectionIncrementInDegrees": 0.1,
+          "GRIB_jPointsAreConsecutive": 0,
+          "GRIB_jScansPositively": 0,
+          "GRIB_latitudeOfFirstGridPointInDegrees": 47.5,
+          "GRIB_latitudeOfLastGridPointInDegrees": 43.3,
+          "GRIB_longitudeOfFirstGridPointInDegrees": 58.1,
+          "GRIB_longitudeOfLastGridPointInDegrees": 63.1,
+          "GRIB_missingValue": 3.4028234663852886e+38,
+          "GRIB_name": "Snow cover",
+          "GRIB_shortName": "snowc",
+          "GRIB_units": "%",
+          "long_name": "Snow cover",
+          "units": "%",
+          "standard_name": "unknown",
+          "GRIB_surface": 0.0
+        },
+        "dtype": "float32",
+        "n_total": 4386,
+        "n_valid": 4386,
+        "missing_percent": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "unique_count": 1
+      }
+    }
+  },
+  {
+    "file": "soil_temperature_level_1_0_daily-mean.nc",
+    "bytes": 34258,
+    "sha256": "d075a38392043a642eda8dc2dc29491bf6cfbc02aa1acd252275527139aa2ba0",
+    "dimensions": {
+      "valid_time": 2,
+      "latitude": 43,
+      "longitude": 51
+    },
+    "attributes": {
+      "GRIB_centre": "ecmf",
+      "GRIB_centreDescription": "European Centre for Medium-Range Weather Forecasts",
+      "GRIB_subCentre": 0,
+      "Conventions": "CF-1.7",
+      "institution": "European Centre for Medium-Range Weather Forecasts",
+      "history": "2026-09-28T10:00 GRIB to CDM+CF via cfgrib-0.9.15.1/ecCodes-2.48.2 with {\"source\": \"soil_temperature_level_1.grib\", \"filter_by_keys\": {}, \"encode_cf\": [\"parameter\", \"time\", \"geography\", \"vertical\"]}\nearthkit.transforms.temporal.daily_reduce(soil_temperature_level_1_0, how=mean, **{'time_shift': {'hours': 5}})"
+    },
+    "coordinates": {
+      "latitude": {
+        "dimensions": [
+          "latitude"
+        ],
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude",
+          "long_name": "latitude",
+          "stored_direction": "decreasing"
+        },
+        "values": [
+          "47.5",
+          "47.4",
+          "47.3",
+          "47.199999999999996",
+          "47.099999999999994",
+          "46.99999999999999",
+          "46.89999999999999",
+          "46.79999999999999",
+          "46.69999999999999",
+          "46.59999999999999",
+          "46.499999999999986",
+          "46.399999999999984",
+          "46.29999999999998",
+          "46.19999999999998",
+          "46.09999999999998",
+          "45.99999999999998",
+          "45.89999999999998",
+          "45.799999999999976",
+          "45.699999999999974",
+          "45.59999999999997",
+          "45.49999999999997",
+          "45.39999999999997",
+          "45.29999999999997",
+          "45.19999999999997",
+          "45.099999999999966",
+          "44.999999999999964",
+          "44.89999999999996",
+          "44.79999999999996",
+          "44.69999999999996",
+          "44.59999999999996",
+          "44.49999999999996",
+          "44.399999999999956",
+          "44.299999999999955",
+          "44.19999999999995",
+          "44.09999999999995",
+          "43.99999999999995",
+          "43.89999999999995",
+          "43.79999999999995",
+          "43.699999999999946",
+          "43.599999999999945",
+          "43.49999999999994",
+          "43.39999999999994",
+          "43.3"
+        ]
+      },
+      "longitude": {
+        "dimensions": [
+          "longitude"
+        ],
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude",
+          "long_name": "longitude"
+        },
+        "values": [
+          "58.1",
+          "58.2",
+          "58.300000000000004",
+          "58.400000000000006",
+          "58.50000000000001",
+          "58.60000000000001",
+          "58.70000000000001",
+          "58.80000000000001",
+          "58.90000000000001",
+          "59.000000000000014",
+          "59.100000000000016",
+          "59.20000000000002",
+          "59.30000000000002",
+          "59.40000000000002",
+          "59.50000000000002",
+          "59.60000000000002",
+          "59.700000000000024",
+          "59.800000000000026",
+          "59.90000000000003",
+          "60.00000000000003",
+          "60.10000000000003",
+          "60.20000000000003",
+          "60.30000000000003",
+          "60.400000000000034",
+          "60.500000000000036",
+          "60.60000000000004",
+          "60.70000000000004",
+          "60.80000000000004",
+          "60.90000000000004",
+          "61.00000000000004",
+          "61.100000000000044",
+          "61.200000000000045",
+          "61.30000000000005",
+          "61.40000000000005",
+          "61.50000000000005",
+          "61.60000000000005",
+          "61.70000000000005",
+          "61.800000000000054",
+          "61.900000000000055",
+          "62.00000000000006",
+          "62.10000000000006",
+          "62.20000000000006",
+          "62.30000000000006",
+          "62.40000000000006",
+          "62.500000000000064",
+          "62.600000000000065",
+          "62.70000000000007",
+          "62.80000000000007",
+          "62.90000000000007",
+          "63.00000000000007",
+          "63.1"
+        ]
+      },
+      "valid_time": {
+        "dimensions": [
+          "valid_time"
+        ],
+        "attributes": {
+          "long_name": "time",
+          "standard_name": "time",
+          "time_shift": "0 days 05:00:00"
+        },
+        "values": [
+          "2026-08-10T00:00:00.000000000",
+          "2026-08-18T00:00:00.000000000"
+        ]
+      },
+      "number": {
+        "dimensions": [],
+        "attributes": {
+          "long_name": "ensemble member numerical id",
+          "units": "1",
+          "standard_name": "realization"
+        },
+        "values": [
+          "0"
+        ]
+      }
+    },
+    "variables": {
+      "stl1": {
+        "dimensions": [
+          "valid_time",
+          "latitude",
+          "longitude"
+        ],
+        "shape": [
+          2,
+          43,
+          51
+        ],
+        "attributes": {
+          "GRIB_paramId": 139,
+          "GRIB_dataType": "an",
+          "GRIB_numberOfPoints": 2193,
+          "GRIB_typeOfLevel": "depthBelowLandLayer",
+          "GRIB_stepUnits": 1,
+          "GRIB_stepType": "instant",
+          "GRIB_gridType": "regular_ll",
+          "GRIB_uvRelativeToGrid": 0,
+          "GRIB_NV": 0,
+          "GRIB_Nx": 51,
+          "GRIB_Ny": 43,
+          "GRIB_cfName": "surface_temperature",
+          "GRIB_cfVarName": "stl1",
+          "GRIB_gridDefinitionDescription": "Latitude/Longitude Grid",
+          "GRIB_iDirectionIncrementInDegrees": 0.1,
+          "GRIB_iScansNegatively": 0,
+          "GRIB_jDirectionIncrementInDegrees": 0.1,
+          "GRIB_jPointsAreConsecutive": 0,
+          "GRIB_jScansPositively": 0,
+          "GRIB_latitudeOfFirstGridPointInDegrees": 47.5,
+          "GRIB_latitudeOfLastGridPointInDegrees": 43.3,
+          "GRIB_longitudeOfFirstGridPointInDegrees": 58.1,
+          "GRIB_longitudeOfLastGridPointInDegrees": 63.1,
+          "GRIB_missingValue": 3.4028234663852886e+38,
+          "GRIB_name": "Soil temperature level 1",
+          "GRIB_shortName": "stl1",
+          "GRIB_totalNumber": 0,
+          "GRIB_units": "K",
+          "long_name": "Soil temperature level 1",
+          "units": "K",
+          "standard_name": "surface_temperature",
+          "GRIB_depthBelowLandLayer": 0.0
+        },
+        "dtype": "float32",
+        "n_total": 4386,
+        "n_valid": 4386,
+        "missing_percent": 0.0,
+        "min": 295.216796875,
+        "max": 311.53753662109375,
+        "mean": 305.4418029785156,
+        "std": 3.5967814922332764,
+        "unique_count": 3890
+      }
+    }
+  },
+  {
+    "file": "soil_temperature_level_2_0_daily-mean.nc",
+    "bytes": 34299,
+    "sha256": "c4b982d3a7540f8ec84bea3cc07105159255a3b8b7d798ff955643d2e5744ba3",
+    "dimensions": {
+      "valid_time": 2,
+      "latitude": 43,
+      "longitude": 51
+    },
+    "attributes": {
+      "GRIB_centre": "ecmf",
+      "GRIB_centreDescription": "European Centre for Medium-Range Weather Forecasts",
+      "GRIB_subCentre": 0,
+      "Conventions": "CF-1.7",
+      "institution": "European Centre for Medium-Range Weather Forecasts",
+      "history": "2026-09-28T10:00 GRIB to CDM+CF via cfgrib-0.9.15.1/ecCodes-2.48.2 with {\"source\": \"soil_temperature_level_2.grib\", \"filter_by_keys\": {}, \"encode_cf\": [\"parameter\", \"time\", \"geography\", \"vertical\"]}\nearthkit.transforms.temporal.daily_reduce(soil_temperature_level_2_0, how=mean, **{'time_shift': {'hours': 5}})"
+    },
+    "coordinates": {
+      "latitude": {
+        "dimensions": [
+          "latitude"
+        ],
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude",
+          "long_name": "latitude",
+          "stored_direction": "decreasing"
+        },
+        "values": [
+          "47.5",
+          "47.4",
+          "47.3",
+          "47.199999999999996",
+          "47.099999999999994",
+          "46.99999999999999",
+          "46.89999999999999",
+          "46.79999999999999",
+          "46.69999999999999",
+          "46.59999999999999",
+          "46.499999999999986",
+          "46.399999999999984",
+          "46.29999999999998",
+          "46.19999999999998",
+          "46.09999999999998",
+          "45.99999999999998",
+          "45.89999999999998",
+          "45.799999999999976",
+          "45.699999999999974",
+          "45.59999999999997",
+          "45.49999999999997",
+          "45.39999999999997",
+          "45.29999999999997",
+          "45.19999999999997",
+          "45.099999999999966",
+          "44.999999999999964",
+          "44.89999999999996",
+          "44.79999999999996",
+          "44.69999999999996",
+          "44.59999999999996",
+          "44.49999999999996",
+          "44.399999999999956",
+          "44.299999999999955",
+          "44.19999999999995",
+          "44.09999999999995",
+          "43.99999999999995",
+          "43.89999999999995",
+          "43.79999999999995",
+          "43.699999999999946",
+          "43.599999999999945",
+          "43.49999999999994",
+          "43.39999999999994",
+          "43.3"
+        ]
+      },
+      "longitude": {
+        "dimensions": [
+          "longitude"
+        ],
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude",
+          "long_name": "longitude"
+        },
+        "values": [
+          "58.1",
+          "58.2",
+          "58.300000000000004",
+          "58.400000000000006",
+          "58.50000000000001",
+          "58.60000000000001",
+          "58.70000000000001",
+          "58.80000000000001",
+          "58.90000000000001",
+          "59.000000000000014",
+          "59.100000000000016",
+          "59.20000000000002",
+          "59.30000000000002",
+          "59.40000000000002",
+          "59.50000000000002",
+          "59.60000000000002",
+          "59.700000000000024",
+          "59.800000000000026",
+          "59.90000000000003",
+          "60.00000000000003",
+          "60.10000000000003",
+          "60.20000000000003",
+          "60.30000000000003",
+          "60.400000000000034",
+          "60.500000000000036",
+          "60.60000000000004",
+          "60.70000000000004",
+          "60.80000000000004",
+          "60.90000000000004",
+          "61.00000000000004",
+          "61.100000000000044",
+          "61.200000000000045",
+          "61.30000000000005",
+          "61.40000000000005",
+          "61.50000000000005",
+          "61.60000000000005",
+          "61.70000000000005",
+          "61.800000000000054",
+          "61.900000000000055",
+          "62.00000000000006",
+          "62.10000000000006",
+          "62.20000000000006",
+          "62.30000000000006",
+          "62.40000000000006",
+          "62.500000000000064",
+          "62.600000000000065",
+          "62.70000000000007",
+          "62.80000000000007",
+          "62.90000000000007",
+          "63.00000000000007",
+          "63.1"
+        ]
+      },
+      "valid_time": {
+        "dimensions": [
+          "valid_time"
+        ],
+        "attributes": {
+          "long_name": "time",
+          "standard_name": "time",
+          "time_shift": "0 days 05:00:00"
+        },
+        "values": [
+          "2026-08-10T00:00:00.000000000",
+          "2026-08-18T00:00:00.000000000"
+        ]
+      },
+      "number": {
+        "dimensions": [],
+        "attributes": {
+          "long_name": "ensemble member numerical id",
+          "units": "1",
+          "standard_name": "realization"
+        },
+        "values": [
+          "0"
+        ]
+      }
+    },
+    "variables": {
+      "stl2": {
+        "dimensions": [
+          "valid_time",
+          "latitude",
+          "longitude"
+        ],
+        "shape": [
+          2,
+          43,
+          51
+        ],
+        "attributes": {
+          "GRIB_paramId": 170,
+          "GRIB_dataType": "an",
+          "GRIB_numberOfPoints": 2193,
+          "GRIB_typeOfLevel": "depthBelowLandLayer",
+          "GRIB_stepUnits": 1,
+          "GRIB_stepType": "instant",
+          "GRIB_gridType": "regular_ll",
+          "GRIB_uvRelativeToGrid": 0,
+          "GRIB_NV": 0,
+          "GRIB_Nx": 51,
+          "GRIB_Ny": 43,
+          "GRIB_cfName": "unknown",
+          "GRIB_cfVarName": "stl2",
+          "GRIB_gridDefinitionDescription": "Latitude/Longitude Grid",
+          "GRIB_iDirectionIncrementInDegrees": 0.1,
+          "GRIB_iScansNegatively": 0,
+          "GRIB_jDirectionIncrementInDegrees": 0.1,
+          "GRIB_jPointsAreConsecutive": 0,
+          "GRIB_jScansPositively": 0,
+          "GRIB_latitudeOfFirstGridPointInDegrees": 47.5,
+          "GRIB_latitudeOfLastGridPointInDegrees": 43.3,
+          "GRIB_longitudeOfFirstGridPointInDegrees": 58.1,
+          "GRIB_longitudeOfLastGridPointInDegrees": 63.1,
+          "GRIB_missingValue": 3.4028234663852886e+38,
+          "GRIB_name": "Soil temperature level 2",
+          "GRIB_shortName": "stl2",
+          "GRIB_totalNumber": 0,
+          "GRIB_units": "K",
+          "long_name": "Soil temperature level 2",
+          "units": "K",
+          "standard_name": "unknown",
+          "GRIB_depthBelowLandLayer": 7.0
+        },
+        "dtype": "float32",
+        "n_total": 4386,
+        "n_valid": 4386,
+        "missing_percent": 0.0,
+        "min": 295.21783447265625,
+        "max": 308.82305908203125,
+        "mean": 303.6049499511719,
+        "std": 2.4729204177856445,
+        "unique_count": 3848
+      }
+    }
+  },
+  {
+    "file": "volumetric_soil_water_layer_1_0_daily-mean.nc",
+    "bytes": 34213,
+    "sha256": "afe32f0e3acfbe44f11ba31c82560ddc0996298946005723e09c00f8f408a624",
+    "dimensions": {
+      "valid_time": 2,
+      "latitude": 43,
+      "longitude": 51
+    },
+    "attributes": {
+      "GRIB_centre": "ecmf",
+      "GRIB_centreDescription": "European Centre for Medium-Range Weather Forecasts",
+      "GRIB_subCentre": 0,
+      "Conventions": "CF-1.7",
+      "institution": "European Centre for Medium-Range Weather Forecasts",
+      "history": "2026-09-28T10:01 GRIB to CDM+CF via cfgrib-0.9.15.1/ecCodes-2.48.2 with {\"source\": \"volumetric_soil_water_layer_1.grib\", \"filter_by_keys\": {}, \"encode_cf\": [\"parameter\", \"time\", \"geography\", \"vertical\"]}\nearthkit.transforms.temporal.daily_reduce(volumetric_soil_water_layer_1_0, how=mean, **{'time_shift': {'hours': 5}})"
+    },
+    "coordinates": {
+      "latitude": {
+        "dimensions": [
+          "latitude"
+        ],
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude",
+          "long_name": "latitude",
+          "stored_direction": "decreasing"
+        },
+        "values": [
+          "47.5",
+          "47.4",
+          "47.3",
+          "47.199999999999996",
+          "47.099999999999994",
+          "46.99999999999999",
+          "46.89999999999999",
+          "46.79999999999999",
+          "46.69999999999999",
+          "46.59999999999999",
+          "46.499999999999986",
+          "46.399999999999984",
+          "46.29999999999998",
+          "46.19999999999998",
+          "46.09999999999998",
+          "45.99999999999998",
+          "45.89999999999998",
+          "45.799999999999976",
+          "45.699999999999974",
+          "45.59999999999997",
+          "45.49999999999997",
+          "45.39999999999997",
+          "45.29999999999997",
+          "45.19999999999997",
+          "45.099999999999966",
+          "44.999999999999964",
+          "44.89999999999996",
+          "44.79999999999996",
+          "44.69999999999996",
+          "44.59999999999996",
+          "44.49999999999996",
+          "44.399999999999956",
+          "44.299999999999955",
+          "44.19999999999995",
+          "44.09999999999995",
+          "43.99999999999995",
+          "43.89999999999995",
+          "43.79999999999995",
+          "43.699999999999946",
+          "43.599999999999945",
+          "43.49999999999994",
+          "43.39999999999994",
+          "43.3"
+        ]
+      },
+      "longitude": {
+        "dimensions": [
+          "longitude"
+        ],
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude",
+          "long_name": "longitude"
+        },
+        "values": [
+          "58.1",
+          "58.2",
+          "58.300000000000004",
+          "58.400000000000006",
+          "58.50000000000001",
+          "58.60000000000001",
+          "58.70000000000001",
+          "58.80000000000001",
+          "58.90000000000001",
+          "59.000000000000014",
+          "59.100000000000016",
+          "59.20000000000002",
+          "59.30000000000002",
+          "59.40000000000002",
+          "59.50000000000002",
+          "59.60000000000002",
+          "59.700000000000024",
+          "59.800000000000026",
+          "59.90000000000003",
+          "60.00000000000003",
+          "60.10000000000003",
+          "60.20000000000003",
+          "60.30000000000003",
+          "60.400000000000034",
+          "60.500000000000036",
+          "60.60000000000004",
+          "60.70000000000004",
+          "60.80000000000004",
+          "60.90000000000004",
+          "61.00000000000004",
+          "61.100000000000044",
+          "61.200000000000045",
+          "61.30000000000005",
+          "61.40000000000005",
+          "61.50000000000005",
+          "61.60000000000005",
+          "61.70000000000005",
+          "61.800000000000054",
+          "61.900000000000055",
+          "62.00000000000006",
+          "62.10000000000006",
+          "62.20000000000006",
+          "62.30000000000006",
+          "62.40000000000006",
+          "62.500000000000064",
+          "62.600000000000065",
+          "62.70000000000007",
+          "62.80000000000007",
+          "62.90000000000007",
+          "63.00000000000007",
+          "63.1"
+        ]
+      },
+      "valid_time": {
+        "dimensions": [
+          "valid_time"
+        ],
+        "attributes": {
+          "long_name": "time",
+          "standard_name": "time",
+          "time_shift": "0 days 05:00:00"
+        },
+        "values": [
+          "2026-08-10T00:00:00.000000000",
+          "2026-08-18T00:00:00.000000000"
+        ]
+      },
+      "number": {
+        "dimensions": [],
+        "attributes": {
+          "long_name": "ensemble member numerical id",
+          "units": "1",
+          "standard_name": "realization"
+        },
+        "values": [
+          "0"
+        ]
+      }
+    },
+    "variables": {
+      "swvl1": {
+        "dimensions": [
+          "valid_time",
+          "latitude",
+          "longitude"
+        ],
+        "shape": [
+          2,
+          43,
+          51
+        ],
+        "attributes": {
+          "GRIB_paramId": 39,
+          "GRIB_dataType": "an",
+          "GRIB_numberOfPoints": 2193,
+          "GRIB_typeOfLevel": "depthBelowLandLayer",
+          "GRIB_stepUnits": 1,
+          "GRIB_stepType": "instant",
+          "GRIB_gridType": "regular_ll",
+          "GRIB_uvRelativeToGrid": 0,
+          "GRIB_NV": 0,
+          "GRIB_Nx": 51,
+          "GRIB_Ny": 43,
+          "GRIB_cfName": "unknown",
+          "GRIB_cfVarName": "swvl1",
+          "GRIB_gridDefinitionDescription": "Latitude/Longitude Grid",
+          "GRIB_iDirectionIncrementInDegrees": 0.1,
+          "GRIB_iScansNegatively": 0,
+          "GRIB_jDirectionIncrementInDegrees": 0.1,
+          "GRIB_jPointsAreConsecutive": 0,
+          "GRIB_jScansPositively": 0,
+          "GRIB_latitudeOfFirstGridPointInDegrees": 47.5,
+          "GRIB_latitudeOfLastGridPointInDegrees": 43.3,
+          "GRIB_longitudeOfFirstGridPointInDegrees": 58.1,
+          "GRIB_longitudeOfLastGridPointInDegrees": 63.1,
+          "GRIB_missingValue": 3.4028234663852886e+38,
+          "GRIB_name": "Volumetric soil water layer 1",
+          "GRIB_shortName": "swvl1",
+          "GRIB_totalNumber": 0,
+          "GRIB_units": "m**3 m**-3",
+          "long_name": "Volumetric soil water layer 1",
+          "units": "m**3 m**-3",
+          "standard_name": "unknown",
+          "GRIB_depthBelowLandLayer": 0.0
+        },
+        "dtype": "float32",
+        "n_total": 4386,
+        "n_valid": 4386,
+        "missing_percent": 0.0,
+        "min": -1.0164398598225872e-20,
+        "max": 0.25844573974609375,
+        "mean": 0.06054121255874634,
+        "std": 0.060859471559524536,
+        "unique_count": 3436
+      }
+    }
+  }
+]

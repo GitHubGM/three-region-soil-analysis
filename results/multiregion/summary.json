@@ -1,0 +1,69 @@
+{
+  "seed": 20261005,
+  "labels": {
+    "Aral": "Aral Sea domain",
+    "Atyrau": "Atyrau domain",
+    "Bozaigyr": "Northwestern domain"
+  },
+  "dates": [
+    "2026-08-10",
+    "2026-08-18"
+  ],
+  "n_region_labelled_rows": 15740,
+  "n_unique_site_date_rows": 15068,
+  "n_unique_sites": 7534,
+  "main_fit_count": 312,
+  "adaptation_fit_count": 144,
+  "main_prediction_count": 503680,
+  "adaptation_prediction_count": 188880,
+  "roundoff_normalized": {
+    "swvl1": 37,
+    "licd": 15740
+  },
+  "all_inputs_unchanged": true,
+  "plan_sha256": "b2cd4fe8d1db0a37130c42ac79d16b208feedb9af3ab5ea0622aefe021cd934a",
+  "runtime_seconds": 528.1626485000015,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "xarray": "2026.9.0",
+    "netCDF4": "1.7.4",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1"
+  },
+  "regions": [
+    {
+      "folder": "Aral",
+      "label": "Aral Sea domain",
+      "n_sites": 2193,
+      "n_rows": 4386,
+      "lat_min": 43.3,
+      "lat_max": 47.5,
+      "lon_min": 58.1,
+      "lon_max": 63.1
+    },
+    {
+      "folder": "Atyrau",
+      "label": "Atyrau domain",
+      "n_sites": 4641,
+      "n_rows": 9282,
+      "lat_min": 44.6,
+      "lat_max": 49.6,
+      "lon_min": 47.2,
+      "lon_max": 56.2
+    },
+    {
+      "folder": "Bozaigyr",
+      "label": "Northwestern domain",
+      "n_sites": 1036,
+      "n_rows": 2072,
+      "lat_min": 48.5,
+      "lat_max": 52.1,
+      "lon_min": 50.6,
+      "lon_max": 53.3
+    }
+  ]
+}

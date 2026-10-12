@@ -1,0 +1,133 @@
+Completed quadrants_buffer_0.3
+Completed quadrants_buffer_0.6
+Completed longitude_strips_buffer_0.3
+{
+  "analysis_type": "Two-date native-grid spatial reconstruction and paired-change pilot",
+  "analysis_date": "2026-08-18",
+  "analysis_dates": [
+    "2026-08-10",
+    "2026-08-18"
+  ],
+  "n_dates": 2,
+  "time_gap_days": 8,
+  "grid_shape": [
+    43,
+    51
+  ],
+  "total_grid_cells": 2193,
+  "complete_model_cells": 2193,
+  "complete_model_rows": 4386,
+  "roundoff_values_set_to_zero": {
+    "swvl1": 37,
+    "licd": 4386
+  },
+  "change_summary": [
+    {
+      "variable": "swvl1",
+      "n_paired": 2193,
+      "mean_first": 0.05890610112873107,
+      "mean_last": 0.06068868668503089,
+      "mean_change": 0.0017825855562998284,
+      "median_change": 7.2479248046875e-05,
+      "decrease_percent": 33.283516085252366,
+      "increase_percent": 54.969641729166
+    },
+    {
+      "variable": "stl1_c",
+      "n_paired": 2193,
+      "mean_first": 34.84664143773462,
+      "mean_last": 29.746318963861224,
+      "mean_change": -5.100322473873389,
+      "median_change": -5.39202880859375,
+      "decrease_percent": 100.0,
+      "increase_percent": 0.0
+    },
+    {
+      "variable": "stl2_c",
+      "n_paired": 2193,
+      "mean_first": 32.1521497866883,
+      "mean_last": 28.769344156395622,
+      "mean_change": -3.3828056302926672,
+      "median_change": -3.431396484375,
+      "decrease_percent": 100.0,
+      "increase_percent": 0.0
+    },
+    {
+      "variable": "u10",
+      "n_paired": 2193,
+      "mean_first": -1.6534116862629356,
+      "mean_last": -2.51742392284407,
+      "mean_change": -0.8640122365811346,
+      "median_change": -0.8860397338867188,
+      "decrease_percent": 67.38677517064589,
+      "increase_percent": 32.61322482935411
+    },
+    {
+      "variable": "lai_lv",
+      "n_paired": 2193,
+      "mean_first": 0.4550263596210748,
+      "mean_last": 0.4533200423435544,
+      "mean_change": -0.001706317277520411,
+      "median_change": 0.0,
+      "decrease_percent": 19.519000480164234,
+      "increase_percent": 0.0
+    }
+  ],
+  "persistence_metrics": {
+    "rmse": 0.004946869985174334,
+    "mae": 0.002588582285858562,
+    "bias": -0.0017825855562998284,
+    "r2": 0.9932351428020836,
+    "n_paired": 2193
+  },
+  "latitude_range": [
+    43.3,
+    47.5
+  ],
+  "longitude_range": [
+    58.1,
+    63.1
+  ],
+  "latitude_step_degrees": 0.10000000000000142,
+  "longitude_step_degrees": 0.10000000000000142,
+  "time_shift": "0 days 05:00:00",
+  "seed": 20261002,
+  "environment_features": [
+    "stl1_c",
+    "stl2_c",
+    "u10",
+    "lai_lv"
+  ],
+  "coordinate_features": [
+    "latitude",
+    "longitude"
+  ],
+  "software": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "xarray": "2026.9.0",
+    "netCDF4": "1.7.4",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2"
+  }
+}
+                     design             model  n_test     rmse      mae      bias        r2  fold_rmse_min  fold_rmse_max  fold_r2_min  fold_r2_max  mse_skill_vs_training_mean
+longitude_strips_buffer_0.3      gbr_combined    4386 0.039433 0.024085 -0.003825  0.576876       0.033104       0.046290     0.518360     0.594203                    0.593868
+longitude_strips_buffer_0.3       rf_combined    4386 0.039916 0.023065 -0.004294  0.566437       0.034658       0.045857     0.507209     0.576845                    0.583848
+longitude_strips_buffer_0.3    rf_environment    4386 0.040878 0.024904  0.001276  0.545300       0.033434       0.045679     0.227366     0.665621                    0.563560
+longitude_strips_buffer_0.3      rf_geography    4386 0.054280 0.034356 -0.006051  0.198274       0.049144       0.059000    -0.088649     0.299550                    0.230470
+longitude_strips_buffer_0.3 ridge_environment    4386 0.046074 0.034680 -0.000895  0.422354       0.036961       0.052647     0.296084     0.494142                    0.445551
+longitude_strips_buffer_0.3     training_mean    4386 0.061876 0.050379 -0.000534 -0.041838       0.052618       0.077222    -0.199961    -0.015284                    0.000000
+       quadrants_buffer_0.3      gbr_combined    4386 0.045211 0.031822  0.003231  0.443788       0.012471       0.054885    -0.336747     0.488702                    0.576732
+       quadrants_buffer_0.3       rf_combined    4386 0.053997 0.036705  0.002617  0.206611       0.012003       0.068212    -1.502547     0.526342                    0.396245
+       quadrants_buffer_0.3    rf_environment    4386 0.052057 0.035231  0.010689  0.262576       0.012706       0.074020    -1.946889     0.469208                    0.438833
+       quadrants_buffer_0.3      rf_geography    4386 0.057088 0.036540 -0.015319  0.113172       0.019228       0.075766    -0.520690    -0.122849                    0.325139
+       quadrants_buffer_0.3 ridge_environment    4386 0.048756 0.038408 -0.000904  0.353134       0.035548       0.059898    -3.154464     0.145536                    0.507746
+       quadrants_buffer_0.3     training_mean    4386 0.069492 0.058620  0.002737 -0.314089       0.058622       0.086167   -10.298120    -0.262940                    0.000000
+       quadrants_buffer_0.6      gbr_combined    4386 0.043138 0.029947  0.003670  0.493629       0.013651       0.054879    -0.027644     0.387396                    0.626883
+       quadrants_buffer_0.6       rf_combined    4386 0.043550 0.028019 -0.003034  0.483908       0.013453       0.057087     0.051203     0.405032                    0.619719
+       quadrants_buffer_0.6    rf_environment    4386 0.050949 0.035268  0.011002  0.293655       0.013851       0.069917    -1.629221     0.369261                    0.479532
+       quadrants_buffer_0.6      rf_geography    4386 0.056419 0.037153 -0.014169  0.133841       0.021556       0.071808    -0.527626    -0.244105                    0.361774
+       quadrants_buffer_0.6 ridge_environment    4386 0.050997 0.040817 -0.003140  0.292321       0.036675       0.060734    -3.422104     0.091949                    0.478549
+       quadrants_buffer_0.6     training_mean    4386 0.070621 0.060304  0.005337 -0.357135       0.062540       0.085277   -11.858816    -0.246163                    0.000000

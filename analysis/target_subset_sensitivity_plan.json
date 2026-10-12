@@ -1,0 +1,11 @@
+{
+  "created_date": "2026-10-05",
+  "stage": "Post hoc sensitivity analysis after inspecting the fixed primary experiment",
+  "reason": "Primary target-only RMSE was sometimes lower at5percent than at100percent and source pooling had mixed effects. Test dependence on target-site sampling without changing the primary results or selecting hyperparameters.",
+  "subset_seed_bases": [20271005, 20281005],
+  "primary_subset_seed_base": 20261005,
+  "model_random_seed": 20261005,
+  "fractions": [0.05, 0.2],
+  "fixed": "Reuse primary model settings, source pools, test quadrants, buffer, target weighting, and nested-subset rule. Full100percent subsets are identical for every subset seed and are not retrained.",
+  "report": "Primary scores remain primary. Report the three-seed range as descriptive sample-selection sensitivity, not a confidence interval. Do not choose a seed based on its score."
+}

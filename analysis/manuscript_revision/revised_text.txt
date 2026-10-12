@@ -1,0 +1,179 @@
+Soil moisture variability and spatial reconstruction in the Aral Sea region
+
+Author names to be inserted upon submission¹, Corresponding Author²*
+
+1-2 Korkyt Ata Kyzylorda University, Kyzylorda, 120000, Kazakhstan
+
+Highlights
+
+Two August 2026 snapshots describe soil-water and thermal patterns across the Aral Sea region.
+
+Spatial tests keep both observations at each grid cell together and separate test blocks from training cells.
+
+Gradient boosting gives the lowest pooled soil-moisture error across three spatial validation designs.
+
+Short-interval changes and spatial reconstruction are evaluated as distinct questions.
+
+Abstract
+
+The Aral Sea and its surroundings provide a distinct setting for examining spatial relationships between soil water, temperature and atmospheric conditions. This study analyses eight daily ECMWF reanalysis fields for 10 and 18 August 2026 over 43.3–47.5° N and 58.1–63.1° E. The 0.1° grid contains 2,193 locations and 4,386 cell-date records. Area-weighted summaries and paired differences describe conditions across the domain, while six fixed model configurations reconstruct topsoil volumetric water content under buffered spatial validation. Both dates at each location are assigned to the same test block. Mean soil moisture increased from 0.0589 to 0.0607 m³/m³, while mean temperature in the 0–7 cm soil layer decreased by 5.10°C. Under the primary four-quadrant design with a 0.3° buffer, gradient boosting achieved a root mean squared error of 0.0452 m³/m³ and pooled R² of 0.444, compared with 0.0695 m³/m³ for the training-mean baseline. Gradient-boosting errors ranged from 0.0394 to 0.0452 m³/m³ across the three spatial designs. An eight-day persistence benchmark produced an error of 0.0049 m³/m³. The findings describe short-interval changes and the spatial predictability of reanalysis soil moisture within the Aral Sea domain. Spatial block performance and temporal persistence represent different prediction settings and are interpreted separately.
+
+Keywords
+
+Aral Sea; soil moisture; ERA5 reanalysis; spatial validation; gradient boosting; soil temperature
+
+1 Introduction
+
+The contraction of the Aral Sea has transformed the hydrological setting of the lake, its former margins and surrounding land. Irrigation withdrawals from its tributaries reduced inflow and contributed to extensive changes in water area, salinity and exposed lakebed conditions (Micklin, 2007). These changes make the Aral Sea region an important setting for studying environmental contrasts at the land surface. Soil moisture is relevant to that setting because it describes the water held in the near-surface soil layer and varies alongside thermal, vegetation and atmospheric conditions.
+
+Regional gridded data allow those contrasts to be examined on a consistent spatial support. An empirical model can then test whether the soil-water pattern is reconstructable from related environmental fields and geographic position. This objective requires a clear distinction between describing a reanalysis field and validating an environmental process. A model fitted to reanalysis soil moisture evaluates agreement with that modelled state. Its errors also depend on which parts of the domain are withheld during evaluation.
+
+The present study focuses exclusively on the Aral Sea and its surroundings. It examines two daily snapshots, 10 and 18 August 2026, at the archived 0.1° resolution. The objectives are to describe paired changes in soil-water and thermal conditions, compare six spatial reconstruction configurations, and assess sensitivity to the geometry and separation of training and test areas. A separate persistence benchmark describes how well the first soil-moisture field carries forward to the second date. Together, these experiments provide a reproducible account of environmental patterns and model behaviour within one regional domain.
+
+2 Literature review
+
+The Aral Sea and its surroundings form an important setting for studying the relationship between water availability and land-surface conditions. The modern contraction of the sea began in the 1960s, primarily because irrigation withdrawals reduced inflow from its tributaries. Micklin (2007) describes the resulting transformation of the lake, river deltas and former shoreline, including increased lake salinity, ecosystem disruption and the development of dust and salt sources. This history places present-day soil-water and temperature patterns within a landscape that has undergone major hydrological change. It also supports treating the sea and adjacent land as a connected study area, while distinguishing contemporary spatial conditions from the processes responsible for decades of environmental change.
+
+Research on the Aral Sea water balance emphasizes interactions between the lake and regional atmospheric conditions. Small et al. (1999) used a coupled regional climate and lake model to examine temperature, evaporation and hydrology. Their simulations reproduced important features of observed lake conditions, but performance varied by season and variable; a stand-alone lake model represented the hydrology less successfully than the coupled configuration. These findings motivate an analysis that considers several environmental variables together. For the present study, the relevant question is how near-surface soil moisture varies across the Aral Sea domain alongside soil temperature, vegetation and atmospheric conditions. Associations among these fields provide spatial context without establishing a causal explanation for the historical desiccation.
+
+Land reanalysis offers a consistent framework for examining such relationships across a regional grid. Muñoz-Sabater et al. (2021) describe ERA5-Land as an offline land-surface simulation driven by ERA5 atmospheric forcing, with hourly fields and an approximately 9 km native resolution. Observations influence its evolution through that forcing, rather than through direct assimilation into the land simulation. Their evaluation found improvements in several hydrological variables relative to earlier reanalyses, while also showing that performance depends on the variable and setting. Thus, soil moisture from this product is best understood as a modelled estimate of land state. Learning relationships among reanalysis variables evaluates how well an empirical model reproduces that estimate across the regional domain.
+
+The spatial support of reanalysis variables also guides their interpretation. The Copernicus Climate Data Store distributes ERA5-Land on a regular 0.1° latitude–longitude grid and defines the first two soil layers as 0–7 cm and 7–28 cm (Copernicus Climate Change Service, 2019). These definitions connect the analysed soil-water variable to a specific modelled depth and distinguish surface from subsurface thermal conditions. In an Aral Sea application, retaining the supplied grid makes the scale of the evidence clear. Regional maps and averages describe conditions represented by grid cells; they should be interpreted at that scale when comparing water availability and temperature across the sea and its surroundings.
+
+Reliable model assessment requires attention to the spatial structure of environmental data. Roberts et al. (2017) show that random cross-validation can underestimate predictive error when nearby records share information, and that block-based designs can better represent prediction to separated locations. They also explain that blocking can increase the difficulty of prediction by withholding environmental conditions. Consequently, the split design and prediction objective must be reported together. For an Aral Sea reconstruction experiment, testing on held-out spatial blocks asks whether relationships learned elsewhere within the same domain extend to those blocks. A geographic baseline provides further context for judging whether environmental predictors add information beyond broad spatial position.
+
+Together, these studies support a focused assessment of soil-water and thermal patterns in the Aral Sea and its surroundings. The present analysis compares reanalysis fields for 10 and 18 August 2026 and evaluates spatial reconstruction of near-surface soil moisture. Its contribution is a reproducible description of differences between those two dates and a comparison of predictive performance under explicit spatial separation. The eight-day interval defines the temporal interpretation of the results, while the supplied grid defines their spatial interpretation. This scope connects the experiments to established Aral Sea research and keeps the conclusions aligned with the quantities actually analysed.
+
+3 Study area and data
+
+3.1 Aral Sea domain and observation dates
+
+The study domain is a rectangular grid extending from 43.3 to 47.5° N and from 58.1 to 63.1° E, covering the Aral Sea and its surroundings. It contains 43 latitude positions and 51 longitude positions, giving 2,193 spatial locations. Grid spacing is 0.1° in both directions. The two archived daily records are dated 10 and 18 August 2026, separated by eight days. Each variable therefore contributes 4,386 cell-date values. Latitude and longitude coordinates agree exactly across the eight NetCDF files, and all grid records are finite.
+
+The analysis retains the archived grid without spatial interpolation. All regional means and changing-area fractions refer to this complete rectangular domain. They do not represent a shoreline, exposed-seabed or land-cover subset. The NetCDF metadata identify ECMWF as the institution and record daily-mean aggregation with a five-hour time shift. Product naming in this paper is kept at the ERA5 family level, consistent with the archived provenance.
+
+3.2 Variables and physical interpretation
+
+Topsoil volumetric water content in the 0–7 cm model layer is the reconstruction target. Environmental predictors comprise soil temperatures at 0–7 and 7–28 cm, the eastward wind component at 10 m, and low-vegetation leaf area index. Latitude and longitude form a separate geographic predictor set. Soil temperatures are converted from kelvin to degrees Celsius. The signed eastward wind component is retained in its original meaning. Low-vegetation leaf area index is interpreted as prescribed climatological vegetation structure rather than a direct observation of recent vegetation change (Muñoz-Sabater et al., 2021; ECMWF, 2026).
+
+Table 1  Reanalysis fields and their roles in the study
+
+Snow cover is zero throughout the two snapshots. Lake fields are retained as input diagnostics. Their interpretation follows the model definition, under which lake quantities can be calculated at grid locations irrespective of actual local water coverage (ECMWF, 2026). Numerical quality control identified 37 soil-water values near −10⁻²⁰ and 4,386 lake-ice values near −10⁻¹⁹. Negative values between −10⁻¹² and zero were treated as numerical roundoff and set to zero for analysis. Original NetCDF values and the raw tabular export were preserved.
+
+4 Methods
+
+4.1 Regional summaries and paired changes
+
+Each cell receives a weight proportional to the cosine of its latitude. With equal angular spacing, these weights account for the change in cell area across the domain. Regional means are calculated separately for each date. Paired changes are defined as the value on 18 August minus the value on 10 August at the same grid location. The proportion of the domain showing an increase or decrease is calculated using the same area weights, with changes within ±10⁻¹² treated as unchanged. Medians and spatial correlation coefficients are reported without area weighting. Pearson and Spearman coefficients describe associations pooled across both snapshots.
+
+4.2 Reconstruction models
+
+Six fixed configurations are evaluated: an area-weighted training-mean baseline, ridge regression using environmental variables, random forests using geographic variables, environmental variables or both sets, and gradient boosting using both sets. The forest and boosting methods follow the tree-ensemble approaches described by Breiman (2001) and Friedman (2001). Model settings are specified before evaluating the withheld blocks. The ridge scaler is fitted within each training fold. Model fitting and error summaries use cosine-latitude weights, and predictions are retained without clipping or subsequent calibration.
+
+Table 2  Fixed reconstruction configurations
+
+All features are considered at each random-forest split, bootstrap sampling is enabled, and the forests use squared-error splitting. Gradient boosting uses squared-error loss. The random seed is 20261002. Both dates are included in the spatial training pool, so the fitted task is contemporaneous soil-moisture reconstruction at withheld locations. Date is not an input feature. No test score is used to tune a parameter or choose a geographic partition.
+
+4.3 Spatial partitions and evaluation
+
+The primary design divides the study rectangle into four quadrants at the midpoint of its latitude and longitude extents. Each quadrant is withheld once, with both observations at a location assigned to the same fold. Training cells within a 0.3° rectangular coordinate buffer around the held-out block are excluded. The distance rule uses the maximum of the latitude and longitude distances to the held rectangle, in degrees. Sensitivity analyses use a 0.6° quadrant buffer and four longitude strips with a 0.3° buffer. These are coordinate buffers, not fixed distances in kilometres. This design responds to the spatial dependence concerns discussed by Roberts et al. (2017).
+
+Each configuration generates one held-out prediction for every cell-date record within each design. Pooled root mean squared error (RMSE), mean absolute error (MAE), bias and R² are recomputed from all held-out predictions using the area weights. Bias is defined as prediction minus reanalysis. Pooled R² uses the weighted mean of all evaluation targets as its reference, whereas fold-specific R² uses the target mean within that fold. MSE skill expresses one minus the ratio of model mean squared error to that of the fold-specific training-mean baseline. Fold ranges describe variation among the four spatial blocks; they are not confidence intervals.
+
+4.4 Persistence and reproducibility
+
+A separate eight-day persistence benchmark uses the 10 August soil-moisture value at each location as its prediction for 18 August. This benchmark uses the earlier target field directly, whereas spatial reconstruction estimates targets at locations excluded from model fitting. Their errors therefore answer different questions and are not ranked against one another. The persistence calculation evaluates one temporal pair.
+
+The analysis is implemented in Python with NumPy 2.5.3, pandas 3.0.6, xarray 2026.9.0, netCDF4 1.7.4, SciPy 1.18.1 and scikit-learn 1.9.1. The three spatial designs, six configurations and four folds produce 72 evaluations and 78,948 held-out predictions. Independent calculations verify prediction coverage, geographic separation, error metrics, paired changes and input-file hashes. All 20 verification checks pass.
+
+5 Results
+
+5.1 Soil-water and thermal changes
+
+Mean topsoil volumetric water content increased from 0.0589 to 0.0607 m³/m³, an area-weighted difference of 0.0018 m³/m³ over eight days (Table 3). Soil moisture increased over 54.97% of the grid-domain area and decreased over 33.28%; the remaining 11.75% was unchanged at the numerical tolerance used. The median cell-level difference was 0.0000725 m³/m³, smaller than the weighted mean change. The paired maps show that moisture gains are spatially concentrated, particularly toward the southern part of the domain (Figure 1).
+
+Table 3  Area-weighted regional conditions on the two dates
+
+Temperature decreased at every grid location in both soil layers. Mean temperature fell by 5.10°C in the 0–7 cm layer and by 3.38°C in the 7–28 cm layer. The eastward wind component became more negative, changing from −1.65 to −2.52 m/s. The small LAI difference is interpreted within its prescribed seasonal climatology. These contrasts describe the conditions represented on the two August dates.
+
+
+
+Figure 1. Topsoil volumetric water content on 10 and 18 August 2026 and the paired difference. The first two maps use the same scale; the difference is 18 August minus 10 August. Values retain the 0.1° grid and represent the complete study rectangle.
+
+5.2 Environmental associations
+
+Across the 4,386 cell-date records, soil moisture had a Spearman correlation of 0.716 with low-vegetation LAI and 0.545 with the eastward wind component. Corresponding Pearson correlations were 0.580 and 0.497. Associations with soil temperature were weak in the pooled sample: Spearman coefficients were −0.043 for the upper layer and −0.038 for the deeper layer. The two temperature variables were strongly associated with one another, with a Spearman coefficient of approximately 0.97. These are descriptive associations within the reanalysis fields; repeated locations and spatial dependence are retained in their interpretation.
+
+5.3 Performance under the primary spatial design
+
+Combined gradient boosting achieved the lowest primary-design RMSE, 0.0452 m³/m³, with MAE 0.0318 m³/m³ and pooled R² 0.444 (Table 4). Its RMSE was 34.9% lower than the training-mean baseline, corresponding to 57.7% MSE skill. Ridge regression achieved RMSE 0.0488 m³/m³, followed by the environmental random forest at 0.0521 m³/m³. The combined forest had RMSE 0.0540 m³/m³, while the coordinate-only forest had RMSE 0.0571 m³/m³. Thus, adding location to the forest did not improve its pooled primary-design error relative to the environmental-only forest.
+
+Table 4  Pooled performance for quadrants with a 0.3 degree buffer
+
+RMSE, MAE and bias are in m³/m³. Values use all held-out cell-date predictions and cosine-latitude weights. The training-mean reference is recalculated in each fold. RF denotes random forest and GBR denotes gradient-boosting regression.
+
+Spatial performance varied among held-out blocks. Gradient-boosting RMSE ranged from 0.0125 to 0.0549 m³/m³, and fold-specific R² ranged from −0.337 to 0.489. The negative value in the southwestern block shows that pooled improvement does not imply equally strong reconstruction throughout the region. The combined forest was also heterogeneous, with fold RMSE from 0.0120 to 0.0682 m³/m³. Consequently, regional pooled scores are read alongside block-specific behaviour.
+
+5.4 Sensitivity to spatial separation
+
+Gradient boosting retained the lowest pooled RMSE among the six configurations under both alternative partitions (Figure 2). Its RMSE was 0.0431 m³/m³ with a 0.6° quadrant buffer and 0.0394 m³/m³ with 0.3°-buffered longitude strips; corresponding R² values were 0.494 and 0.577. The combined forest reached RMSE 0.0435 and 0.0399 m³/m³ in these two settings. Increasing the buffer therefore did not produce a monotonic increase in pooled error. The result reflects changes in the composition and distribution of retained training cells, as well as separation from the test block.
+
+
+
+Figure 2. Pooled RMSE for all six fixed configurations across the primary quadrant design and two spatial sensitivity designs. All points refer to contemporaneous reconstruction of reanalysis soil moisture; both dates at each location remain in the same held-out block.
+
+5.5 Eight-day persistence
+
+Carrying the 10 August moisture field forward to 18 August produced RMSE 0.0049 m³/m³, MAE 0.0026 m³/m³ and bias −0.0018 m³/m³. The negative bias follows from the increase in the regional mean between dates. R² was 0.993, reflecting the persistence of the broad spatial moisture pattern over this interval. Because the benchmark has access to the previous soil-moisture value at each evaluation location, it is a distinct temporal reference rather than a competing spatial reconstruction model.
+
+6 Discussion
+
+6.1 Interpreting the Aral Sea patterns
+
+The two snapshots combine a regional cooling signal with a small mean increase in topsoil water. The difference between the median moisture change and the weighted mean indicates that the regional mean is influenced by spatially concentrated changes. This supports examining maps and distributions together when describing the Aral Sea environment. The observed eight-day contrast is a short-interval land-state comparison. It does not measure the rate of the historical desiccation described by Micklin (2007).
+
+The contrast between stronger associations with LAI and wind and weaker pooled associations with temperature also requires care. Temperature differs substantially between dates, while much of the spatial moisture pattern persists. A correlation calculated across both dates mixes geographic variation with date-to-date variation. Climatological vegetation structure and atmospheric fields are useful descriptive covariates in this reconstruction setting, but their correlations do not establish which process caused a local moisture change. This interpretation is consistent with treating the reanalysis as a coupled source of modelled environmental fields (Muñoz-Sabater et al., 2021).
+
+6.2 What spatial validation shows
+
+The consistent pooled advantage of gradient boosting across the three predefined designs supports its use as a compact empirical description of the regional reanalysis pattern under the tested conditions. It does not establish a universally optimal model. Ridge regression outperformed the forests in the primary design, and the benefit of adding geographic coordinates to a forest changed with the partition. These results show why model complexity and larger predictor sets should be assessed through explicit comparisons rather than assumed to improve reconstruction.
+
+The block-level errors are particularly relevant in a heterogeneous domain. A negative southwestern-block R² for gradient boosting coexists with a positive pooled R² because the pooled and local reference variances differ and performance varies geographically. Likewise, improved error after widening a buffer is possible when the remaining training distribution changes. The sensitivity results therefore describe dependence on partition geometry and training composition; they should not be interpreted as a controlled experiment isolating distance alone. Reporting all predefined designs follows the validation principles outlined by Roberts et al. (2017).
+
+6.3 Temporal persistence and scientific scope
+
+The low persistence error shows that the spatial moisture field changes modestly relative to its between-location variation over the eight-day interval. Its high R² is compatible with locally meaningful moisture gains because the dominant regional contrasts remain present. The benchmark is useful as a reference for this temporal pair, while the learned models answer the separate question of reconstruction at spatially withheld sites. Keeping these two tasks distinct avoids attributing temporal forecast skill to models trained using both dates.
+
+The conclusions apply to modelled soil-water values on the 0.1° Aral Sea grid and to the two specified August dates. The analysis describes internal spatial consistency and paired land-state changes, rather than direct measurements of salinity or a multiyear environmental trend. Within this scope, the reproducible workflow and the reported block-level variability provide a clear basis for comparing regional soil-moisture reconstruction methods.
+
+7 Conclusions
+
+This study provides an Aral Sea-focused analysis of two daily reanalysis snapshots and a spatial comparison of six soil-moisture reconstruction configurations. Between 10 and 18 August 2026, regional mean topsoil water increased by 0.0018 m³/m³ while upper-layer soil temperature decreased by 5.10°C. Moisture changes were spatially uneven, and the broader regional pattern persisted across the interval.
+
+Gradient boosting achieved the lowest pooled error in each predefined spatial design, with RMSE from 0.0394 to 0.0452 m³/m³. Its primary-design pooled R² of 0.444 was accompanied by substantial variation between geographic blocks. These findings establish the importance of reporting split geometry, local errors and simple reference models when assessing soil-moisture reconstruction in the Aral Sea and its surroundings. The conclusions concern the analysed grid and dates, with temporal persistence and spatial prediction evaluated separately.
+
+Declaration of competing interest
+
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+Data and code availability
+
+The study archive contains the eight input NetCDF files, their SHA-256 identifiers, derived regional tables, paired changes, spatial fold definitions and all held-out predictions. Reproducible Python scripts and package versions accompany the analysis. The underlying ECMWF climate products are distributed through the Copernicus Climate Data Store.
+
+References
+
+Breiman, L. (2001). Random forests. Machine Learning, 45, 5–32. https://doi.org/10.1023/A:1010933404324
+
+Copernicus Climate Change Service (C3S) (2019). ERA5-Land hourly data from 1950 to present. Climate Data Store. https://doi.org/10.24381/cds.e2161bac (accessed 2 October 2026).
+
+European Centre for Medium-Range Weather Forecasts (ECMWF) (2026). ERA5-Land data documentation. https://confluence.ecmwf.int/spaces/CKB/pages/140385202/ERA5-Land+data+documentation (accessed 2 October 2026).
+
+Friedman, J. H. (2001). Greedy function approximation: A gradient boosting machine. The Annals of Statistics, 29(5), 1189–1232. https://doi.org/10.1214/aos/1013203451
+
+Micklin, P. (2007). The Aral Sea disaster. Annual Review of Earth and Planetary Sciences, 35, 47–72. https://doi.org/10.1146/annurev.earth.35.031306.140120
+
+Muñoz-Sabater, J., Dutra, E., Agustí-Panareda, A., et al. (2021). ERA5-Land: a state-of-the-art global reanalysis dataset for land applications. Earth System Science Data, 13, 4349–4383. https://doi.org/10.5194/essd-13-4349-2021
+
+Roberts, D. R., Bahn, V., Ciuti, S., et al. (2017). Cross-validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure. Ecography, 40(8), 913–929. https://doi.org/10.1111/ecog.02881
+
+Small, E. E., Sloan, L. C., Hostetler, S., and Giorgi, F. (1999). Simulating the water balance of the Aral Sea with a coupled regional climate-lake model. Journal of Geophysical Research: Atmospheres, 104(D6), 6583–6602. https://doi.org/10.1029/98JD02348

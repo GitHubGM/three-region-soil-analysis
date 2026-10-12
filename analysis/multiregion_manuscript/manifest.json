@@ -1,0 +1,15 @@
+{
+  "source": "C:\\proj\\papers\\ERA-5\\Hybrid_Early_Warning_Soil_Degradation_Kazakhstan_EcolInform.docx",
+  "source_sha256": "1fded99bd0d7202d8458395caf9ff36d5cfb2327813f590532bbd03710c81711",
+  "output": "C:\\proj\\papers\\ERA-5\\Machine_Learning_Soil_Moisture_Three_Domains.docx",
+  "output_sha256": "2ee666f6583d63cc4e13bd263cb420b90d1747b5b0916e72492359125f38a01d",
+  "paragraphs": 114,
+  "tables": 4,
+  "figures": 4,
+  "verification_passed": 1258,
+  "verification_failed": 0,
+  "sensitivity_verification_passed": 783,
+  "title": "Spatial validation and regional transfer of machine learning models for soil moisture reconstruction",
+  "northwestern_folder": "Bozaigyr",
+  "input_data_unchanged": true
+}

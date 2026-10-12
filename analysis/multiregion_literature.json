@@ -1,0 +1,167 @@
+{
+  "verified_on": "2026-10-05",
+  "purpose": "Primary-source support for a three-region, machine-learning-focused reanalysis reconstruction study. Draft paragraphs describe motivation and design, not uncomputed results.",
+  "heading": "2. Related work",
+  "draft_paragraphs": [
+    "Predictive accuracy in environmental machine learning depends on the relationship between the training data and the locations where a model is applied. Nearby grid cells and repeated observations at the same location can share substantial information. Roberts et al. (2017) showed through simulations and case studies that ignoring such structure can underestimate prediction error. They also explained that blocking changes the environmental conditions represented in training, so a validation design must match the intended prediction task. This distinction motivates evaluating interpolation within observed regional domains separately from transfer to an entirely withheld region, while keeping repeated observations at each grid location together.",
+    "Spatial dependence can also make environmental predictors act as indirect indicators of geographic location. Ploton et al. (2020) demonstrated this problem in random-forest biomass mapping: accuracy declined substantially when evaluation separated training and test locations, and a coordinate-only model produced similar distance-dependent behaviour to a model using environmental and optical predictors. Their empirical result concerns forest biomass, but the methodological lesson is relevant to gridded regression. Comparisons between environmental predictors, coordinates and their combination can reveal whether apparent predictive gains rely mainly on regional position. Such comparisons are diagnostic; a strong coordinate model alone does not establish an environmental mechanism.",
+    "Transfer between geographic domains connects environmental modelling to the broader machine-learning problem of distribution shift. Koh et al. (2021) introduced WILDS as a benchmark spanning naturally occurring shifts, including changes across locations and time in satellite applications. Their experiments showed substantial performance losses between training-like and shifted test distributions, including for existing approaches designed to improve robustness. This supports reporting performance for each target domain instead of relying only on a pooled average. In the present setting, holding out Aral, Atyrau or the Northwestern domain provides an explicit regional transfer task. If target-region labels are used only for final evaluation, this design tests generalization without target-region supervision.",
+    "Geographic separation and environmental novelty are related but distinct. Meyer and Pebesma (2021) proposed an area of applicability based on the distance from new observations to training data in a standardized, importance-weighted predictor space. The threshold is derived consistently with the cross-validation design. Their simulations linked errors inside that area to cross-validation estimates, while showing that those estimates did not extend reliably beyond it. For a regional transfer study, this motivates examining predictor-space support alongside geographic holdouts. Simple range or distance diagnostics can characterize novelty, but they should be identified by their implemented definitions rather than described as the full area-of-applicability method.",
+    "The prediction target also determines what model evaluation establishes. Muñoz-Sabater et al. (2021) describe ERA5-Land as a land-surface simulation driven by ERA5 meteorological forcing, with observations influencing the product indirectly through that forcing. Its leaf area index follows a prescribed monthly climatology. Thus, learning relationships among reanalysis soil-water, thermal, vegetation and wind fields measures the reproducibility of a modelled environmental state. It is not independent validation against measured soil moisture. The Copernicus daily-data catalogue identifies the first soil layer as 0–7 cm and documents the configurable aggregation frequency and time-zone shift (Copernicus Climate Change Service, 2024). These definitions guide target construction and the interpretation of predictors.",
+    "These studies support an empirical contribution centred on validation and transfer rather than a claim of a new learning algorithm. A three-region comparison can test whether model rankings persist when the evaluation changes from grouped sampling within represented domains to spatially separated blocks and finally to an unseen region. Geographic and environmental predictor comparisons can further test the source of predictive information. Reporting domain-specific errors, simple baselines and the exact preprocessing and split rules makes the resulting evidence inspectable. Conclusions about transfer should remain tied to the supplied domains and observation dates, with temporal prediction distinguished from contemporaneous spatial reconstruction."
+  ],
+  "references": [
+    {
+      "id": "roberts2017",
+      "authors": "Roberts, D. R., Bahn, V., Ciuti, S., Boyce, M. S., Elith, J., Guillera-Arroita, G., Hauenstein, S., Lahoz-Monfort, J. J., Schröder, B., Thuiller, W., Warton, D. I., Wintle, B. A., Hartig, F., and Dormann, C. F.",
+      "year": 2017,
+      "title": "Cross-validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure",
+      "venue": "Ecography",
+      "volume": "40",
+      "pages": "913–929",
+      "doi": "10.1111/ecog.02881",
+      "url": "https://nsojournals.onlinelibrary.wiley.com/doi/10.1111/ecog.02881",
+      "verified_content": "Publisher full text read earlier in this task on 2 October 2026; metadata and simulations/case-study conclusions verified. Direct reopen on 5 October returned an internal error.",
+      "supported_claim_notes": [
+        "Blocking can reduce optimistic error estimates caused by dependence, but may also induce predictor-space extrapolation.",
+        "Choose splits in relation to the prediction objective; no universal block size is established for these new data."
+      ]
+    },
+    {
+      "id": "ploton2020",
+      "authors": "Ploton, P., Mortier, F., Réjou-Méchain, M., Barbier, N., Picard, N., Rossi, V., Dormann, C., Cornu, G., Viennois, G., Bayol, N., Lyapustin, A., Gourlet-Fleury, S., and Pélissier, R.",
+      "year": 2020,
+      "title": "Spatial validation reveals poor predictive performance of large-scale ecological mapping models",
+      "venue": "Nature Communications",
+      "volume": "11",
+      "article": "4540",
+      "doi": "10.1038/s41467-020-18321-y",
+      "url": "https://www.nature.com/articles/s41467-020-18321-y",
+      "verified_content": "Publisher full article retrieved through web search, including Methods and Results. Direct open subsequently encountered the publisher identity redirect.",
+      "supported_claim_notes": [
+        "Their biomass example compared random, spatial and buffered validation plus a coordinate-only model.",
+        "Its numerical accuracy and distance threshold are study-specific and should not be transferred to Kazakhstan soil moisture."
+      ]
+    },
+    {
+      "id": "koh2021",
+      "authors": "Koh, P. W., Sagawa, S., Marklund, H., Xie, S. M., Zhang, M., Balsubramani, A., Hu, W., Yasunaga, M., Phillips, R. L., Gao, I., Lee, T., David, E., Stavness, I., Guo, W., Earnshaw, B., Haque, I., Beery, S. M., Leskovec, J., Kundaje, A., Pierson, E., Levine, S., Finn, C., and Liang, P.",
+      "year": 2021,
+      "title": "WILDS: A Benchmark of in-the-Wild Distribution Shifts",
+      "venue": "Proceedings of the 38th International Conference on Machine Learning",
+      "series": "Proceedings of Machine Learning Research",
+      "volume": "139",
+      "pages": "5637–5664",
+      "doi": null,
+      "url": "https://proceedings.mlr.press/v139/koh21a.html",
+      "verified_content": "Official proceedings metadata and abstract read. Proceedings entry does not list a DOI; do not invent one.",
+      "supported_claim_notes": [
+        "The benchmark covers ten datasets with naturally occurring distribution shifts.",
+        "Use as conceptual motivation, not a claim that the present files reproduce WILDS or constitute a similarly broad benchmark."
+      ]
+    },
+    {
+      "id": "meyer2021",
+      "authors": "Meyer, H., and Pebesma, E.",
+      "year": 2021,
+      "title": "Predicting into unknown space? Estimating the area of applicability of spatial prediction models",
+      "venue": "Methods in Ecology and Evolution",
+      "volume": "12",
+      "pages": "1620–1633",
+      "doi": "10.1111/2041-210X.13650",
+      "url": "https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13650",
+      "verified_content": "Publisher full text read, including Sections 2.1–2.5 and simulation findings.",
+      "supported_claim_notes": [
+        "The published method uses nearest-training distance, training scaling, variable-importance weights and normalization by average training-pair distance.",
+        "Its threshold excludes same-fold neighbours and removes outliers. A plain standardized nearest-neighbour distance is not an implementation of the full method."
+      ]
+    },
+    {
+      "id": "munoz2021",
+      "authors": "Muñoz-Sabater, J., Dutra, E., Agustí-Panareda, A., Albergel, C., Arduini, G., Balsamo, G., Boussetta, S., Choulga, M., Harrigan, S., Hersbach, H., Martens, B., Miralles, D. G., Piles, M., Rodríguez-Fernández, N. J., Zsoter, E., Buontempo, C., and Thépaut, J.-N.",
+      "year": 2021,
+      "title": "ERA5-Land: a state-of-the-art global reanalysis dataset for land applications",
+      "venue": "Earth System Science Data",
+      "volume": "13",
+      "pages": "4349–4383",
+      "doi": "10.5194/essd-13-4349-2021",
+      "url": "https://essd.copernicus.org/articles/13/4349/2021/",
+      "verified_content": "Publisher full text, production method, abstract and static LAI-climatology passage read.",
+      "supported_claim_notes": [
+        "ERA5-Land has no direct observational assimilation; observation information enters through ERA5 forcing.",
+        "LAI climatology does not establish recent greening. These product facts do not identify a local file's product lineage by themselves."
+      ]
+    },
+    {
+      "id": "c3s2024daily",
+      "authors": "Copernicus Climate Change Service (C3S)",
+      "year": 2024,
+      "title": "ERA5-Land post-processed daily statistics from 1950 to present",
+      "venue": "Climate Data Store",
+      "doi": "10.24381/cds.e9c9c792",
+      "url": "https://cds.climate.copernicus.eu/datasets/derived-era5-land-daily-statistics?tab=overview",
+      "accessed": "2026-10-05",
+      "verified_content": "Official catalogue and variable table read. Catalogue publication date is 14 October 2024.",
+      "supported_claim_notes": [
+        "Daily aggregation is calculated during retrieval with a chosen statistic, sampling interval and time shift.",
+        "swvl1 is volumetric soil water in 0–7 cm; stl1 and stl2 are soil temperatures in 0–7 and 7–28 cm.",
+        "The distributed 0.1° grid is distinct from the approximately 9 km native model grid; local metadata must establish which product was retrieved."
+      ]
+    },
+    {
+      "id": "ecmwf_land_docs",
+      "authors": "European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "year": 2025,
+      "title": "ERA5-Land: data documentation",
+      "url": "https://confluence.ecmwf.int/spaces/CKB/pages/140385202/ERA5-Land%2Bdata%2Bdocumentation",
+      "accessed": "2026-10-05",
+      "verified_content": "Official documentation read; page reports last update 29 September 2025.",
+      "supported_claim_notes": [
+        "ERA5-Land uses H-TESSEL without coupling to the IFS atmosphere and without direct data assimilation.",
+        "A NetCDF containing only one release stream may not distinguish preliminary ERA5-Land-T from consolidated ERA5-Land.",
+        "Do not assume recent data are finalized unless archived provenance establishes that. The analysis can cite its frozen input hashes and download history."
+      ]
+    },
+    {
+      "id": "ecmwf_daily_docs",
+      "authors": "European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "year": 2026,
+      "title": "ERA5 family post-processed daily statistics documentation",
+      "url": "https://confluence.ecmwf.int/spaces/CKB/pages/462888259/ERA5%2Bfamily%2Bpost-processed%2Bdaily%2Bstatistics%2Bdocumentation",
+      "accessed": "2026-10-05",
+      "verified_content": "Official documentation read; last update 30 July 2026.",
+      "supported_claim_notes": [
+        "The retrieval computes daily statistics through earthkit transforms and returns one NetCDF per variable.",
+        "Frequency choices are 1, 3 or 6 hours. A daily-mean label alone does not imply a 24-sample average.",
+        "A selected local time zone determines time_shift. Check consistency across all three folders before pooling them."
+      ]
+    },
+    {
+      "id": "ecmwf_wind_docs",
+      "authors": "European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "year": 2026,
+      "title": "ERA5: How to calculate wind speed and wind direction from u and v components of the wind?",
+      "url": "https://confluence.ecmwf.int/pages/viewpage.action?pageId=133262398",
+      "accessed": "2026-10-05",
+      "verified_content": "Official wind component definitions and speed formula read.",
+      "supported_claim_notes": [
+        "Speed is sqrt(u² + v²); u10 alone is signed eastward velocity.",
+        "Keep the name eastward wind component when only u10 is analysed."
+      ]
+    }
+  ],
+  "authoring_and_experiment_recommendations": [
+    "Present the contribution as a reproducible empirical study of validation design and regional generalization. Do not claim a novel algorithm merely because existing regressors are compared.",
+    "Use distribution shift as a broad description; calling it covariate shift asserts that the conditional target relationship is unchanged, which these data do not establish.",
+    "For leave-one-region-out evaluation, fit scaling, imputation, feature selection and tuning using source-region data. Treat any target-region feature fitting or target-label calibration as an explicit adaptation protocol.",
+    "Group repeated dates of each cell. For cross-region coordinate overlaps, group or exclude duplicate locations too.",
+    "Distinguish random groups of sites, spatial blocks and regional holdouts; these protocols answer different deployment questions.",
+    "Report per-region scores plus an explicitly defined aggregate. A sample-weighted pooled score can be dominated by the largest regional grid.",
+    "Compare environmental-only, coordinate-only and combined predictors using the same folds when practical; these are feature comparisons, not causal tests.",
+    "A three-region study has three geographic transfer tests, not thousands of independent region replicates. Cell counts should not be used as the effective sample size for a general claim about regions.",
+    "Name simple training-range violations or standardized nearest-neighbour distances exactly. Cite Meyer and Pebesma as motivation without claiming full AOA replication unless its weighting, normalization and threshold are implemented.",
+    "Verify the two-date assumption against each new folder. If it holds, retain the temporal scope in Abstract and Methods and avoid long-term trend or operational early-warning claims.",
+    "Keep field interpretation distinct from target-reanalysis reconstruction. Feature importance and transfer errors characterize an empirical relationship among supplied variables.",
+    "Do not add neural networks solely for journal appearance. Include them only if they form a justified, consistently evaluated comparator."
+  ]
+}

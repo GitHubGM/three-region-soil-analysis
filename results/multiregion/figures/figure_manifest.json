@@ -1,0 +1,49 @@
+{
+  "script_sha256": "e1dfaa027a846b00049fa46207eacb40291cd01b7c45c3212b0e71f4d753f4d5",
+  "minimum_font_size_pt": 8.5,
+  "figures": [
+    {
+      "file": "results/multiregion/figures/figure_1_domains.png",
+      "sha256": "b368df5bb5d9f0d3c1988e2d518b15afd97592273ba973665ad893601fad6803",
+      "dpi": 300,
+      "source_sha256": {
+        "results/multiregion/analysis_grid.csv.gz": "109b78fd8ac0132a59afd083cfd0b0e117ccd63bad2d19319629c5659520e903"
+      },
+      "description": "Exact coordinate extents of the three supplied grids; shaded overlap and example exclusion rectangles expanded by 0.3 degrees. No administrative boundary data used."
+    },
+    {
+      "file": "results/multiregion/figures/figure_2_macro_rmse.png",
+      "sha256": "5c7a3758c95971cc458c7184f167f5750645032be8889e98d796f0abfbbb5332",
+      "dpi": 300,
+      "source_sha256": {
+        "results/multiregion/main_macro_metrics.csv": "a66d5f24362ad761c2179b65faa5b95bc3b542dcdc1840a5631a808a55bd53b0",
+        "results/multiregion/main_region_metrics.csv": "50cccae9d5ec97e76923ad95fbd24a87e44ddff33d4fe97a750a968817ad2b93"
+      },
+      "description": "Eight configurations by four validation protocols. Every annotation is macro RMSE: the arithmetic mean of the three regional RMSEs, checked against the regional CSV."
+    },
+    {
+      "file": "results/multiregion/figures/figure_3_region_transfer.png",
+      "sha256": "e7a9464490d9a626c8a48f97dcf9cf88b9069f8836a2d1190c3a90d832618f7e",
+      "dpi": 300,
+      "source_sha256": {
+        "results/multiregion/main_region_metrics.csv": "50cccae9d5ec97e76923ad95fbd24a87e44ddff33d4fe97a750a968817ad2b93"
+      },
+      "description": "Eight leave-region-out configurations, each with separate cosine-latitude-weighted R squared for the three target regions. R squared uses the weighted target mean as its reference; the zero reference line is not the source-training-mean model. Source records inside target bounds plus the 0.3 degree buffer are excluded."
+    },
+    {
+      "file": "results/multiregion/figures/figure_4_target_adaptation.png",
+      "sha256": "01402fce9a4b12bb0a1980567e730d94e1459808be5b794dd873ced5fe6a05ec",
+      "dpi": 300,
+      "source_sha256": {
+        "results/multiregion/adaptation_region_metrics.csv": "d061af612e57a926bf76f6a1add9c398136c12229871d32c065b1df20e8aa5cc",
+        "results/multiregion/main_region_metrics.csv": "50cccae9d5ec97e76923ad95fbd24a87e44ddff33d4fe97a750a968817ad2b93"
+      },
+      "description": "RF and gradient boosting with environmental predictors. Curves use 5%, 20% and 100% of eligible target training sites under buffered quadrant evaluation; source-only dashed references use the corresponding leave-region-out model at zero target labels. Both model rows share each region's y-axis scale."
+    }
+  ],
+  "labels": {
+    "Aral": "Aral Sea",
+    "Atyrau": "Atyrau",
+    "Bozaigyr": "Northwestern"
+  }
+}

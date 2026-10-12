@@ -1,0 +1,50 @@
+{
+  "verified_on": "2026-10-05",
+  "basis": "Official publisher aims-and-scope pages. Fit assessments are editorial inferences based on the intended empirical study, not acceptance predictions. No indexing, quartile, fee or turnaround claim has been checked.",
+  "candidates": [
+    {
+      "journal": "SN Computer Science",
+      "official_scope_url": "https://link.springer.com/journal/42979/aims-and-scope",
+      "publisher_scope_summary": "Broad computer science and interdisciplinary research; the listed topics include machine learning, AI, data mining, modelling and simulation. The page describes assessment from a sound-science perspective.",
+      "fit_inference": "Most plausible first CS target among the pages checked for a reproducible three-region ML evaluation with clear computational questions.",
+      "positioning": "Lead with generalization, validation design, feature-set comparisons and reusable code. Regional hydrology provides the application and interpretation.",
+      "remaining_editorial_test": "The manuscript still needs a clear original empirical finding and sufficient experimental evidence beyond a routine ranking of regressors."
+    },
+    {
+      "journal": "Neural Computing and Applications",
+      "official_scope_url": "https://link.springer.com/journal/521/aims-and-scope",
+      "publisher_scope_summary": "Practical neural computing and related methods, including machine learning, applied statistics, benchmarks, performance measures and supervised learning. Original articles must offer new, significant research, developments or useful applications.",
+      "fit_inference": "A conditional applied-ML candidate if the final experiments produce a substantial generalization result; a small routine comparison may be weak.",
+      "positioning": "Emphasize what regional holdouts reveal about model behaviour and when predictor sets help or harm transfer.",
+      "remaining_editorial_test": "Benchmark breadth, repeatability and the significance of the contribution need a manuscript-level assessment. Its name is not a reason to add an unjustified neural model."
+    },
+    {
+      "journal": "Earth Science Informatics",
+      "official_scope_url": "https://link.springer.com/journal/12145/aims-and-scope",
+      "publisher_scope_summary": "Formal and computational methods, spatial and temporal analysis and computer applications in Earth systems. Its current guidance requires the principal contribution to be Earth science informatics; predominantly meteorological, geographic or routine application work may be outside scope.",
+      "fit_inference": "An interdisciplinary computing alternative if the paper's main result concerns an auditable modelling and evaluation workflow.",
+      "positioning": "Demonstrate how the computational design supports reliable regional transfer assessment and reproducibility.",
+      "remaining_editorial_test": "A manuscript mainly describing regional soil moisture, with ML as a routine tool, may not satisfy the explicit informatics focus."
+    }
+  ],
+  "checked_but_not_prioritized": [
+    {
+      "journal": "Applied Intelligence",
+      "official_scope_url": "https://link.springer.com/journal/10489/aims-and-scope",
+      "publisher_scope_summary": "The scope emphasizes new intelligent-system methodologies and explicitly distinguishes original technological developments from applying existing technologies to different datasets.",
+      "fit_inference": "Do not prioritize the proposed standard-regressor comparison here without a genuine methodological contribution."
+    }
+  ],
+  "unverified_options": [
+    {
+      "journal": "Machine Learning with Applications",
+      "attempted_official_scope_url": "https://www.sciencedirect.com/journal/machine-learning-with-applications/about/aims-and-scope",
+      "status": "Official page returned 403. No scope recommendation based on unverified mirrors was made."
+    },
+    {
+      "journal": "Intelligent Systems with Applications",
+      "attempted_official_scope_url": "https://www.sciencedirect.com/journal/intelligent-systems-with-applications/about/aims-and-scope",
+      "status": "Official page returned 403. Similarly named third-party sites were excluded."
+    }
+  ]
+}

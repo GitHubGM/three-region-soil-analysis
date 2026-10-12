@@ -1,0 +1,90 @@
+{
+  "verified_on": "2026-10-02",
+  "scope": "Primary-source interpretation guidance; product identity and aggregation settings must be checked against local NetCDF and retrieval metadata.",
+  "variables": {
+    "swvl1": {
+      "name": "Volumetric soil water layer 1",
+      "units": "m3 m-3",
+      "depth_cm": [0, 7],
+      "caveat": "Model soil moisture, not a Sentinel-2 optical measurement or direct soil degradation label.",
+      "sources": ["era5_land_documentation"]
+    },
+    "stl1": {
+      "name": "Soil temperature level 1",
+      "units": "K",
+      "depth_cm": [0, 7],
+      "conversion": "degrees_C = K - 273.15",
+      "sources": ["era5_land_documentation"]
+    },
+    "stl2": {
+      "name": "Soil temperature level 2",
+      "units": "K",
+      "depth_cm": [7, 28],
+      "conversion": "degrees_C = K - 273.15",
+      "sources": ["era5_land_documentation"]
+    },
+    "lai_lv": {
+      "name": "Leaf area index, low vegetation",
+      "units": "m2 m-2",
+      "caveat": "ERA5-Land LAI is prescribed as a repeating monthly climatology. Seasonal variation cannot establish observed interannual greening, recovery, or degradation. Separate satellite observations are required for those claims.",
+      "sources": ["era5_land_paper", "era5_land_documentation"]
+    },
+    "lblt": {
+      "name": "Lake bottom temperature",
+      "units": "K",
+      "conversion": "degrees_C = K - 273.15",
+      "caveat": "Model bottom-water temperature. Lake fields are computed even at cells without lakes; interpret using lake fraction CL. Lake area and depth are fixed in time, so this field does not measure Aral Sea shrinkage.",
+      "sources": ["era5_land_daily", "era5_land_documentation"]
+    },
+    "licd": {
+      "name": "Lake ice depth",
+      "units": "m",
+      "caveat": "Ice thickness, not water depth or lake-area coverage. Use lake fraction CL to identify modeled inland water. ECMWF's fractional ice treatment reaches full ice coverage at 0.10 m thickness.",
+      "sources": ["era5_land_daily", "era5_land_documentation"]
+    },
+    "u10": {
+      "name": "10 m eastward wind component",
+      "units": "m s-1",
+      "caveat": "Signed eastward velocity is not scalar wind speed. Speed requires both u10 and v10: sqrt(u10^2 + v10^2). Magnitude of daily mean components is not the daily mean of hourly speeds.",
+      "sources": ["era5_daily", "wind_components"]
+    },
+    "cl": {
+      "name": "Lake cover",
+      "units": "fraction, 0 to 1",
+      "caveat": "Invariant modeled lake fraction. Required for interpreting lake fields, but cannot establish changing observed water extent.",
+      "sources": ["era5_land_documentation"]
+    }
+  },
+  "products": {
+    "derived-era5-single-levels-daily-statistics": {
+      "name": "ERA5 post-processed daily statistics on single levels from 1940 to present",
+      "doi": "10.24381/cds.4991cf48",
+      "standard_atmospheric_reanalysis_grid_degrees": [0.25, 0.25],
+      "source": "era5_daily"
+    },
+    "derived-era5-land-daily-statistics": {
+      "name": "ERA5-Land post-processed daily statistics from 1950 to present",
+      "doi": "10.24381/cds.e9c9c792",
+      "standard_grid_degrees": [0.1, 0.1],
+      "native_resolution_km": 9,
+      "source": "era5_land_daily"
+    }
+  },
+  "aggregation_caveat": {
+    "text": "Daily statistics are computed during retrieval. Audit product identifier, aggregation statistic, source sampling frequency, and UTC offset. Available sampling intervals are 1, 3, or 6 hours. A daily timestamp alone does not establish a 24-sample mean or local-day definition. Grid spacing corroborates identity but is insufficient by itself because data can be interpolated.",
+    "sources": ["daily_statistics_documentation", "era5_daily", "era5_land_daily"]
+  },
+  "aral_mask_caveat": {
+    "text": "ECMWF-affiliated primary research documents that GlobCover2009 represented Aral Sea extent from 1998; updated inland-water fields substantially changed the lake fraction and improved modeled land-surface-temperature predictions around Aral. This supports treating static model masks as a limitation rather than a measure of water-area change.",
+    "source": "physiographic_fields_paper"
+  },
+  "sources": {
+    "era5_land_documentation": "https://confluence.ecmwf.int/spaces/CKB/pages/140385202/ERA5-Land%2Bdata%2Bdocumentation",
+    "era5_land_paper": "https://essd.copernicus.org/articles/13/4349/2021/",
+    "era5_daily": "https://cds.climate.copernicus.eu/datasets/derived-era5-single-levels-daily-statistics?tab=overview",
+    "era5_land_daily": "https://cds.climate.copernicus.eu/datasets/derived-era5-land-daily-statistics?tab=overview",
+    "daily_statistics_documentation": "https://confluence.ecmwf.int/spaces/CKB/pages/462888259/ERA5+family+post-processed+daily+statistics+documentation",
+    "wind_components": "https://confluence.ecmwf.int/pages/viewpage.action?pageId=133262398",
+    "physiographic_fields_paper": "https://hess.copernicus.org/articles/27/4661/2023/hess-27-4661-2023.html"
+  }
+}

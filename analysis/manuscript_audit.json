@@ -1,0 +1,451 @@
+{
+  "schema_version": "1.0",
+  "source_manuscript": "Hybrid_Early_Warning_Soil_Degradation_Kazakhstan_EcolInform.docx",
+  "source_status": "Read without modification",
+  "audit_scope": "Requirements and claims in the supplied manuscript compared with files in the current folder only. References cited by the manuscript have not been independently verified.",
+  "evidence_status": "Manuscript claims are not experimental results reproduced from the supplied files.",
+  "intended_study": {
+    "regions": [
+      "Aral Sea dried seabed",
+      "Bozaigyr",
+      "Atyrau/Shol"
+    ],
+    "years": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "sentinel_season": "April to October",
+    "geographic_ambiguity": "The manuscript combines Shol in Aktobe with adjoining Atyrau territory without exact study polygons."
+  },
+  "supplied_files": {
+    "metadata_status": "Verified against results/input_metadata.json. Eight ECMWF reanalysis-family NetCDF files share two dates, the same 43-by-51 grid and no missing values. Exact ERA5 versus ERA5-Land product lineage and source sampling frequency require the original CDS request.",
+    "climate_candidates": [
+      "10m_u_component_of_wind_0_daily-mean.nc",
+      "lake_bottom_temperature_0_daily-mean.nc",
+      "lake_ice_depth_0_daily-mean.nc",
+      "leaf_area_index_low_vegetation_0_daily-mean.nc",
+      "snow_cover_0_daily-mean.nc",
+      "soil_temperature_level_1_0_daily-mean.nc",
+      "soil_temperature_level_2_0_daily-mean.nc",
+      "volumetric_soil_water_layer_1_0_daily-mean.nc"
+    ],
+    "sentinel_2_files_identified": [],
+    "independent_outcome_labels_identified": [],
+    "verified_coverage": {
+      "metadata_source": "results/input_metadata.json",
+      "analysis_dates": [
+        "2026-08-10",
+        "2026-08-18"
+      ],
+      "n_dates": 2,
+      "time_gap_days": 8,
+      "grid_shape": [
+        43,
+        51
+      ],
+      "unique_spatial_cells": 2193,
+      "cell_date_records": 4386,
+      "latitude_range": [
+        43.3,
+        47.5
+      ],
+      "longitude_range": [
+        58.1,
+        63.1
+      ],
+      "latitude_step_degrees": 0.1,
+      "longitude_step_degrees": 0.1,
+      "time_shift": "0 days 05:00:00",
+      "missing_value_count": 0,
+      "variables": {
+        "u10": {
+          "file": "10m_u_component_of_wind_0_daily-mean.nc",
+          "units": "m s**-1",
+          "raw_min": -6.7887115478515625,
+          "raw_max": 1.3468399047851562
+        },
+        "lblt": {
+          "file": "lake_bottom_temperature_0_daily-mean.nc",
+          "units": "K",
+          "raw_min": 279.062744140625,
+          "raw_max": 299.72802734375
+        },
+        "licd": {
+          "file": "lake_ice_depth_0_daily-mean.nc",
+          "units": "m",
+          "raw_min": -2.507218040860612e-19,
+          "raw_max": -1.7618289180298568e-19
+        },
+        "lai_lv": {
+          "file": "leaf_area_index_low_vegetation_0_daily-mean.nc",
+          "units": "m**2 m**-2",
+          "raw_min": 0.0,
+          "raw_max": 2.329925537109375
+        },
+        "snowc": {
+          "file": "snow_cover_0_daily-mean.nc",
+          "units": "%",
+          "raw_min": 0.0,
+          "raw_max": 0.0
+        },
+        "stl1": {
+          "file": "soil_temperature_level_1_0_daily-mean.nc",
+          "units": "K",
+          "raw_min": 295.216796875,
+          "raw_max": 311.53753662109375
+        },
+        "stl2": {
+          "file": "soil_temperature_level_2_0_daily-mean.nc",
+          "units": "K",
+          "raw_min": 295.21783447265625,
+          "raw_max": 308.82305908203125
+        },
+        "swvl1": {
+          "file": "volumetric_soil_water_layer_1_0_daily-mean.nc",
+          "units": "m**3 m**-3",
+          "raw_min": -1.0164398598225872e-20,
+          "raw_max": 0.25844573974609375
+        }
+      },
+      "quality_note": "Tiny negative roundoff in SWVL1 and lake ice is set to zero for analysis only when magnitude is below 1e-12. Original NetCDF inputs and native_grid_values.csv preserve raw values. Snow is zero throughout; lake ice values are effectively zero."
+    }
+  },
+  "modules": [
+    {
+      "id": "M1",
+      "name": "Salinity segmentation",
+      "manuscript_sections": [
+        "3.1"
+      ],
+      "required_inputs": [
+        "Sentinel-2 L2A surface reflectance B2, B3, B4, B8, B8A, B11 and B12, with dates, georeferencing and quality masks",
+        "NDVI, NDWI, NDSI, BI and SI1-SI5, with explicit index definitions",
+        "ERA5-Land soil-water layers used by the original model",
+        "Independent salinity and soil-class observations to validate saline, normal and sandy classes and continuous salinity"
+      ],
+      "supplied_inputs": [
+        "Verified SWVL1 topsoil volumetric soil water on 2026-08-10 and 2026-08-18 at 2193 native grid sites"
+      ],
+      "unavailable_outputs": [
+        "Validated saline-soil probability",
+        "Validated saline/normal/sandy classification",
+        "Continuous salinity regression",
+        "Reproduced M1 performance"
+      ],
+      "reason": "No Sentinel-2 bands or independent salinity targets were identified in the folder.",
+      "proposed_method": "K-means pseudo-labels; XGBoost probability enrichment; aligned voting across K-means, agglomerative clustering and DBSCAN; multi-task neural classification and regression"
+    },
+    {
+      "id": "M2",
+      "name": "Soil profile stratification",
+      "manuscript_sections": [
+        "3.2"
+      ],
+      "required_inputs": [
+        "Sentinel-2 spectral features",
+        "DEM and derived elevation, slope, aspect, curvature, TRI, TPI and distance to water",
+        "OpenLandMap static covariates with provenance",
+        "Independent clay, sand, bulk density, texture and horizon targets at 0, 10, 30, 60, 100 and 200 cm"
+      ],
+      "supplied_inputs": [],
+      "unavailable_outputs": [
+        "Validated physical soil-property profiles",
+        "Validated horizon or texture classes",
+        "Validated stratification instability index",
+        "Reproduced M2 performance"
+      ],
+      "reason": "Soil temperatures at levels 1 and 2 are not measurements of clay, sand, bulk density or horizon class. Required spectral, terrain and profile target data were not identified.",
+      "proposed_method": "Random Forest, Gradient Boosting and XGBoost base learners with linear or logistic stacking; depth-wise class probability entropy"
+    },
+    {
+      "id": "M3",
+      "name": "Climate-risk trajectory",
+      "manuscript_sections": [
+        "3.3"
+      ],
+      "required_inputs": [
+        "Topsoil volumetric soil water, precipitation, potential evapotranspiration and vapour pressure deficit over 2019-2024",
+        "Independent dated drought or salinization progression targets, with explicit units and spatial support",
+        "A training-only anomaly baseline and a defined prediction horizon"
+      ],
+      "supplied_inputs": [
+        "Verified SWVL1 topsoil volumetric soil water on 2026-08-10 and 2026-08-18 at 2193 native grid sites",
+        "Other supplied reanalysis variables support a separate spatial reconstruction and paired-change experiment; they do not replace missing manuscript predictors without changing the method"
+      ],
+      "unavailable_outputs": [
+        "The manuscript's supervised Climate Stress Index",
+        "Validated degradation prediction",
+        "Reproduced three-region CSI means"
+      ],
+      "reason": "Precipitation, potential evapotranspiration, vapour pressure deficit and independent progression labels are absent. Only two dates in August 2026 are available; 2019-2024 coverage is absent.",
+      "proposed_method": "Standardized anomalies; Mann-Kendall trend testing and Sen slope; supervised gradient boosting from trend and anomaly features"
+    },
+    {
+      "id": "SDRI",
+      "name": "Entropy-weighted fusion",
+      "manuscript_sections": [
+        "3.4"
+      ],
+      "required_inputs": [
+        "Validated and aligned M1 saline probability, M2 instability and M3 CSI",
+        "Training-only scaling and entropy weights",
+        "Independent degradation observations for validation"
+      ],
+      "supplied_inputs": [],
+      "unavailable_outputs": [
+        "Full SDRI maps",
+        "Validated SDRI regional distributions",
+        "Verified High and Critical area shares"
+      ],
+      "reason": "None of the three required fitted module outputs was supplied.",
+      "proposed_method": "Min-max normalize each module output and combine with Shannon entropy weights"
+    },
+    {
+      "id": "SDRI_NN",
+      "name": "Alternative neural fusion",
+      "manuscript_sections": [
+        "3.5"
+      ],
+      "required_inputs": [
+        "Trained M1 and M2 feature representations",
+        "Climate anomaly sequences for a GRU branch",
+        "Verified degradation outcome labels"
+      ],
+      "supplied_inputs": [],
+      "unavailable_outputs": [
+        "Trained neural SDRI",
+        "Neural versus analytic fusion comparison"
+      ],
+      "reason": "The manuscript itself describes this alternative as dependent on future verified outcome labels.",
+      "proposed_method": "Concatenated module representations, climate GRU, attention and sigmoid risk output"
+    },
+    {
+      "id": "EXPLANATION",
+      "name": "Fusion surrogate and SHAP",
+      "manuscript_sections": [
+        "3.6"
+      ],
+      "required_inputs": [
+        "Computed SDRI targets",
+        "Spectral, terrain and climate covariates",
+        "Held-out surrogate fidelity assessment"
+      ],
+      "supplied_inputs": [
+        "Reanalysis environmental variables on two dates only; no spectral or terrain covariates"
+      ],
+      "unavailable_outputs": [
+        "Verified composite SHAP rankings",
+        "Evidence that CSI improves degradation prediction"
+      ],
+      "reason": "SDRI, Sentinel-2 and terrain covariates were not supplied.",
+      "proposed_method": "Fit a gradient-boosting surrogate of SDRI and explain its predictions"
+    },
+    {
+      "id": "TIERS",
+      "name": "Warning threshold calibration",
+      "manuscript_sections": [
+        "3.7"
+      ],
+      "required_inputs": [
+        "Computed SDRI",
+        "Independent spatial erosion or degradation reference",
+        "Explicit multiclass or ordinal threshold calibration method"
+      ],
+      "supplied_inputs": [],
+      "unavailable_outputs": [
+        "Outcome-calibrated warning tiers",
+        "Validated management thresholds"
+      ],
+      "reason": "The RUSLE reference and independent outcomes are absent; the manuscript presents quarter ranges without calibration results.",
+      "proposed_method": "Youden-like calibration against the cited reference"
+    },
+    {
+      "id": "VALIDATION",
+      "name": "Spatial and temporal validation",
+      "manuscript_sections": [
+        "2.1",
+        "3.8",
+        "4.4"
+      ],
+      "required_inputs": [
+        "All three regional datasets and outcomes",
+        "Chronological training years and 2024 holdout",
+        "SMAP observations and matched ERA5-Land samples for the stated external moisture comparison"
+      ],
+      "supplied_inputs": [
+        "Eight reanalysis files on 2026-08-10 and 2026-08-18 at 43.3-47.5 N, 58.1-63.1 E; 2193 sites and 4386 cell-date records"
+      ],
+      "unavailable_outputs": [
+        "Three leave-region-out fold scores",
+        "Verified 2024 early-warning skill",
+        "Reproduced ERA5-Land versus SMAP statistics"
+      ],
+      "reason": "No second or third regional dataset, independent outcomes or SMAP files were identified.",
+      "proposed_method": "Train on two regions and test the third; withhold 2024; compare matched moisture observations"
+    }
+  ],
+  "unverified_new_numerical_claims": [
+    {
+      "id": "SMAP",
+      "section": "2.1",
+      "claim": "ERA5-Land versus SMAP mean correlation 0.71 +/- 0.06 and RMSE 0.039 m3/m3 across three regions",
+      "status": "No matched observations or calculation artifacts supplied"
+    },
+    {
+      "id": "ARAL_TREND",
+      "section": "4.2",
+      "claim": "Statistically significant Aral SWVL1 drying over 2019-2024 with p < 0.05",
+      "status": "Not verified from supplied data"
+    },
+    {
+      "id": "CSI_ARAL",
+      "section": "4.2",
+      "claim": "Regional mean CSI approximately 0.71",
+      "status": "No trained CSI model, labels or outputs supplied"
+    },
+    {
+      "id": "CSI_BOZAIGYR",
+      "section": "4.2",
+      "claim": "Regional mean CSI approximately 0.44",
+      "status": "No trained CSI model, labels or outputs supplied"
+    },
+    {
+      "id": "CSI_ATYRAU",
+      "section": "4.2",
+      "claim": "Mean CSI approximately 0.30-0.58 depending on location",
+      "status": "No trained CSI model, labels or outputs supplied"
+    },
+    {
+      "id": "ARAL_TIERS",
+      "section": "Table 4",
+      "claim": "Low/Moderate/High/Critical percentages 4/18/39/39; combined High and Critical 78%",
+      "status": "No SDRI raster or area calculation supplied"
+    },
+    {
+      "id": "BOZAIGYR_TIERS",
+      "section": "Table 4",
+      "claim": "Low/Moderate/High/Critical percentages 22/41/28/9",
+      "status": "No SDRI raster or area calculation supplied"
+    },
+    {
+      "id": "ATYRAU_TIERS",
+      "section": "Table 4",
+      "claim": "Low/Moderate/High/Critical percentages 31/35/24/10",
+      "status": "No SDRI raster or area calculation supplied"
+    },
+    {
+      "id": "TRANSFER",
+      "section": "4.4",
+      "claim": "Fusion Spearman correlation declines moderately, analogized to a 2-4 percentage-point M2 accuracy loss",
+      "status": "Actual correlation values, fold scores, sample counts and uncertainty are absent; unlike metrics are compared"
+    },
+    {
+      "id": "SHAP",
+      "section": "4.5",
+      "claim": "B11, elevation and distance to water are the top three predictors; CSI is among the top five at Aral",
+      "status": "No surrogate model, fidelity score, SHAP values or ranking artifact supplied"
+    }
+  ],
+  "prior_study_claims": {
+    "status": "Values attributed by the manuscript to external studies; not reproduced or independently verified in this audit",
+    "M1": {
+      "silhouette": 0.8156,
+      "davies_bouldin": 0.3022,
+      "classification_accuracy_percent": 99.99
+    },
+    "M2_table_3": {
+      "clay_sand_r2_range": [
+        0.999,
+        1.0
+      ],
+      "bulk_density_r2_range": [
+        0.985,
+        0.996
+      ],
+      "horizon_accuracy_percent_approx": 99,
+      "horizon_macro_f1_percent_approx": 98.3,
+      "external_r2_range_approx": [
+        0.92,
+        0.94
+      ],
+      "external_accuracy_percent_range_approx": [
+        95,
+        97
+      ]
+    },
+    "internal_inconsistency": "Introduction and conclusion instead state M2 R2 0.86-0.97 and classification accuracy 94-98%, without reconciling the evaluation settings."
+  },
+  "main_methodological_fixes": [
+    {
+      "id": "F01",
+      "fix": "Define measurable targets, units, forecast horizon, sample counts and spatial support before fitting CSI or describing early-warning skill."
+    },
+    {
+      "id": "F02",
+      "fix": "Fit anomaly baselines, preprocessing, cluster stages, stacking and fusion weights only inside training folds; exclude temporal holdout observations from all fitting."
+    },
+    {
+      "id": "F03",
+      "fix": "Do not use variance of a series standardized on that same series as an informative feature: it is approximately one by construction. Define rolling or held-out variability against a training baseline if needed."
+    },
+    {
+      "id": "F04",
+      "fix": "Keep Mann-Kendall statistic/tau distinct from Sen slope; report physical slope units, sample count and uncertainty. Address seasonality, serial dependence and multiple comparisons before significance claims."
+    },
+    {
+      "id": "F05",
+      "fix": "Respect native climate-cell and temporal groups in validation. Resampling coarse climate data to a fine grid does not create independent observations or finer climate information."
+    },
+    {
+      "id": "F06",
+      "fix": "Validate soil salinity against independent observations. Accuracy against cluster-derived labels measures cluster reproduction and cannot establish soil salinity accuracy."
+    },
+    {
+      "id": "F07",
+      "fix": "Resolve M1 two-cluster versus three-class inconsistency, align cluster labels before voting, handle DBSCAN noise and define continuous salinity targets and spectral formulas."
+    },
+    {
+      "id": "F08",
+      "fix": "Train stacking meta-models using out-of-fold base predictions; group depths from the same soil profile and document target provenance."
+    },
+    {
+      "id": "F09",
+      "fix": "Treat class entropy as model uncertainty or class mixing until its relationship with observed structural degradation is validated; specify depth aggregation."
+    },
+    {
+      "id": "F10",
+      "fix": "Report entropy weights and handle constant or zero indicators. Spatial variation is not evidence of reliability, and weights do not by themselves establish transfer robustness."
+    },
+    {
+      "id": "F11",
+      "fix": "Calibrate warning thresholds with actual independent outcomes, report calibration metrics, and use contiguous intervals. The stated quarter ranges leave gaps for continuous scores."
+    },
+    {
+      "id": "F12",
+      "fix": "Distinguish erosion-reference agreement from validation of salinity, profile disturbance and future degradation. Prospective outcomes are required for early-warning claims."
+    },
+    {
+      "id": "F13",
+      "fix": "Measure held-out surrogate fidelity before interpreting SHAP. Surrogate attributions do not establish causal environmental drivers."
+    },
+    {
+      "id": "F14",
+      "fix": "Provide exact regional polygons, datasets, seeds, hyperparameters, fold scores and sample counts; reconcile contradictory M2 summaries and incomplete references."
+    }
+  ],
+  "supported_pilot_scope": {
+    "description": "Use the two supplied daily fields for native-grid spatial reconstruction of topsoil water and an eight-day paired comparison.",
+    "candidate_outputs": [
+      "Verified dataset inventory, provenance and native-grid quality audit",
+      "Soil-moisture descriptive summaries and paired changes in physical units",
+      "Descriptive associations with temperature, low-vegetation LAI climatology and signed eastward wind",
+      "Spatially blocked model comparisons pooling both dates while keeping both observations at each site in the same test block",
+      "An untrained eight-day persistence benchmark evaluated on the single date pair"
+    ],
+    "interpretation_limit": "These outputs describe and reconstruct the supplied reanalysis variables. Two dates cannot establish multi-year trends, climate anomalies, robust temporal forecasting skill, salinity, CSI, full SDRI or degradation early-warning validation."
+  }
+}

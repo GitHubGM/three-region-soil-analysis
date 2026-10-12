@@ -1,0 +1,98 @@
+[
+  {
+    "file": "Aral\\10m_u_component_of_wind_0_daily-mean.nc",
+    "sha256": "5396821d181ad70c9e5bd5d67f4242e2a277ff0dc472d62013a6ccda3382983d"
+  },
+  {
+    "file": "Aral\\lake_bottom_temperature_0_daily-mean.nc",
+    "sha256": "de2373ee57675d9ce5923f6a24f16e5d811d8d55d0047c8ff26bf04c8bbb8be9"
+  },
+  {
+    "file": "Aral\\lake_ice_depth_0_daily-mean.nc",
+    "sha256": "e0aa984c2ac501cd408643b4fdfbd7db72a41b66845336b29c4eeb6650772544"
+  },
+  {
+    "file": "Aral\\leaf_area_index_low_vegetation_0_daily-mean.nc",
+    "sha256": "beaec3caa33627895dd9b4b19857ec550fff4461d47b2e3ec177abffe13bdaa9"
+  },
+  {
+    "file": "Aral\\snow_cover_0_daily-mean.nc",
+    "sha256": "c19afc4cb035f5303d521a7a56a827bc91f629756a5e4556ed71f4a142f8de7d"
+  },
+  {
+    "file": "Aral\\soil_temperature_level_1_0_daily-mean.nc",
+    "sha256": "d075a38392043a642eda8dc2dc29491bf6cfbc02aa1acd252275527139aa2ba0"
+  },
+  {
+    "file": "Aral\\soil_temperature_level_2_0_daily-mean.nc",
+    "sha256": "c4b982d3a7540f8ec84bea3cc07105159255a3b8b7d798ff955643d2e5744ba3"
+  },
+  {
+    "file": "Aral\\volumetric_soil_water_layer_1_0_daily-mean.nc",
+    "sha256": "afe32f0e3acfbe44f11ba31c82560ddc0996298946005723e09c00f8f408a624"
+  },
+  {
+    "file": "Atyrau\\10m_u_component_of_wind_0_daily-mean.nc",
+    "sha256": "1a44f8ae85d3f445e33c8c3ada30d1528bd06e6f461fbcc25ba8f2f01a706f17"
+  },
+  {
+    "file": "Atyrau\\lake_bottom_temperature_0_daily-mean.nc",
+    "sha256": "2742325e750369c3328baf4aa26d5d060832784045a751caf0abdf4b8a276189"
+  },
+  {
+    "file": "Atyrau\\lake_ice_depth_0_daily-mean.nc",
+    "sha256": "9b264382abd473000eb98dfd3f3c8df1cb40627b4a041b153ba54aa41c4d8bec"
+  },
+  {
+    "file": "Atyrau\\leaf_area_index_low_vegetation_0_daily-mean.nc",
+    "sha256": "d6368aa54be40204778f7a12042c41098aab6e7373e12dce8088fdcd1680c320"
+  },
+  {
+    "file": "Atyrau\\snow_cover_0_daily-mean.nc",
+    "sha256": "176b46a7a80821d1c60ad793abb5b2abb7e366650dd81e5edf5ae71050f3a381"
+  },
+  {
+    "file": "Atyrau\\soil_temperature_level_1_0_daily-mean.nc",
+    "sha256": "2ea7aab4ae844e33ed193a08656a01a97c9cccda4a2252a36be8ed7cc1eac37f"
+  },
+  {
+    "file": "Atyrau\\soil_temperature_level_2_0_daily-mean.nc",
+    "sha256": "c23089e5aa76737db981620e37432a094bf8ceb31ab0e4b33ac302232533a4bd"
+  },
+  {
+    "file": "Atyrau\\volumetric_soil_water_layer_1_0_daily-mean.nc",
+    "sha256": "432606fa08539f9bb73261026574a5675a4b2ccb6f1ce15987963344858253e0"
+  },
+  {
+    "file": "Bozaigyr\\10m_u_component_of_wind_0_daily-mean.nc",
+    "sha256": "fa138223536b499483b99ca63de9b8686ac6e5f68a8760630e319871e7d761dc"
+  },
+  {
+    "file": "Bozaigyr\\lake_bottom_temperature_0_daily-mean.nc",
+    "sha256": "b55b44f7a6b4a20497550035b2cc8f3c75dd2eb83ae023fb8f160b59c9f27f19"
+  },
+  {
+    "file": "Bozaigyr\\lake_ice_depth_0_daily-mean.nc",
+    "sha256": "5ff3ed533e67831406ee18d42e455c310df0e42bf70c4c97b258d3b8b4905507"
+  },
+  {
+    "file": "Bozaigyr\\leaf_area_index_low_vegetation_0_daily-mean.nc",
+    "sha256": "c176d988bfa4a6b95031568d74964dba7984ba327a054ba38b15cd62b8bade63"
+  },
+  {
+    "file": "Bozaigyr\\snow_cover_0_daily-mean.nc",
+    "sha256": "2b1803e59c9d9d585f3f1e65d39d1e2e4d8b1fe737eb4dcc62de63b047c5d57a"
+  },
+  {
+    "file": "Bozaigyr\\soil_temperature_level_1_0_daily-mean.nc",
+    "sha256": "615058355ecaf74f3938953a496ab48c02ba4f4e269d4602f63b1c1cb85977f4"
+  },
+  {
+    "file": "Bozaigyr\\soil_temperature_level_2_0_daily-mean.nc",
+    "sha256": "ad5028b3aabc2dace5911b625a5b493edb2a31bc3b6911808888c794619719b2"
+  },
+  {
+    "file": "Bozaigyr\\volumetric_soil_water_layer_1_0_daily-mean.nc",
+    "sha256": "6fdc5836848e982c81a1c20a8ea917fce49e24bfa1f463b01fc1860ab396edf6"
+  }
+]

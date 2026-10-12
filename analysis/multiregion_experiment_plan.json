@@ -1,0 +1,39 @@
+{
+  "created_date": "2026-10-05",
+  "status": "Fixed before evaluating the three-region model scores",
+  "objective": "Measure soil-moisture reconstruction accuracy under progressively stronger spatial and regional separation and quantify the value of labelled target-region sites",
+  "target": "swvl1 at the recorded time and location",
+  "environment_features": ["stl1_c", "stl2_c", "u10", "lai_lv"],
+  "geographic_features": ["latitude", "longitude"],
+  "seed": 20261005,
+  "models": {
+    "training_mean": {},
+    "ridge_env": {"standardize": true, "alpha": 10},
+    "svr_env": {"standardize": true, "kernel": "rbf", "C": 1, "epsilon": 0.005, "gamma": "scale"},
+    "rf_geo": {"n_estimators": 200, "min_samples_leaf": 10, "max_features": 1.0},
+    "rf_env": {"n_estimators": 200, "min_samples_leaf": 10, "max_features": 1.0},
+    "rf_env_geo": {"n_estimators": 200, "min_samples_leaf": 10, "max_features": 1.0},
+    "gbr_env": {"n_estimators": 150, "learning_rate": 0.03, "max_depth": 2, "min_samples_leaf": 10},
+    "gbr_env_geo": {"n_estimators": 150, "learning_rate": 0.03, "max_depth": 2, "min_samples_leaf": 10}
+  },
+  "main_protocols": [
+    {"name": "random_rows", "folds_per_region": 4, "purpose": "Diagnostic of conventional randomly mixed records"},
+    {"name": "random_sites", "folds_per_region": 4, "purpose": "Both dates of a site remain together; nearby sites may occur in training"},
+    {"name": "buffered_quadrants", "folds_per_region": 4, "buffer_degrees": 0.3, "purpose": "Within-region prediction across separated spatial blocks"},
+    {"name": "leave_region_out", "folds": 3, "buffer_degrees": 0.3, "purpose": "Train on the two source folders after excluding the target rectangle and its coordinate buffer; test the complete target region; no target labels in training"}
+  ],
+  "weights": "Cosine-latitude weights normalized to equal total weight per retained training-region provenance and mean weight one overall after alphabetical deduplication; target-region evaluation uses cosine-latitude weights. Macro RMSE is the arithmetic mean of the three region-specific RMSEs, and regional R2 is computed from all out-of-fold predictions.",
+  "adaptation": {
+    "models": ["rf_env", "gbr_env"],
+    "target_training_site_fractions": [0.05, 0.2, 1.0],
+    "target_test_protocol": "buffered_quadrants",
+    "settings": ["target_only", "source_plus_target"],
+    "selection": "Seeded nested subsets of eligible target training sites, retaining all dates at each selected site",
+    "source_plus_target_weights": "Target-labelled subset receives one-half of total weight and each of two source regions receives one-quarter, with cosine-latitude weighting within each subset",
+    "interpretation": "Pooled supervised learning with target labels; not unsupervised domain adaptation"
+  },
+  "diagnostics": ["regional feature and target distributions", "source-feature min-max envelope exceedance on held-out target region", "coordinate-feature ablation", "fold-level heterogeneity", "fit and prediction runtime"],
+  "controls": ["no tuning on held-out predictions", "training-only scaling", "no target clipping", "no region-ID feature", "all input files hashed", "separate raw and analysis values", "constant lake/ice/snow fields remain diagnostics", "no claims of field validation, temporal forecasting, salinity prediction or a novel learning algorithm"],
+  "audit_amendment_before_scoring": "The Atyrau and Bozaigyr folders overlap at336 physicalsites. In every leave-region-out and adaptation experiment, exclude all source sites within the complete target rectangle or its0.3degree coordinate buffer. Deduplicate any remaining source-source site-date overlaps by alphabetical folder priority. Overlapping targets and nonthermal predictors agree exactly; the two soil-temperature fields differ by at most0.00006103515625K on18August. Keep folder region IDs as provenance and use rounded coordinates to determine physical site identity. User confirmed retaining the third grid with an accurate label; use Northwestern domain for Bozaigyr-folder coordinates.",
+  "conditional_checks": "Run only after the input audit confirms compatible variables; document any additional required design amendments before scoring."
+}

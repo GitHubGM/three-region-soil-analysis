@@ -1,0 +1,3925 @@
+{
+  "method": "Independent verification using original NetCDF inputs, membership reconstruction and saved predictions; neither experiment runner is imported.",
+  "check_count": 783,
+  "passed": 783,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "Sensitivity plan is explicitly post hoc and uses the declared seeds and budgets",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Recorded sensitivity plan hash",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Primary outputs unchanged against sensitivity-run starting hashes",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "All primary outputs unchanged against independent verification snapshot",
+      "passed": true,
+      "details": {
+        "file_count": 21
+      }
+    },
+    {
+      "check": "Exactly 24 original NetCDF files and complete hash coverage",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Run hashes match the independent pre-run audit",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Raw and analysis rows have identical sample identity",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Raw sample IDs are unique and exhaustive",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Aral/10m_u_component_of_wind_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Aral/10m_u_component_of_wind_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Aral/lake_bottom_temperature_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Aral/lake_bottom_temperature_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Aral/lake_ice_depth_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Aral/lake_ice_depth_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Aral/leaf_area_index_low_vegetation_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Aral/leaf_area_index_low_vegetation_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Aral/snow_cover_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Aral/snow_cover_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Aral/soil_temperature_level_1_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Aral/soil_temperature_level_1_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Aral/soil_temperature_level_2_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Aral/soil_temperature_level_2_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Aral/volumetric_soil_water_layer_1_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Aral/volumetric_soil_water_layer_1_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Atyrau/10m_u_component_of_wind_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Atyrau/10m_u_component_of_wind_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Atyrau/lake_bottom_temperature_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Atyrau/lake_bottom_temperature_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Atyrau/lake_ice_depth_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Atyrau/lake_ice_depth_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Atyrau/leaf_area_index_low_vegetation_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Atyrau/leaf_area_index_low_vegetation_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Atyrau/snow_cover_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Atyrau/snow_cover_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Atyrau/soil_temperature_level_1_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Atyrau/soil_temperature_level_1_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Atyrau/soil_temperature_level_2_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Atyrau/soil_temperature_level_2_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Atyrau/volumetric_soil_water_layer_1_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Atyrau/volumetric_soil_water_layer_1_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Bozaigyr/10m_u_component_of_wind_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Bozaigyr/10m_u_component_of_wind_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Bozaigyr/lake_bottom_temperature_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Bozaigyr/lake_bottom_temperature_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Bozaigyr/lake_ice_depth_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Bozaigyr/lake_ice_depth_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Bozaigyr/leaf_area_index_low_vegetation_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Bozaigyr/leaf_area_index_low_vegetation_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Bozaigyr/snow_cover_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Bozaigyr/snow_cover_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Bozaigyr/soil_temperature_level_1_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Bozaigyr/soil_temperature_level_1_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Bozaigyr/soil_temperature_level_2_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Bozaigyr/soil_temperature_level_2_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Bozaigyr/volumetric_soil_water_layer_1_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Bozaigyr/volumetric_soil_water_layer_1_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Grid counts and dates: Aral",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Grid counts and dates: Atyrau",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Grid counts and dates: Bozaigyr",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Distinct physical sites and site-date records",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Physical overlap is exactly the 336 Atyrau/Bozaigyr sites",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Only declared numerical normalization: swvl1",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Only declared numerical normalization: stl1",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Only declared numerical normalization: stl2",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Only declared numerical normalization: u10",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Only declared numerical normalization: lai_lv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Only declared numerical normalization: snowc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Only declared numerical normalization: lblt",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Only declared numerical normalization: licd",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Temperature conversion from raw Kelvin: level 1",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Temperature conversion from raw Kelvin: level 2",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Stored evaluation weights are cosine latitude",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity output counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity split IDs are exhaustive across output files",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity memberships and predictions have no duplicates",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity models, seeds, settings and budgets match the plan",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity prediction targets and provenance match unchanged analysis records",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:0:0.05:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:0:0.05:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:0:0.05:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:0:0.05:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:0:0.05:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:0:0.05:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:0:0.05:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:0:0.05:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:0:0.05:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:0:0.05:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:0:0.05:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:0:0.05:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:0:0.05:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:0:0.2:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:0:0.2:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:0:0.2:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:0:0.2:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:0:0.2:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:0:0.2:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:0:0.2:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:0:0.2:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:0:0.2:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:0:0.2:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:0:0.2:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:0:0.2:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:0:0.2:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:1:0.05:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:1:0.05:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:1:0.05:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:1:0.05:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:1:0.05:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:1:0.05:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:1:0.05:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:1:0.05:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:1:0.05:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:1:0.05:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:1:0.05:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:1:0.05:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:1:0.05:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:1:0.2:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:1:0.2:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:1:0.2:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:1:0.2:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:1:0.2:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:1:0.2:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:1:0.2:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:1:0.2:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:1:0.2:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:1:0.2:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:1:0.2:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:1:0.2:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:1:0.2:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:2:0.05:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:2:0.05:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:2:0.05:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:2:0.05:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:2:0.05:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:2:0.05:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:2:0.05:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:2:0.05:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:2:0.05:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:2:0.05:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:2:0.05:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:2:0.05:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:2:0.05:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:2:0.2:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:2:0.2:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:2:0.2:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:2:0.2:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:2:0.2:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:2:0.2:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:2:0.2:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:2:0.2:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:2:0.2:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:2:0.2:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:2:0.2:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:2:0.2:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:2:0.2:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:3:0.05:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:3:0.05:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:3:0.05:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:3:0.05:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:3:0.05:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:3:0.05:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:3:0.05:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:3:0.05:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:3:0.05:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:3:0.05:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:3:0.05:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:3:0.05:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:3:0.05:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:3:0.2:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:3:0.2:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:3:0.2:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:3:0.2:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:3:0.2:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:3:0.2:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:3:0.2:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:3:0.2:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:3:0.2:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:3:0.2:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:3:0.2:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:3:0.2:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Aral:3:0.2:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:0:0.05:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:0:0.05:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:0:0.05:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:0:0.05:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:0:0.05:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:0:0.05:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:0:0.05:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:0:0.05:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:0:0.05:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:0:0.05:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:0:0.05:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:0:0.05:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:0:0.05:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:0:0.2:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:0:0.2:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:0:0.2:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:0:0.2:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:0:0.2:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:0:0.2:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:0:0.2:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:0:0.2:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:0:0.2:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:0:0.2:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:0:0.2:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:0:0.2:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:0:0.2:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:1:0.05:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:1:0.05:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:1:0.05:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:1:0.05:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:1:0.05:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:1:0.05:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:1:0.05:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:1:0.05:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:1:0.05:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:1:0.05:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:1:0.05:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:1:0.05:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:1:0.05:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:1:0.2:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:1:0.2:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:1:0.2:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:1:0.2:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:1:0.2:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:1:0.2:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:1:0.2:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:1:0.2:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:1:0.2:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:1:0.2:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:1:0.2:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:1:0.2:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:1:0.2:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:2:0.05:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:2:0.05:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:2:0.05:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:2:0.05:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:2:0.05:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:2:0.05:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:2:0.05:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:2:0.05:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:2:0.05:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:2:0.05:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:2:0.05:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:2:0.05:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:2:0.05:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:2:0.2:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:2:0.2:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:2:0.2:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:2:0.2:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:2:0.2:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:2:0.2:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:2:0.2:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:2:0.2:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:2:0.2:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:2:0.2:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:2:0.2:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:2:0.2:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:2:0.2:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:3:0.05:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:3:0.05:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:3:0.05:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:3:0.05:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:3:0.05:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:3:0.05:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:3:0.05:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:3:0.05:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:3:0.05:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:3:0.05:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:3:0.05:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:3:0.05:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:3:0.05:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:3:0.2:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:3:0.2:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:3:0.2:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:3:0.2:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:3:0.2:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:3:0.2:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:3:0.2:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:3:0.2:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:3:0.2:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:3:0.2:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:3:0.2:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:3:0.2:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Atyrau:3:0.2:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:0:0.05:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:0:0.05:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:0:0.05:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:0:0.05:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:0:0.05:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:0:0.05:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:0:0.05:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:0:0.05:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:0:0.05:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:0:0.05:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:0:0.05:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:0:0.05:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:0:0.05:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:0:0.2:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:0:0.2:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:0:0.2:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:0:0.2:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:0:0.2:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:0:0.2:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:0:0.2:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:0:0.2:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:0:0.2:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:0:0.2:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:0:0.2:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:0:0.2:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:0:0.2:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:1:0.05:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:1:0.05:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:1:0.05:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:1:0.05:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:1:0.05:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:1:0.05:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:1:0.05:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:1:0.05:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:1:0.05:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:1:0.05:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:1:0.05:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:1:0.05:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:1:0.05:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:1:0.2:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:1:0.2:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:1:0.2:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:1:0.2:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:1:0.2:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:1:0.2:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:1:0.2:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:1:0.2:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:1:0.2:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:1:0.2:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:1:0.2:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:1:0.2:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:1:0.2:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:2:0.05:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:2:0.05:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:2:0.05:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:2:0.05:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:2:0.05:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:2:0.05:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:2:0.05:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:2:0.05:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:2:0.05:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:2:0.05:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:2:0.05:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:2:0.05:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:2:0.05:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:2:0.2:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:2:0.2:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:2:0.2:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:2:0.2:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:2:0.2:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:2:0.2:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:2:0.2:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:2:0.2:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:2:0.2:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:2:0.2:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:2:0.2:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:2:0.2:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:2:0.2:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:3:0.05:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:3:0.05:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:3:0.05:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:3:0.05:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:3:0.05:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:3:0.05:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:3:0.05:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:3:0.05:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:3:0.05:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:3:0.05:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:3:0.05:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:3:0.05:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:3:0.05:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:3:0.2:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:3:0.2:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:3:0.2:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:3:0.2:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:3:0.2:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:3:0.2:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:3:0.2:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:3:0.2:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:3:0.2:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:3:0.2:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:3:0.2:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:3:0.2:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20271005:Bozaigyr:3:0.2:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:0:0.05:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:0:0.05:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:0:0.05:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:0:0.05:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:0:0.05:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:0:0.05:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:0:0.05:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:0:0.05:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:0:0.05:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:0:0.05:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:0:0.05:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:0:0.05:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:0:0.05:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:0:0.2:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:0:0.2:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:0:0.2:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:0:0.2:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:0:0.2:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:0:0.2:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:0:0.2:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:0:0.2:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:0:0.2:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:0:0.2:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:0:0.2:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:0:0.2:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:0:0.2:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:1:0.05:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:1:0.05:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:1:0.05:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:1:0.05:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:1:0.05:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:1:0.05:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:1:0.05:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:1:0.05:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:1:0.05:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:1:0.05:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:1:0.05:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:1:0.05:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:1:0.05:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:1:0.2:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:1:0.2:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:1:0.2:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:1:0.2:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:1:0.2:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:1:0.2:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:1:0.2:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:1:0.2:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:1:0.2:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:1:0.2:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:1:0.2:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:1:0.2:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:1:0.2:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:2:0.05:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:2:0.05:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:2:0.05:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:2:0.05:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:2:0.05:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:2:0.05:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:2:0.05:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:2:0.05:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:2:0.05:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:2:0.05:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:2:0.05:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:2:0.05:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:2:0.05:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:2:0.2:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:2:0.2:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:2:0.2:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:2:0.2:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:2:0.2:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:2:0.2:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:2:0.2:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:2:0.2:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:2:0.2:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:2:0.2:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:2:0.2:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:2:0.2:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:2:0.2:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:3:0.05:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:3:0.05:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:3:0.05:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:3:0.05:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:3:0.05:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:3:0.05:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:3:0.05:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:3:0.05:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:3:0.05:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:3:0.05:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:3:0.05:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:3:0.05:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:3:0.05:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:3:0.2:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:3:0.2:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:3:0.2:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:3:0.2:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:3:0.2:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:3:0.2:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:3:0.2:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:3:0.2:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:3:0.2:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:3:0.2:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:3:0.2:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:3:0.2:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Aral:3:0.2:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:0:0.05:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:0:0.05:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:0:0.05:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:0:0.05:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:0:0.05:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:0:0.05:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:0:0.05:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:0:0.05:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:0:0.05:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:0:0.05:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:0:0.05:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:0:0.05:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:0:0.05:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:0:0.2:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:0:0.2:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:0:0.2:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:0:0.2:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:0:0.2:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:0:0.2:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:0:0.2:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:0:0.2:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:0:0.2:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:0:0.2:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:0:0.2:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:0:0.2:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:0:0.2:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:1:0.05:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:1:0.05:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:1:0.05:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:1:0.05:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:1:0.05:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:1:0.05:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:1:0.05:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:1:0.05:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:1:0.05:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:1:0.05:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:1:0.05:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:1:0.05:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:1:0.05:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:1:0.2:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:1:0.2:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:1:0.2:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:1:0.2:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:1:0.2:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:1:0.2:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:1:0.2:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:1:0.2:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:1:0.2:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:1:0.2:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:1:0.2:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:1:0.2:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:1:0.2:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:2:0.05:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:2:0.05:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:2:0.05:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:2:0.05:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:2:0.05:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:2:0.05:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:2:0.05:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:2:0.05:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:2:0.05:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:2:0.05:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:2:0.05:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:2:0.05:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:2:0.05:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:2:0.2:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:2:0.2:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:2:0.2:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:2:0.2:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:2:0.2:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:2:0.2:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:2:0.2:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:2:0.2:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:2:0.2:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:2:0.2:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:2:0.2:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:2:0.2:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:2:0.2:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:3:0.05:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:3:0.05:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:3:0.05:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:3:0.05:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:3:0.05:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:3:0.05:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:3:0.05:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:3:0.05:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:3:0.05:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:3:0.05:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:3:0.05:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:3:0.05:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:3:0.05:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:3:0.2:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:3:0.2:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:3:0.2:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:3:0.2:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:3:0.2:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:3:0.2:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:3:0.2:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:3:0.2:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:3:0.2:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:3:0.2:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:3:0.2:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:3:0.2:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Atyrau:3:0.2:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:0:0.05:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:0:0.05:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:0:0.05:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:0:0.05:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:0:0.05:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:0:0.05:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:0:0.05:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:0:0.05:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:0:0.05:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:0:0.05:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:0:0.05:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:0:0.05:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:0:0.05:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:0:0.2:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:0:0.2:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:0:0.2:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:0:0.2:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:0:0.2:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:0:0.2:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:0:0.2:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:0:0.2:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:0:0.2:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:0:0.2:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:0:0.2:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:0:0.2:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:0:0.2:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:1:0.05:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:1:0.05:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:1:0.05:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:1:0.05:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:1:0.05:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:1:0.05:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:1:0.05:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:1:0.05:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:1:0.05:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:1:0.05:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:1:0.05:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:1:0.05:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:1:0.05:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:1:0.2:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:1:0.2:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:1:0.2:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:1:0.2:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:1:0.2:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:1:0.2:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:1:0.2:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:1:0.2:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:1:0.2:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:1:0.2:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:1:0.2:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:1:0.2:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:1:0.2:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:2:0.05:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:2:0.05:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:2:0.05:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:2:0.05:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:2:0.05:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:2:0.05:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:2:0.05:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:2:0.05:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:2:0.05:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:2:0.05:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:2:0.05:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:2:0.05:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:2:0.05:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:2:0.2:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:2:0.2:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:2:0.2:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:2:0.2:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:2:0.2:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:2:0.2:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:2:0.2:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:2:0.2:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:2:0.2:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:2:0.2:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:2:0.2:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:2:0.2:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:2:0.2:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:3:0.05:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:3:0.05:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:3:0.05:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:3:0.05:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:3:0.05:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:3:0.05:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:3:0.05:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:3:0.05:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:3:0.05:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:3:0.05:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:3:0.05:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:3:0.05:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:3:0.05:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:3:0.2:target_only: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:3:0.2:target_only: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:3:0.2:target_only: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:3:0.2:target_only: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:3:0.2:target_only: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:3:0.2:target_only: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:3:0.2:source_plus_target: exact seeded target anchors and buffer eligibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:3:0.2:source_plus_target: exact target test block and complete purged source pool",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:3:0.2:source_plus_target: no physical-site leakage or duplicate training observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:3:0.2:source_plus_target: declared regional training weights and latitude test weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:3:0.2:source_plus_target: identical anchors across training settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:3:0.2:source_plus_target: both models predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "sensitivity:20281005:Bozaigyr:3:0.2:source_plus_target: prediction metadata matches membership definition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "20271005/Aral/0: 5% anchors are nested within 20% anchors",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "20271005/Aral/1: 5% anchors are nested within 20% anchors",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "20271005/Aral/2: 5% anchors are nested within 20% anchors",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "20271005/Aral/3: 5% anchors are nested within 20% anchors",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "20271005/Atyrau/0: 5% anchors are nested within 20% anchors",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "20271005/Atyrau/1: 5% anchors are nested within 20% anchors",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "20271005/Atyrau/2: 5% anchors are nested within 20% anchors",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "20271005/Atyrau/3: 5% anchors are nested within 20% anchors",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "20271005/Bozaigyr/0: 5% anchors are nested within 20% anchors",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "20271005/Bozaigyr/1: 5% anchors are nested within 20% anchors",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "20271005/Bozaigyr/2: 5% anchors are nested within 20% anchors",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "20271005/Bozaigyr/3: 5% anchors are nested within 20% anchors",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "20281005/Aral/0: 5% anchors are nested within 20% anchors",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "20281005/Aral/1: 5% anchors are nested within 20% anchors",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "20281005/Aral/2: 5% anchors are nested within 20% anchors",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "20281005/Aral/3: 5% anchors are nested within 20% anchors",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "20281005/Atyrau/0: 5% anchors are nested within 20% anchors",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "20281005/Atyrau/1: 5% anchors are nested within 20% anchors",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "20281005/Atyrau/2: 5% anchors are nested within 20% anchors",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "20281005/Atyrau/3: 5% anchors are nested within 20% anchors",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "20281005/Bozaigyr/0: 5% anchors are nested within 20% anchors",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "20281005/Bozaigyr/1: 5% anchors are nested within 20% anchors",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "20281005/Bozaigyr/2: 5% anchors are nested within 20% anchors",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "20281005/Bozaigyr/3: 5% anchors are nested within 20% anchors",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20271005, 'Aral', 'gbr_env', 0.05, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20271005, 'Aral', 'gbr_env', 0.05, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20271005, 'Aral', 'gbr_env', 0.2, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20271005, 'Aral', 'gbr_env', 0.2, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20271005, 'Aral', 'rf_env', 0.05, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20271005, 'Aral', 'rf_env', 0.05, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20271005, 'Aral', 'rf_env', 0.2, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20271005, 'Aral', 'rf_env', 0.2, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20271005, 'Atyrau', 'gbr_env', 0.05, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20271005, 'Atyrau', 'gbr_env', 0.05, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20271005, 'Atyrau', 'gbr_env', 0.2, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20271005, 'Atyrau', 'gbr_env', 0.2, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20271005, 'Atyrau', 'rf_env', 0.05, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20271005, 'Atyrau', 'rf_env', 0.05, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20271005, 'Atyrau', 'rf_env', 0.2, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20271005, 'Atyrau', 'rf_env', 0.2, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20271005, 'Bozaigyr', 'gbr_env', 0.05, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20271005, 'Bozaigyr', 'gbr_env', 0.05, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20271005, 'Bozaigyr', 'gbr_env', 0.2, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20271005, 'Bozaigyr', 'gbr_env', 0.2, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20271005, 'Bozaigyr', 'rf_env', 0.05, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20271005, 'Bozaigyr', 'rf_env', 0.05, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20271005, 'Bozaigyr', 'rf_env', 0.2, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20271005, 'Bozaigyr', 'rf_env', 0.2, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20281005, 'Aral', 'gbr_env', 0.05, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20281005, 'Aral', 'gbr_env', 0.05, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20281005, 'Aral', 'gbr_env', 0.2, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20281005, 'Aral', 'gbr_env', 0.2, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20281005, 'Aral', 'rf_env', 0.05, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20281005, 'Aral', 'rf_env', 0.05, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20281005, 'Aral', 'rf_env', 0.2, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20281005, 'Aral', 'rf_env', 0.2, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20281005, 'Atyrau', 'gbr_env', 0.05, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20281005, 'Atyrau', 'gbr_env', 0.05, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20281005, 'Atyrau', 'gbr_env', 0.2, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20281005, 'Atyrau', 'gbr_env', 0.2, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20281005, 'Atyrau', 'rf_env', 0.05, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20281005, 'Atyrau', 'rf_env', 0.05, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20281005, 'Atyrau', 'rf_env', 0.2, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20281005, 'Atyrau', 'rf_env', 0.2, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20281005, 'Bozaigyr', 'gbr_env', 0.05, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20281005, 'Bozaigyr', 'gbr_env', 0.05, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20281005, 'Bozaigyr', 'gbr_env', 0.2, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20281005, 'Bozaigyr', 'gbr_env', 0.2, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20281005, 'Bozaigyr', 'rf_env', 0.05, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20281005, 'Bozaigyr', 'rf_env', 0.05, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20281005, 'Bozaigyr', 'rf_env', 0.2, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Sensitivity exhaustive out-of-fold coverage (20281005, 'Bozaigyr', 'rf_env', 0.2, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Metric table groups: region_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Recomputed rmse: region_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Recomputed mae: region_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Recomputed bias: region_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Recomputed r2: region_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Recomputed test counts: region_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Exactly 48 additional regional metric rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Combined regional metrics retain the primary seed and all added seeds unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Three-seed macro metrics equally weight all three regional metrics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Three-seed RMSE range and mean independently recomputed",
+      "passed": true,
+      "details": null
+    }
+  ]
+}

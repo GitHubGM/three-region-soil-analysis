@@ -1,0 +1,2788 @@
+{
+  "source": "C:\\proj\\papers\\ERA-5\\Hybrid_Early_Warning_Soil_Degradation_Kazakhstan_EcolInform.docx",
+  "source_sha256": "1fded99bd0d7202d8458395caf9ff36d5cfb2327813f590532bbd03710c81711",
+  "purpose": "Observed source layout and typography for the Aral Sea manuscript revision",
+  "source_counts": {
+    "sections": 1,
+    "body_paragraphs": 141,
+    "tables": 4,
+    "paragraph_styles": {
+      "Normal": 200,
+      "Heading 1": 15,
+      "List Bullet": 8,
+      "Heading 2": 15,
+      "Heading 3": 4
+    }
+  },
+  "preserve": {
+    "page_size": "Letter",
+    "orientation": "portrait",
+    "page_width_inches": 8.5,
+    "page_height_inches": 11,
+    "margins_inches": {
+      "left": 1.25,
+      "right": 1.25,
+      "top": 1,
+      "bottom": 1,
+      "header": 0.5,
+      "footer": 0.5
+    },
+    "body_font": "Times New Roman",
+    "body_size_pt": 11,
+    "default_line_spacing_multiple": 1.15,
+    "default_space_after_pt": 10,
+    "title": {
+      "source_style": "Normal",
+      "font": "Times New Roman inherited",
+      "size_pt": 15,
+      "bold": true,
+      "alignment": "center"
+    },
+    "headings": {
+      "Heading 1": {
+        "font": "Times New Roman through direct run override",
+        "size_pt": 14,
+        "bold": true,
+        "space_before_pt": 24,
+        "space_after_pt": 0,
+        "keep_with_next": true
+      },
+      "Heading 2": {
+        "font": "Times New Roman through direct run override",
+        "size_pt": 13,
+        "bold": true,
+        "space_before_pt": 10,
+        "space_after_pt": 0,
+        "keep_with_next": true
+      },
+      "Heading 3": {
+        "font": "Times New Roman through direct run override",
+        "size_pt": 11,
+        "bold": true,
+        "space_before_pt": 10,
+        "space_after_pt": 0,
+        "keep_with_next": true
+      }
+    }
+  },
+  "source_color_note": "Heading styles carry blue theme colors; explicit black may be applied to revised headings under the document skill. Body and title have no explicit color.",
+  "sections": [
+    {
+      "width_inches": 8.5,
+      "height_inches": 11.0,
+      "orientation": "PORTRAIT (0)",
+      "margins_inches": {
+        "top_margin": 1.0,
+        "bottom_margin": 1.0,
+        "left_margin": 1.25,
+        "right_margin": 1.25,
+        "header_distance": 0.5,
+        "footer_distance": 0.5,
+        "gutter": 0.0
+      },
+      "section_properties": {
+        "tag": "sectPr",
+        "attributes": {
+          "rsidR": "000D7289",
+          "rsidSect": "00034616"
+        },
+        "children": [
+          {
+            "tag": "pgSz",
+            "attributes": {
+              "w": "12240",
+              "h": "15840"
+            },
+            "children": []
+          },
+          {
+            "tag": "pgMar",
+            "attributes": {
+              "top": "1440",
+              "right": "1800",
+              "bottom": "1440",
+              "left": "1800",
+              "header": "720",
+              "footer": "720",
+              "gutter": "0"
+            },
+            "children": []
+          },
+          {
+            "tag": "cols",
+            "attributes": {
+              "space": "720"
+            },
+            "children": []
+          },
+          {
+            "tag": "docGrid",
+            "attributes": {
+              "linePitch": "360"
+            },
+            "children": []
+          }
+        ]
+      },
+      "header_text": [
+        ""
+      ],
+      "footer_text": [
+        ""
+      ]
+    }
+  ],
+  "document_defaults": {
+    "tag": "docDefaults",
+    "attributes": {},
+    "children": [
+      {
+        "tag": "rPrDefault",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "asciiTheme": "minorHAnsi",
+                  "eastAsiaTheme": "minorEastAsia",
+                  "hAnsiTheme": "minorHAnsi",
+                  "cstheme": "minorBidi"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "lang",
+                "attributes": {
+                  "val": "en-US",
+                  "eastAsia": "en-US",
+                  "bidi": "ar-SA"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "pPrDefault",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "pPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "spacing",
+                "attributes": {
+                  "after": "200",
+                  "line": "276",
+                  "lineRule": "auto"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "used_styles_and_ancestors": {
+    "Heading 1": {
+      "tag": "style",
+      "attributes": {
+        "type": "paragraph",
+        "styleId": "1"
+      },
+      "children": [
+        {
+          "tag": "name",
+          "attributes": {
+            "val": "heading 1"
+          },
+          "children": []
+        },
+        {
+          "tag": "basedOn",
+          "attributes": {
+            "val": "a1"
+          },
+          "children": []
+        },
+        {
+          "tag": "next",
+          "attributes": {
+            "val": "a1"
+          },
+          "children": []
+        },
+        {
+          "tag": "link",
+          "attributes": {
+            "val": "10"
+          },
+          "children": []
+        },
+        {
+          "tag": "uiPriority",
+          "attributes": {
+            "val": "9"
+          },
+          "children": []
+        },
+        {
+          "tag": "qFormat",
+          "attributes": {},
+          "children": []
+        },
+        {
+          "tag": "rsid",
+          "attributes": {
+            "val": "00FC693F"
+          },
+          "children": []
+        },
+        {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "keepNext",
+              "attributes": {},
+              "children": []
+            },
+            {
+              "tag": "keepLines",
+              "attributes": {},
+              "children": []
+            },
+            {
+              "tag": "spacing",
+              "attributes": {
+                "before": "480",
+                "after": "0"
+              },
+              "children": []
+            },
+            {
+              "tag": "outlineLvl",
+              "attributes": {
+                "val": "0"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "tag": "rPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "rFonts",
+              "attributes": {
+                "asciiTheme": "majorHAnsi",
+                "eastAsiaTheme": "majorEastAsia",
+                "hAnsiTheme": "majorHAnsi",
+                "cstheme": "majorBidi"
+              },
+              "children": []
+            },
+            {
+              "tag": "b",
+              "attributes": {},
+              "children": []
+            },
+            {
+              "tag": "bCs",
+              "attributes": {},
+              "children": []
+            },
+            {
+              "tag": "color",
+              "attributes": {
+                "val": "365F91",
+                "themeColor": "accent1",
+                "themeShade": "BF"
+              },
+              "children": []
+            },
+            {
+              "tag": "sz",
+              "attributes": {
+                "val": "28"
+              },
+              "children": []
+            },
+            {
+              "tag": "szCs",
+              "attributes": {
+                "val": "28"
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "Heading 2": {
+      "tag": "style",
+      "attributes": {
+        "type": "paragraph",
+        "styleId": "21"
+      },
+      "children": [
+        {
+          "tag": "name",
+          "attributes": {
+            "val": "heading 2"
+          },
+          "children": []
+        },
+        {
+          "tag": "basedOn",
+          "attributes": {
+            "val": "a1"
+          },
+          "children": []
+        },
+        {
+          "tag": "next",
+          "attributes": {
+            "val": "a1"
+          },
+          "children": []
+        },
+        {
+          "tag": "link",
+          "attributes": {
+            "val": "22"
+          },
+          "children": []
+        },
+        {
+          "tag": "uiPriority",
+          "attributes": {
+            "val": "9"
+          },
+          "children": []
+        },
+        {
+          "tag": "unhideWhenUsed",
+          "attributes": {},
+          "children": []
+        },
+        {
+          "tag": "qFormat",
+          "attributes": {},
+          "children": []
+        },
+        {
+          "tag": "rsid",
+          "attributes": {
+            "val": "00FC693F"
+          },
+          "children": []
+        },
+        {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "keepNext",
+              "attributes": {},
+              "children": []
+            },
+            {
+              "tag": "keepLines",
+              "attributes": {},
+              "children": []
+            },
+            {
+              "tag": "spacing",
+              "attributes": {
+                "before": "200",
+                "after": "0"
+              },
+              "children": []
+            },
+            {
+              "tag": "outlineLvl",
+              "attributes": {
+                "val": "1"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "tag": "rPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "rFonts",
+              "attributes": {
+                "asciiTheme": "majorHAnsi",
+                "eastAsiaTheme": "majorEastAsia",
+                "hAnsiTheme": "majorHAnsi",
+                "cstheme": "majorBidi"
+              },
+              "children": []
+            },
+            {
+              "tag": "b",
+              "attributes": {},
+              "children": []
+            },
+            {
+              "tag": "bCs",
+              "attributes": {},
+              "children": []
+            },
+            {
+              "tag": "color",
+              "attributes": {
+                "val": "4F81BD",
+                "themeColor": "accent1"
+              },
+              "children": []
+            },
+            {
+              "tag": "sz",
+              "attributes": {
+                "val": "26"
+              },
+              "children": []
+            },
+            {
+              "tag": "szCs",
+              "attributes": {
+                "val": "26"
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "Heading 3": {
+      "tag": "style",
+      "attributes": {
+        "type": "paragraph",
+        "styleId": "31"
+      },
+      "children": [
+        {
+          "tag": "name",
+          "attributes": {
+            "val": "heading 3"
+          },
+          "children": []
+        },
+        {
+          "tag": "basedOn",
+          "attributes": {
+            "val": "a1"
+          },
+          "children": []
+        },
+        {
+          "tag": "next",
+          "attributes": {
+            "val": "a1"
+          },
+          "children": []
+        },
+        {
+          "tag": "link",
+          "attributes": {
+            "val": "32"
+          },
+          "children": []
+        },
+        {
+          "tag": "uiPriority",
+          "attributes": {
+            "val": "9"
+          },
+          "children": []
+        },
+        {
+          "tag": "unhideWhenUsed",
+          "attributes": {},
+          "children": []
+        },
+        {
+          "tag": "qFormat",
+          "attributes": {},
+          "children": []
+        },
+        {
+          "tag": "rsid",
+          "attributes": {
+            "val": "00FC693F"
+          },
+          "children": []
+        },
+        {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "keepNext",
+              "attributes": {},
+              "children": []
+            },
+            {
+              "tag": "keepLines",
+              "attributes": {},
+              "children": []
+            },
+            {
+              "tag": "spacing",
+              "attributes": {
+                "before": "200",
+                "after": "0"
+              },
+              "children": []
+            },
+            {
+              "tag": "outlineLvl",
+              "attributes": {
+                "val": "2"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "tag": "rPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "rFonts",
+              "attributes": {
+                "asciiTheme": "majorHAnsi",
+                "eastAsiaTheme": "majorEastAsia",
+                "hAnsiTheme": "majorHAnsi",
+                "cstheme": "majorBidi"
+              },
+              "children": []
+            },
+            {
+              "tag": "b",
+              "attributes": {},
+              "children": []
+            },
+            {
+              "tag": "bCs",
+              "attributes": {},
+              "children": []
+            },
+            {
+              "tag": "color",
+              "attributes": {
+                "val": "4F81BD",
+                "themeColor": "accent1"
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "List Bullet": {
+      "tag": "style",
+      "attributes": {
+        "type": "paragraph",
+        "styleId": "a0"
+      },
+      "children": [
+        {
+          "tag": "name",
+          "attributes": {
+            "val": "List Bullet"
+          },
+          "children": []
+        },
+        {
+          "tag": "basedOn",
+          "attributes": {
+            "val": "a1"
+          },
+          "children": []
+        },
+        {
+          "tag": "uiPriority",
+          "attributes": {
+            "val": "99"
+          },
+          "children": []
+        },
+        {
+          "tag": "unhideWhenUsed",
+          "attributes": {},
+          "children": []
+        },
+        {
+          "tag": "rsid",
+          "attributes": {
+            "val": "00326F90"
+          },
+          "children": []
+        },
+        {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "numPr",
+              "attributes": {},
+              "children": [
+                {
+                  "tag": "numId",
+                  "attributes": {
+                    "val": "1"
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "contextualSpacing",
+              "attributes": {},
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "Normal": {
+      "tag": "style",
+      "attributes": {
+        "type": "paragraph",
+        "default": "1",
+        "styleId": "a1"
+      },
+      "children": [
+        {
+          "tag": "name",
+          "attributes": {
+            "val": "Normal"
+          },
+          "children": []
+        },
+        {
+          "tag": "qFormat",
+          "attributes": {},
+          "children": []
+        },
+        {
+          "tag": "rsid",
+          "attributes": {
+            "val": "00FC693F"
+          },
+          "children": []
+        },
+        {
+          "tag": "rPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "rFonts",
+              "attributes": {
+                "ascii": "Times New Roman",
+                "hAnsi": "Times New Roman"
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "theme_font_scheme": {
+    "tag": "fontScheme",
+    "attributes": {
+      "name": "Office"
+    },
+    "children": [
+      {
+        "tag": "majorFont",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "latin",
+            "attributes": {
+              "typeface": "Calibri"
+            },
+            "children": []
+          },
+          {
+            "tag": "ea",
+            "attributes": {
+              "typeface": ""
+            },
+            "children": []
+          },
+          {
+            "tag": "cs",
+            "attributes": {
+              "typeface": ""
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Jpan",
+              "typeface": "ＭＳ ゴシック"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Hang",
+              "typeface": "맑은 고딕"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Hans",
+              "typeface": "宋体"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Hant",
+              "typeface": "新細明體"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Arab",
+              "typeface": "Times New Roman"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Hebr",
+              "typeface": "Times New Roman"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Thai",
+              "typeface": "Angsana New"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Ethi",
+              "typeface": "Nyala"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Beng",
+              "typeface": "Vrinda"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Gujr",
+              "typeface": "Shruti"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Khmr",
+              "typeface": "MoolBoran"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Knda",
+              "typeface": "Tunga"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Guru",
+              "typeface": "Raavi"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Cans",
+              "typeface": "Euphemia"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Cher",
+              "typeface": "Plantagenet Cherokee"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Yiii",
+              "typeface": "Microsoft Yi Baiti"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Tibt",
+              "typeface": "Microsoft Himalaya"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Thaa",
+              "typeface": "MV Boli"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Deva",
+              "typeface": "Mangal"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Telu",
+              "typeface": "Gautami"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Taml",
+              "typeface": "Latha"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Syrc",
+              "typeface": "Estrangelo Edessa"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Orya",
+              "typeface": "Kalinga"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Mlym",
+              "typeface": "Kartika"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Laoo",
+              "typeface": "DokChampa"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Sinh",
+              "typeface": "Iskoola Pota"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Mong",
+              "typeface": "Mongolian Baiti"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Viet",
+              "typeface": "Times New Roman"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Uigh",
+              "typeface": "Microsoft Uighur"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Geor",
+              "typeface": "Sylfaen"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "tag": "minorFont",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "latin",
+            "attributes": {
+              "typeface": "Cambria"
+            },
+            "children": []
+          },
+          {
+            "tag": "ea",
+            "attributes": {
+              "typeface": ""
+            },
+            "children": []
+          },
+          {
+            "tag": "cs",
+            "attributes": {
+              "typeface": ""
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Jpan",
+              "typeface": "ＭＳ 明朝"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Hang",
+              "typeface": "맑은 고딕"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Hans",
+              "typeface": "宋体"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Hant",
+              "typeface": "新細明體"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Arab",
+              "typeface": "Arial"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Hebr",
+              "typeface": "Arial"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Thai",
+              "typeface": "Cordia New"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Ethi",
+              "typeface": "Nyala"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Beng",
+              "typeface": "Vrinda"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Gujr",
+              "typeface": "Shruti"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Khmr",
+              "typeface": "DaunPenh"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Knda",
+              "typeface": "Tunga"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Guru",
+              "typeface": "Raavi"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Cans",
+              "typeface": "Euphemia"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Cher",
+              "typeface": "Plantagenet Cherokee"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Yiii",
+              "typeface": "Microsoft Yi Baiti"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Tibt",
+              "typeface": "Microsoft Himalaya"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Thaa",
+              "typeface": "MV Boli"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Deva",
+              "typeface": "Mangal"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Telu",
+              "typeface": "Gautami"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Taml",
+              "typeface": "Latha"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Syrc",
+              "typeface": "Estrangelo Edessa"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Orya",
+              "typeface": "Kalinga"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Mlym",
+              "typeface": "Kartika"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Laoo",
+              "typeface": "DokChampa"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Sinh",
+              "typeface": "Iskoola Pota"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Mong",
+              "typeface": "Mongolian Baiti"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Viet",
+              "typeface": "Arial"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Uigh",
+              "typeface": "Microsoft Uighur"
+            },
+            "children": []
+          },
+          {
+            "tag": "font",
+            "attributes": {
+              "script": "Geor",
+              "typeface": "Sylfaen"
+            },
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "direct_format_observations": {
+    "nonempty_run_font_counts": {
+      "None": 210,
+      "Times New Roman": 34
+    },
+    "nonempty_run_size_counts_pt": {
+      "15.0": 1,
+      "None": 104,
+      "10.0": 37,
+      "9.0": 102
+    },
+    "title_paragraph": {
+      "style": "Normal",
+      "alignment": "CENTER (1)",
+      "paragraph_properties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "jc",
+            "attributes": {
+              "val": "center"
+            },
+            "children": []
+          }
+        ]
+      },
+      "run_properties": [
+        {
+          "tag": "rPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "b",
+              "attributes": {},
+              "children": []
+            },
+            {
+              "tag": "sz",
+              "attributes": {
+                "val": "30"
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "heading_paragraphs": [
+      {
+        "text": "Highlights",
+        "style": "Heading 1",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "1"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Graphical Abstract (schematic description)",
+        "style": "Heading 1",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "1"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Abstract",
+        "style": "Heading 1",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "1"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Keywords",
+        "style": "Heading 1",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "1"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "1. Introduction",
+        "style": "Heading 1",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "1"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "2. Study Area and Data",
+        "style": "Heading 1",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "1"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "2.1. Remote sensing and climate data sources",
+        "style": "Heading 2",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "21"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Table 1. Summary of data sources and covariates used in the fusion framework.",
+        "style": "Heading 3",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "31"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "3. Methodology",
+        "style": "Heading 1",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "1"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "3.1. Module M1: Salinity segmentation sub-model",
+        "style": "Heading 2",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "21"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "3.2. Module M2: Profile stratification sub-model",
+        "style": "Heading 2",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "21"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "3.3. Module M3: Climate-risk trajectory sub-model (new component)",
+        "style": "Heading 2",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "21"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "3.4. Fusion layer: the Soil Degradation Risk Index (SDRI)",
+        "style": "Heading 2",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "21"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "3.5. Multi-task neural fusion head (alternative learned fusion)",
+        "style": "Heading 2",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "21"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "3.6. Interpretability: SHAP-based attribution at the fusion level",
+        "style": "Heading 2",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "21"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "3.7. Early-warning classification and threshold calibration",
+        "style": "Heading 2",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "21"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Table 2. Proposed early-warning tiers of the Soil Degradation Risk Index (SDRI).",
+        "style": "Heading 3",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "31"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "3.8. Validation strategy",
+        "style": "Heading 2",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "21"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "3.9. Implementation",
+        "style": "Heading 2",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "21"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "4. Results",
+        "style": "Heading 1",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "1"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "4.1. Baseline performance of the constituent sub-models",
+        "style": "Heading 2",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "21"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Table 3. Reported performance of Modules M1 and M2 prior to fusion.",
+        "style": "Heading 3",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "31"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "4.2. Climate Stress Index (Module M3)",
+        "style": "Heading 2",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "21"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "4.3. Composite SDRI and early-warning tier distribution",
+        "style": "Heading 2",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "21"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Table 4. Regional distribution of SDRI early-warning tiers.",
+        "style": "Heading 3",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "31"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "4.4. Leave-region-out transferability and uncertainty",
+        "style": "Heading 2",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "21"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "4.5. SHAP attribution of the composite index",
+        "style": "Heading 2",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "21"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "5. Discussion",
+        "style": "Heading 1",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "1"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "6. Conclusions",
+        "style": "Heading 1",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "1"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "CRediT authorship contribution statement",
+        "style": "Heading 1",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "1"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Declaration of competing interest",
+        "style": "Heading 1",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "1"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Data availability",
+        "style": "Heading 1",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "1"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Acknowledgments",
+        "style": "Heading 1",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "1"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "References",
+        "style": "Heading 1",
+        "alignment": null,
+        "paragraph_properties": {
+          "tag": "pPr",
+          "attributes": {},
+          "children": [
+            {
+              "tag": "pStyle",
+              "attributes": {
+                "val": "1"
+              },
+              "children": []
+            }
+          ]
+        },
+        "run_properties": [
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Times New Roman",
+                  "hAnsi": "Times New Roman"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "tables": [
+    {
+      "index": 1,
+      "rows": 5,
+      "columns": 5,
+      "style": "Light Grid Accent 1",
+      "properties": {
+        "tag": "tblPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "tblStyle",
+            "attributes": {
+              "val": "-11"
+            },
+            "children": []
+          },
+          {
+            "tag": "tblW",
+            "attributes": {
+              "w": "0",
+              "type": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "tblLook",
+            "attributes": {
+              "val": "04A0",
+              "firstRow": "1",
+              "lastRow": "0",
+              "firstColumn": "1",
+              "lastColumn": "0",
+              "noHBand": "0",
+              "noVBand": "1"
+            },
+            "children": []
+          }
+        ]
+      },
+      "grid": {
+        "tag": "tblGrid",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "gridCol",
+            "attributes": {
+              "w": "1728"
+            },
+            "children": []
+          },
+          {
+            "tag": "gridCol",
+            "attributes": {
+              "w": "1728"
+            },
+            "children": []
+          },
+          {
+            "tag": "gridCol",
+            "attributes": {
+              "w": "1728"
+            },
+            "children": []
+          },
+          {
+            "tag": "gridCol",
+            "attributes": {
+              "w": "1728"
+            },
+            "children": []
+          },
+          {
+            "tag": "gridCol",
+            "attributes": {
+              "w": "1728"
+            },
+            "children": []
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "rows": 5,
+      "columns": 4,
+      "style": "Light Grid Accent 1",
+      "properties": {
+        "tag": "tblPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "tblStyle",
+            "attributes": {
+              "val": "-11"
+            },
+            "children": []
+          },
+          {
+            "tag": "tblW",
+            "attributes": {
+              "w": "0",
+              "type": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "tblLook",
+            "attributes": {
+              "val": "04A0",
+              "firstRow": "1",
+              "lastRow": "0",
+              "firstColumn": "1",
+              "lastColumn": "0",
+              "noHBand": "0",
+              "noVBand": "1"
+            },
+            "children": []
+          }
+        ]
+      },
+      "grid": {
+        "tag": "tblGrid",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "gridCol",
+            "attributes": {
+              "w": "2160"
+            },
+            "children": []
+          },
+          {
+            "tag": "gridCol",
+            "attributes": {
+              "w": "2160"
+            },
+            "children": []
+          },
+          {
+            "tag": "gridCol",
+            "attributes": {
+              "w": "2160"
+            },
+            "children": []
+          },
+          {
+            "tag": "gridCol",
+            "attributes": {
+              "w": "2160"
+            },
+            "children": []
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "rows": 8,
+      "columns": 4,
+      "style": "Light Grid Accent 1",
+      "properties": {
+        "tag": "tblPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "tblStyle",
+            "attributes": {
+              "val": "-11"
+            },
+            "children": []
+          },
+          {
+            "tag": "tblW",
+            "attributes": {
+              "w": "0",
+              "type": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "tblLook",
+            "attributes": {
+              "val": "04A0",
+              "firstRow": "1",
+              "lastRow": "0",
+              "firstColumn": "1",
+              "lastColumn": "0",
+              "noHBand": "0",
+              "noVBand": "1"
+            },
+            "children": []
+          }
+        ]
+      },
+      "grid": {
+        "tag": "tblGrid",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "gridCol",
+            "attributes": {
+              "w": "2160"
+            },
+            "children": []
+          },
+          {
+            "tag": "gridCol",
+            "attributes": {
+              "w": "2160"
+            },
+            "children": []
+          },
+          {
+            "tag": "gridCol",
+            "attributes": {
+              "w": "2160"
+            },
+            "children": []
+          },
+          {
+            "tag": "gridCol",
+            "attributes": {
+              "w": "2160"
+            },
+            "children": []
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "rows": 4,
+      "columns": 6,
+      "style": "Light Grid Accent 1",
+      "properties": {
+        "tag": "tblPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "tblStyle",
+            "attributes": {
+              "val": "-11"
+            },
+            "children": []
+          },
+          {
+            "tag": "tblW",
+            "attributes": {
+              "w": "0",
+              "type": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "tblLook",
+            "attributes": {
+              "val": "04A0",
+              "firstRow": "1",
+              "lastRow": "0",
+              "firstColumn": "1",
+              "lastColumn": "0",
+              "noHBand": "0",
+              "noVBand": "1"
+            },
+            "children": []
+          }
+        ]
+      },
+      "grid": {
+        "tag": "tblGrid",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "gridCol",
+            "attributes": {
+              "w": "1440"
+            },
+            "children": []
+          },
+          {
+            "tag": "gridCol",
+            "attributes": {
+              "w": "1440"
+            },
+            "children": []
+          },
+          {
+            "tag": "gridCol",
+            "attributes": {
+              "w": "1440"
+            },
+            "children": []
+          },
+          {
+            "tag": "gridCol",
+            "attributes": {
+              "w": "1440"
+            },
+            "children": []
+          },
+          {
+            "tag": "gridCol",
+            "attributes": {
+              "w": "1440"
+            },
+            "children": []
+          },
+          {
+            "tag": "gridCol",
+            "attributes": {
+              "w": "1440"
+            },
+            "children": []
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "document": "Aral_Sea_Soil_Moisture_Revised.docx",
+  "sha256": "c3855db576c58086886f1a503bc583c760869e8567dc13ecd5d666410118a557",
+  "render": "render_v2",
+  "renderer": "Microsoft Word PDF export and packaged DOCX renderer using Poppler",
+  "pages": 12,
+  "all_pages_visually_reviewed": true,
+  "page_groups": {
+    "1-4": "PASS: title, abstract, literature review, headings, symbols and Table 1",
+    "5-8": "PASS: Tables 2-4, compact Figure 1, captions and spacing",
+    "9-12": "PASS: Figure 2, discussion, conclusions and references"
+  },
+  "scientific_review": "Completed against verified results and source references; keyword corrected to soil temperature",
+  "source_manuscript_unchanged": true,
+  "scope": "Aral Sea and surroundings; removed other-region sections and missing-data inventories"
+}

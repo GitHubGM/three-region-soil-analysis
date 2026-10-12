@@ -1,0 +1,6298 @@
+{
+  "method": "Independent recomputation from original NetCDF data, saved split memberships and predictions; experiment code is not imported.",
+  "check_count": 1258,
+  "passed": 1258,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "Exactly 24 original NetCDF files and complete hash coverage",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Run hashes match the independent pre-run audit",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Raw and analysis rows have identical sample identity",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Raw sample IDs are unique and exhaustive",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Aral/10m_u_component_of_wind_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Aral/10m_u_component_of_wind_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Aral/lake_bottom_temperature_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Aral/lake_bottom_temperature_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Aral/lake_ice_depth_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Aral/lake_ice_depth_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Aral/leaf_area_index_low_vegetation_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Aral/leaf_area_index_low_vegetation_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Aral/snow_cover_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Aral/snow_cover_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Aral/soil_temperature_level_1_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Aral/soil_temperature_level_1_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Aral/soil_temperature_level_2_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Aral/soil_temperature_level_2_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Aral/volumetric_soil_water_layer_1_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Aral/volumetric_soil_water_layer_1_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Atyrau/10m_u_component_of_wind_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Atyrau/10m_u_component_of_wind_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Atyrau/lake_bottom_temperature_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Atyrau/lake_bottom_temperature_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Atyrau/lake_ice_depth_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Atyrau/lake_ice_depth_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Atyrau/leaf_area_index_low_vegetation_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Atyrau/leaf_area_index_low_vegetation_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Atyrau/snow_cover_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Atyrau/snow_cover_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Atyrau/soil_temperature_level_1_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Atyrau/soil_temperature_level_1_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Atyrau/soil_temperature_level_2_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Atyrau/soil_temperature_level_2_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Atyrau/volumetric_soil_water_layer_1_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Atyrau/volumetric_soil_water_layer_1_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Bozaigyr/10m_u_component_of_wind_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Bozaigyr/10m_u_component_of_wind_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Bozaigyr/lake_bottom_temperature_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Bozaigyr/lake_bottom_temperature_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Bozaigyr/lake_ice_depth_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Bozaigyr/lake_ice_depth_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Bozaigyr/leaf_area_index_low_vegetation_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Bozaigyr/leaf_area_index_low_vegetation_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Bozaigyr/snow_cover_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Bozaigyr/snow_cover_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Bozaigyr/soil_temperature_level_1_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Bozaigyr/soil_temperature_level_1_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Bozaigyr/soil_temperature_level_2_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Bozaigyr/soil_temperature_level_2_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Unchanged input: Bozaigyr/volumetric_soil_water_layer_1_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Full-precision raw values: Bozaigyr/volumetric_soil_water_layer_1_0_daily-mean.nc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Grid counts and dates: Aral",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Grid counts and dates: Atyrau",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Grid counts and dates: Bozaigyr",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Distinct physical sites and site-date records",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Physical overlap is exactly the 336 Atyrau/Bozaigyr sites",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Only declared numerical normalization: swvl1",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Only declared numerical normalization: stl1",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Only declared numerical normalization: stl2",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Only declared numerical normalization: u10",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Only declared numerical normalization: lai_lv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Only declared numerical normalization: snowc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Only declared numerical normalization: lblt",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Only declared numerical normalization: licd",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Temperature conversion from raw Kelvin: level 1",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Temperature conversion from raw Kelvin: level 2",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Stored evaluation weights are cosine latitude",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: expected number of splits",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: expected total prediction count",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: no repeated predictions or memberships",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: valid membership roles and finite positive weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: complete split coverage",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: prediction provenance and observed values",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:0: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:0: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:0: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:0: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:0: exact within-region partition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:0: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:0: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:1: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:1: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:1: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:1: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:1: exact within-region partition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:1: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:1: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:2: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:2: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:2: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:2: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:2: exact within-region partition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:2: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:2: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:3: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:3: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:3: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:3: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:3: exact within-region partition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:3: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Aral:3: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:0: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:0: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:0: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:0: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:0: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:0: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:0: exact within-region partition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:0: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:0: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:1: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:1: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:1: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:1: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:1: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:1: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:1: exact within-region partition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:1: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:1: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:2: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:2: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:2: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:2: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:2: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:2: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:2: exact within-region partition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:2: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:2: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:3: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:3: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:3: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:3: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:3: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:3: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:3: exact within-region partition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:3: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Aral:3: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:0: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:0: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:0: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:0: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:0: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:0: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:0: independently reconstructed buffered quadrant",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:0: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:0: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:1: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:1: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:1: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:1: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:1: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:1: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:1: independently reconstructed buffered quadrant",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:1: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:1: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:2: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:2: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:2: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:2: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:2: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:2: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:2: independently reconstructed buffered quadrant",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:2: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:2: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:3: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:3: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:3: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:3: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:3: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:3: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:3: independently reconstructed buffered quadrant",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:3: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Aral:3: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Aral:0: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Aral:0: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Aral:0: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Aral:0: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Aral:0: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Aral:0: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Aral:0: full target-rectangle purge and source deduplication",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Aral:0: source purge counters",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Aral:0: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Aral:0: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:0: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:0: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:0: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:0: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:0: exact within-region partition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:0: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:0: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:1: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:1: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:1: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:1: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:1: exact within-region partition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:1: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:1: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:2: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:2: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:2: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:2: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:2: exact within-region partition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:2: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:2: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:3: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:3: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:3: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:3: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:3: exact within-region partition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:3: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Atyrau:3: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:0: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:0: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:0: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:0: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:0: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:0: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:0: exact within-region partition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:0: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:0: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:1: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:1: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:1: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:1: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:1: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:1: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:1: exact within-region partition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:1: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:1: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:2: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:2: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:2: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:2: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:2: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:2: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:2: exact within-region partition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:2: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:2: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:3: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:3: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:3: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:3: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:3: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:3: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:3: exact within-region partition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:3: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Atyrau:3: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:0: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:0: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:0: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:0: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:0: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:0: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:0: independently reconstructed buffered quadrant",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:0: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:0: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:1: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:1: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:1: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:1: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:1: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:1: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:1: independently reconstructed buffered quadrant",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:1: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:1: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:2: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:2: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:2: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:2: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:2: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:2: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:2: independently reconstructed buffered quadrant",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:2: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:2: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:3: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:3: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:3: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:3: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:3: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:3: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:3: independently reconstructed buffered quadrant",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:3: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Atyrau:3: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Atyrau:0: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Atyrau:0: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Atyrau:0: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Atyrau:0: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Atyrau:0: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Atyrau:0: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Atyrau:0: full target-rectangle purge and source deduplication",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Atyrau:0: source purge counters",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Atyrau:0: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Atyrau:0: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:0: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:0: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:0: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:0: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:0: exact within-region partition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:0: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:0: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:1: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:1: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:1: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:1: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:1: exact within-region partition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:1: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:1: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:2: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:2: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:2: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:2: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:2: exact within-region partition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:2: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:2: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:3: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:3: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:3: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:3: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:3: exact within-region partition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:3: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_rows:Bozaigyr:3: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:0: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:0: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:0: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:0: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:0: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:0: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:0: exact within-region partition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:0: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:0: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:1: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:1: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:1: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:1: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:1: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:1: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:1: exact within-region partition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:1: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:1: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:2: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:2: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:2: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:2: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:2: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:2: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:2: exact within-region partition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:2: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:2: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:3: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:3: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:3: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:3: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:3: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:3: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:3: exact within-region partition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:3: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "random_sites:Bozaigyr:3: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:0: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:0: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:0: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:0: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:0: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:0: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:0: independently reconstructed buffered quadrant",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:0: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:0: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:1: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:1: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:1: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:1: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:1: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:1: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:1: independently reconstructed buffered quadrant",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:1: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:1: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:2: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:2: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:2: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:2: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:2: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:2: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:2: independently reconstructed buffered quadrant",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:2: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:2: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:3: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:3: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:3: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:3: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:3: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:3: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:3: independently reconstructed buffered quadrant",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:3: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "buffered_quadrants:Bozaigyr:3: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Bozaigyr:0: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Bozaigyr:0: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Bozaigyr:0: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Bozaigyr:0: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Bozaigyr:0: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Bozaigyr:0: stored unique site counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Bozaigyr:0: full target-rectangle purge and source deduplication",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Bozaigyr:0: source purge counters",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Bozaigyr:0: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "leave_region_out:Bozaigyr:0: baseline uses training labels and declared weights only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('buffered_quadrants', 'Aral', 'gbr_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('buffered_quadrants', 'Aral', 'gbr_env_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('buffered_quadrants', 'Aral', 'rf_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('buffered_quadrants', 'Aral', 'rf_env_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('buffered_quadrants', 'Aral', 'rf_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('buffered_quadrants', 'Aral', 'ridge_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('buffered_quadrants', 'Aral', 'svr_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('buffered_quadrants', 'Aral', 'training_mean')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('buffered_quadrants', 'Atyrau', 'gbr_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('buffered_quadrants', 'Atyrau', 'gbr_env_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('buffered_quadrants', 'Atyrau', 'rf_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('buffered_quadrants', 'Atyrau', 'rf_env_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('buffered_quadrants', 'Atyrau', 'rf_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('buffered_quadrants', 'Atyrau', 'ridge_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('buffered_quadrants', 'Atyrau', 'svr_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('buffered_quadrants', 'Atyrau', 'training_mean')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('buffered_quadrants', 'Bozaigyr', 'gbr_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('buffered_quadrants', 'Bozaigyr', 'gbr_env_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('buffered_quadrants', 'Bozaigyr', 'rf_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('buffered_quadrants', 'Bozaigyr', 'rf_env_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('buffered_quadrants', 'Bozaigyr', 'rf_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('buffered_quadrants', 'Bozaigyr', 'ridge_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('buffered_quadrants', 'Bozaigyr', 'svr_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('buffered_quadrants', 'Bozaigyr', 'training_mean')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('leave_region_out', 'Aral', 'gbr_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('leave_region_out', 'Aral', 'gbr_env_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('leave_region_out', 'Aral', 'rf_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('leave_region_out', 'Aral', 'rf_env_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('leave_region_out', 'Aral', 'rf_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('leave_region_out', 'Aral', 'ridge_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('leave_region_out', 'Aral', 'svr_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('leave_region_out', 'Aral', 'training_mean')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('leave_region_out', 'Atyrau', 'gbr_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('leave_region_out', 'Atyrau', 'gbr_env_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('leave_region_out', 'Atyrau', 'rf_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('leave_region_out', 'Atyrau', 'rf_env_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('leave_region_out', 'Atyrau', 'rf_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('leave_region_out', 'Atyrau', 'ridge_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('leave_region_out', 'Atyrau', 'svr_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('leave_region_out', 'Atyrau', 'training_mean')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('leave_region_out', 'Bozaigyr', 'gbr_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('leave_region_out', 'Bozaigyr', 'gbr_env_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('leave_region_out', 'Bozaigyr', 'rf_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('leave_region_out', 'Bozaigyr', 'rf_env_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('leave_region_out', 'Bozaigyr', 'rf_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('leave_region_out', 'Bozaigyr', 'ridge_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('leave_region_out', 'Bozaigyr', 'svr_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('leave_region_out', 'Bozaigyr', 'training_mean')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_rows', 'Aral', 'gbr_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_rows', 'Aral', 'gbr_env_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_rows', 'Aral', 'rf_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_rows', 'Aral', 'rf_env_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_rows', 'Aral', 'rf_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_rows', 'Aral', 'ridge_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_rows', 'Aral', 'svr_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_rows', 'Aral', 'training_mean')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_rows', 'Atyrau', 'gbr_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_rows', 'Atyrau', 'gbr_env_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_rows', 'Atyrau', 'rf_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_rows', 'Atyrau', 'rf_env_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_rows', 'Atyrau', 'rf_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_rows', 'Atyrau', 'ridge_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_rows', 'Atyrau', 'svr_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_rows', 'Atyrau', 'training_mean')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_rows', 'Bozaigyr', 'gbr_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_rows', 'Bozaigyr', 'gbr_env_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_rows', 'Bozaigyr', 'rf_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_rows', 'Bozaigyr', 'rf_env_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_rows', 'Bozaigyr', 'rf_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_rows', 'Bozaigyr', 'ridge_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_rows', 'Bozaigyr', 'svr_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_rows', 'Bozaigyr', 'training_mean')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_sites', 'Aral', 'gbr_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_sites', 'Aral', 'gbr_env_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_sites', 'Aral', 'rf_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_sites', 'Aral', 'rf_env_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_sites', 'Aral', 'rf_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_sites', 'Aral', 'ridge_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_sites', 'Aral', 'svr_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_sites', 'Aral', 'training_mean')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_sites', 'Atyrau', 'gbr_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_sites', 'Atyrau', 'gbr_env_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_sites', 'Atyrau', 'rf_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_sites', 'Atyrau', 'rf_env_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_sites', 'Atyrau', 'rf_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_sites', 'Atyrau', 'ridge_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_sites', 'Atyrau', 'svr_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_sites', 'Atyrau', 'training_mean')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_sites', 'Bozaigyr', 'gbr_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_sites', 'Bozaigyr', 'gbr_env_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_sites', 'Bozaigyr', 'rf_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_sites', 'Bozaigyr', 'rf_env_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_sites', 'Bozaigyr', 'rf_geo')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_sites', 'Bozaigyr', 'ridge_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_sites', 'Bozaigyr', 'svr_env')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: exhaustive out-of-fold coverage ('random_sites', 'Bozaigyr', 'training_mean')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Metric table groups: main_fold_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Recomputed rmse: main_fold_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Recomputed mae: main_fold_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Recomputed bias: main_fold_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Recomputed r2: main_fold_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Recomputed test counts: main_fold_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Metric table groups: main_region_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Recomputed rmse: main_region_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Recomputed mae: main_region_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Recomputed bias: main_region_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Recomputed r2: main_region_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Recomputed test counts: main_region_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: relative MSE skill against the matched training-mean baseline",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main: macro metrics equally average regional metrics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Domain shift diagnostic: Aral/stl1_c",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Domain shift diagnostic: Aral/stl2_c",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Domain shift diagnostic: Aral/u10",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Domain shift diagnostic: Aral/lai_lv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Any-feature support diagnostic: Aral",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Aral/gbr_env/inside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Aral/gbr_env/outside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Aral/gbr_env_geo/inside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Aral/gbr_env_geo/outside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Aral/rf_env/inside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Aral/rf_env/outside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Aral/rf_env_geo/inside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Aral/rf_env_geo/outside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Aral/rf_geo/inside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Aral/rf_geo/outside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Aral/ridge_env/inside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Aral/ridge_env/outside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Aral/svr_env/inside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Aral/svr_env/outside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Aral/training_mean/inside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Aral/training_mean/outside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Domain shift diagnostic: Atyrau/stl1_c",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Domain shift diagnostic: Atyrau/stl2_c",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Domain shift diagnostic: Atyrau/u10",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Domain shift diagnostic: Atyrau/lai_lv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Any-feature support diagnostic: Atyrau",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Atyrau/gbr_env/inside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Atyrau/gbr_env/outside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Atyrau/gbr_env_geo/inside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Atyrau/gbr_env_geo/outside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Atyrau/rf_env/inside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Atyrau/rf_env/outside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Atyrau/rf_env_geo/inside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Atyrau/rf_env_geo/outside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Atyrau/rf_geo/inside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Atyrau/rf_geo/outside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Atyrau/ridge_env/inside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Atyrau/ridge_env/outside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Atyrau/svr_env/inside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Atyrau/svr_env/outside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Atyrau/training_mean/inside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Atyrau/training_mean/outside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Domain shift diagnostic: Bozaigyr/stl1_c",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Domain shift diagnostic: Bozaigyr/stl2_c",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Domain shift diagnostic: Bozaigyr/u10",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Domain shift diagnostic: Bozaigyr/lai_lv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Any-feature support diagnostic: Bozaigyr",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Bozaigyr/gbr_env/inside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Bozaigyr/gbr_env/outside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Bozaigyr/gbr_env_geo/inside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Bozaigyr/gbr_env_geo/outside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Bozaigyr/rf_env/inside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Bozaigyr/rf_env/outside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Bozaigyr/rf_env_geo/inside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Bozaigyr/rf_env_geo/outside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Bozaigyr/rf_geo/inside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Bozaigyr/rf_geo/outside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Bozaigyr/ridge_env/inside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Bozaigyr/ridge_env/outside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Bozaigyr/svr_env/inside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Bozaigyr/svr_env/outside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Bozaigyr/training_mean/inside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Conditional transfer metrics: Bozaigyr/training_mean/outside",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "All nonempty transfer support groups reported",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Main runtime records are complete and nonnegative",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: expected number of splits",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: expected total prediction count",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: no repeated predictions or memberships",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: valid membership roles and finite positive weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: complete split coverage",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: prediction provenance and observed values",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.05:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.05:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.05:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.05:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.05:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.05:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.05:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.05:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.05:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.05:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.05:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.05:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.05:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.05:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.05:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.05:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.05:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.2:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.2:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.2:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.2:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.2:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.2:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.2:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.2:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.2:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.2:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.2:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.2:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.2:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.2:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.2:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.2:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:0.2:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:1.0:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:1.0:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:1.0:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:1.0:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:1.0:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:1.0:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:1.0:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:1.0:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:1.0:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:1.0:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:1.0:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:1.0:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:1.0:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:1.0:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:1.0:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:1.0:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0:1.0:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.05:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.05:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.05:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.05:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.05:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.05:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.05:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.05:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.05:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.05:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.05:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.05:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.05:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.05:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.05:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.05:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.05:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.2:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.2:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.2:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.2:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.2:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.2:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.2:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.2:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.2:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.2:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.2:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.2:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.2:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.2:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.2:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.2:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:0.2:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:1.0:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:1.0:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:1.0:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:1.0:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:1.0:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:1.0:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:1.0:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:1.0:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:1.0:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:1.0:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:1.0:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:1.0:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:1.0:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:1.0:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:1.0:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:1.0:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1:1.0:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.05:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.05:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.05:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.05:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.05:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.05:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.05:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.05:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.05:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.05:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.05:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.05:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.05:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.05:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.05:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.05:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.05:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.2:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.2:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.2:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.2:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.2:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.2:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.2:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.2:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.2:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.2:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.2:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.2:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.2:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.2:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.2:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.2:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:0.2:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:1.0:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:1.0:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:1.0:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:1.0:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:1.0:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:1.0:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:1.0:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:1.0:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:1.0:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:1.0:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:1.0:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:1.0:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:1.0:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:1.0:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:1.0:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:1.0:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2:1.0:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.05:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.05:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.05:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.05:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.05:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.05:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.05:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.05:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.05:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.05:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.05:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.05:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.05:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.05:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.05:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.05:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.05:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.2:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.2:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.2:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.2:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.2:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.2:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.2:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.2:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.2:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.2:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.2:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.2:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.2:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.2:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.2:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.2:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:0.2:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:1.0:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:1.0:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:1.0:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:1.0:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:1.0:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:1.0:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:1.0:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:1.0:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:1.0:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:1.0:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:1.0:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:1.0:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:1.0:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:1.0:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:1.0:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:1.0:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3:1.0:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.05:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.05:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.05:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.05:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.05:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.05:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.05:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.05:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.05:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.05:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.05:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.05:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.05:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.05:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.05:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.05:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.05:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.2:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.2:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.2:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.2:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.2:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.2:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.2:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.2:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.2:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.2:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.2:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.2:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.2:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.2:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.2:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.2:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:0.2:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:1.0:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:1.0:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:1.0:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:1.0:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:1.0:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:1.0:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:1.0:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:1.0:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:1.0:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:1.0:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:1.0:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:1.0:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:1.0:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:1.0:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:1.0:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:1.0:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0:1.0:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.05:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.05:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.05:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.05:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.05:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.05:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.05:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.05:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.05:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.05:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.05:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.05:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.05:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.05:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.05:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.05:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.05:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.2:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.2:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.2:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.2:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.2:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.2:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.2:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.2:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.2:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.2:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.2:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.2:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.2:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.2:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.2:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.2:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:0.2:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:1.0:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:1.0:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:1.0:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:1.0:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:1.0:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:1.0:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:1.0:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:1.0:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:1.0:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:1.0:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:1.0:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:1.0:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:1.0:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:1.0:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:1.0:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:1.0:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1:1.0:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.05:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.05:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.05:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.05:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.05:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.05:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.05:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.05:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.05:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.05:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.05:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.05:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.05:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.05:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.05:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.05:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.05:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.2:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.2:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.2:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.2:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.2:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.2:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.2:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.2:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.2:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.2:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.2:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.2:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.2:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.2:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.2:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.2:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:0.2:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:1.0:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:1.0:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:1.0:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:1.0:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:1.0:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:1.0:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:1.0:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:1.0:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:1.0:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:1.0:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:1.0:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:1.0:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:1.0:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:1.0:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:1.0:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:1.0:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2:1.0:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.05:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.05:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.05:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.05:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.05:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.05:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.05:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.05:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.05:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.05:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.05:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.05:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.05:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.05:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.05:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.05:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.05:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.2:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.2:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.2:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.2:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.2:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.2:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.2:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.2:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.2:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.2:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.2:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.2:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.2:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.2:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.2:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.2:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:0.2:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:1.0:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:1.0:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:1.0:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:1.0:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:1.0:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:1.0:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:1.0:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:1.0:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:1.0:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:1.0:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:1.0:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:1.0:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:1.0:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:1.0:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:1.0:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:1.0:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3:1.0:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.05:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.05:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.05:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.05:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.05:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.05:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.05:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.05:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.05:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.05:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.05:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.05:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.05:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.05:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.05:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.05:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.05:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.2:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.2:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.2:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.2:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.2:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.2:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.2:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.2:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.2:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.2:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.2:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.2:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.2:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.2:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.2:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.2:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:0.2:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:1.0:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:1.0:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:1.0:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:1.0:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:1.0:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:1.0:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:1.0:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:1.0:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:1.0:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:1.0:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:1.0:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:1.0:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:1.0:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:1.0:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:1.0:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:1.0:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0:1.0:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.05:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.05:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.05:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.05:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.05:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.05:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.05:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.05:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.05:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.05:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.05:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.05:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.05:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.05:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.05:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.05:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.05:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.2:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.2:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.2:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.2:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.2:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.2:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.2:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.2:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.2:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.2:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.2:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.2:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.2:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.2:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.2:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.2:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:0.2:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:1.0:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:1.0:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:1.0:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:1.0:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:1.0:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:1.0:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:1.0:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:1.0:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:1.0:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:1.0:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:1.0:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:1.0:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:1.0:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:1.0:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:1.0:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:1.0:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1:1.0:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.05:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.05:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.05:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.05:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.05:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.05:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.05:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.05:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.05:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.05:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.05:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.05:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.05:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.05:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.05:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.05:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.05:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.2:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.2:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.2:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.2:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.2:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.2:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.2:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.2:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.2:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.2:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.2:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.2:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.2:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.2:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.2:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.2:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:0.2:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:1.0:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:1.0:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:1.0:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:1.0:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:1.0:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:1.0:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:1.0:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:1.0:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:1.0:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:1.0:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:1.0:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:1.0:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:1.0:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:1.0:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:1.0:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:1.0:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2:1.0:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.05:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.05:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.05:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.05:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.05:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.05:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.05:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.05:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.05:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.05:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.05:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.05:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.05:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.05:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.05:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.05:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.05:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.2:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.2:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.2:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.2:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.2:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.2:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.2:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.2:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.2:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.2:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.2:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.2:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.2:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.2:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.2:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.2:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:0.2:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:1.0:target_only: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:1.0:target_only: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:1.0:target_only: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:1.0:target_only: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:1.0:target_only: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:1.0:target_only: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:1.0:target_only: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:1.0:target_only: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:1.0:source_plus_target: stored train/test counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:1.0:source_plus_target: correct training and evaluation weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:1.0:source_plus_target: target region and no duplicate physical training rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:1.0:source_plus_target: physical train/test site separation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:1.0:source_plus_target: both dates retained per training and test site",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:1.0:source_plus_target: exact nested target-label selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:1.0:source_plus_target: full target-rectangle source exclusion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:1.0:source_plus_target: identical anchors across learning settings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3:1.0:source_plus_target: all configurations predict precisely the test membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Aral', 'gbr_env', 0.05, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Aral', 'gbr_env', 0.05, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Aral', 'gbr_env', 0.2, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Aral', 'gbr_env', 0.2, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Aral', 'gbr_env', 1.0, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Aral', 'gbr_env', 1.0, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Aral', 'rf_env', 0.05, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Aral', 'rf_env', 0.05, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Aral', 'rf_env', 0.2, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Aral', 'rf_env', 0.2, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Aral', 'rf_env', 1.0, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Aral', 'rf_env', 1.0, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Atyrau', 'gbr_env', 0.05, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Atyrau', 'gbr_env', 0.05, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Atyrau', 'gbr_env', 0.2, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Atyrau', 'gbr_env', 0.2, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Atyrau', 'gbr_env', 1.0, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Atyrau', 'gbr_env', 1.0, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Atyrau', 'rf_env', 0.05, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Atyrau', 'rf_env', 0.05, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Atyrau', 'rf_env', 0.2, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Atyrau', 'rf_env', 0.2, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Atyrau', 'rf_env', 1.0, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Atyrau', 'rf_env', 1.0, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Bozaigyr', 'gbr_env', 0.05, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Bozaigyr', 'gbr_env', 0.05, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Bozaigyr', 'gbr_env', 0.2, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Bozaigyr', 'gbr_env', 0.2, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Bozaigyr', 'gbr_env', 1.0, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Bozaigyr', 'gbr_env', 1.0, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Bozaigyr', 'rf_env', 0.05, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Bozaigyr', 'rf_env', 0.05, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Bozaigyr', 'rf_env', 0.2, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Bozaigyr', 'rf_env', 0.2, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Bozaigyr', 'rf_env', 1.0, 'source_plus_target')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: exhaustive out-of-fold coverage ('Bozaigyr', 'rf_env', 1.0, 'target_only')",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Metric table groups: adaptation_fold_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Recomputed rmse: adaptation_fold_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Recomputed mae: adaptation_fold_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Recomputed bias: adaptation_fold_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Recomputed r2: adaptation_fold_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Metric table groups: adaptation_region_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Recomputed rmse: adaptation_region_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Recomputed mae: adaptation_region_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Recomputed bias: adaptation_region_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Recomputed r2: adaptation_region_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Recomputed test counts: adaptation_region_metrics.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation: macro metrics equally average regional metrics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:0: target label budgets are nested",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:1: target label budgets are nested",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:2: target label budgets are nested",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Aral:3: target label budgets are nested",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:0: target label budgets are nested",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:1: target label budgets are nested",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:2: target label budgets are nested",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Atyrau:3: target label budgets are nested",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:0: target label budgets are nested",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:1: target label budgets are nested",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:2: target label budgets are nested",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "adaptation:Bozaigyr:3: target label budgets are nested",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Summary records correct fixed plan and counts",
+      "passed": true,
+      "details": null
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "heading": "2. Literature review",
+  "paragraphs": [
+    "The Aral Sea and its surroundings form an important setting for studying the relationship between water availability and land-surface conditions. The modern contraction of the sea began in the 1960s, primarily because irrigation withdrawals reduced inflow from its tributaries. Micklin (2007) describes the resulting transformation of the lake, river deltas and former shoreline, including increased lake salinity, ecosystem disruption and the development of dust and salt sources. This history places present-day soil-water and temperature patterns within a landscape that has undergone major hydrological change. It also supports treating the sea and adjacent land as a connected study area, while distinguishing contemporary spatial conditions from the processes responsible for decades of environmental change.",
+    "Research on the Aral Sea water balance emphasizes interactions between the lake and regional atmospheric conditions. Small et al. (1999) used a coupled regional climate and lake model to examine temperature, evaporation and hydrology. Their simulations reproduced important features of observed lake conditions, but performance varied by season and variable; a stand-alone lake model represented the hydrology less successfully than the coupled configuration. These findings motivate an analysis that considers several environmental variables together. For the present study, the relevant question is how near-surface soil moisture varies across the Aral Sea domain alongside soil temperature, vegetation and atmospheric conditions. Associations among these fields provide spatial context without establishing a causal explanation for the historical desiccation.",
+    "Land reanalysis offers a consistent framework for examining such relationships across a regional grid. Muñoz-Sabater et al. (2021) describe ERA5-Land as an offline land-surface simulation driven by ERA5 atmospheric forcing, with hourly fields and an approximately 9 km native resolution. Observations influence its evolution through that forcing, rather than through direct assimilation into the land simulation. Their evaluation found improvements in several hydrological variables relative to earlier reanalyses, while also showing that performance depends on the variable and setting. Thus, soil moisture from this product is best understood as a modelled estimate of land state. Learning relationships among reanalysis variables evaluates how well an empirical model reproduces that estimate across the regional domain.",
+    "The spatial support of reanalysis variables also guides their interpretation. The Copernicus Climate Data Store distributes ERA5-Land on a regular 0.1° latitude–longitude grid and defines the first two soil layers as 0–7 cm and 7–28 cm (Copernicus Climate Change Service, 2019). These definitions connect the analysed surface-water variable to a specific modelled depth and distinguish surface from subsurface thermal conditions. In an Aral Sea application, retaining the supplied grid makes the scale of the evidence clear. Regional maps and averages describe conditions represented by grid cells; they should be interpreted at that scale when comparing water availability and temperature across the sea and its surroundings.",
+    "Reliable model assessment requires attention to the spatial structure of environmental data. Roberts et al. (2017) show that random cross-validation can underestimate predictive error when nearby records share information, and that block-based designs can better represent prediction to separated locations. They also explain that blocking can increase the difficulty of prediction by withholding environmental conditions. Consequently, the split design and prediction objective must be reported together. For an Aral Sea reconstruction experiment, testing on held-out spatial blocks asks whether relationships learned elsewhere within the same domain extend to those blocks. A geographic baseline provides further context for judging whether environmental predictors add information beyond broad spatial position.",
+    "Together, these studies support a focused assessment of soil-water and thermal patterns in the Aral Sea and its surroundings. The present analysis compares reanalysis fields for 10 and 18 August 2026 and evaluates spatial reconstruction of near-surface soil moisture. Its contribution is a reproducible description of differences between those two dates and a comparison of predictive performance under explicit spatial separation. The eight-day interval defines the temporal interpretation of the results, while the supplied grid defines their spatial interpretation. This scope connects the experiments to established Aral Sea research and keeps the conclusions aligned with the quantities actually analysed."
+  ],
+  "references": [
+    {
+      "id": "micklin2007",
+      "authors": "Micklin, P.",
+      "year": 2007,
+      "title": "The Aral Sea Disaster",
+      "journal": "Annual Review of Earth and Planetary Sciences",
+      "volume": "35",
+      "pages": "47–72",
+      "doi": "10.1146/annurev.earth.35.031306.140120",
+      "url": "https://doi.org/10.1146/annurev.earth.35.031306.140120",
+      "verified_source": "https://www.annualreviews.org/content/journals/10.1146/annurev.earth.35.031306.140120",
+      "verification_note": "Publisher metadata and abstract read; cited historical facts are supported by the abstract. This is a review article."
+    },
+    {
+      "id": "small1999",
+      "authors": "Small, E. E., Sloan, L. C., Hostetler, S., and Giorgi, F.",
+      "year": 1999,
+      "title": "Simulating the water balance of the Aral Sea with a coupled regional climate-lake model",
+      "journal": "Journal of Geophysical Research: Atmospheres",
+      "volume": "104",
+      "issue": "D6",
+      "pages": "6583–6602",
+      "doi": "10.1029/98JD02348",
+      "url": "https://doi.org/10.1029/98JD02348",
+      "verified_source": "https://pubs.usgs.gov/publication/70021753",
+      "verification_note": "USGS publication record and substantive abstract retrieved in web search; direct open subsequently returned 403. Claims confined to abstract content. Author-hosted publication list corroborates bibliographic details."
+    },
+    {
+      "id": "munoz2021",
+      "authors": "Muñoz-Sabater, J., Dutra, E., Agustí-Panareda, A., Albergel, C., Arduini, G., Balsamo, G., Boussetta, S., Choulga, M., Harrigan, S., Hersbach, H., Martens, B., Miralles, D. G., Piles, M., Rodríguez-Fernández, N. J., Zsoter, E., Buontempo, C., and Thépaut, J.-N.",
+      "year": 2021,
+      "title": "ERA5-Land: a state-of-the-art global reanalysis dataset for land applications",
+      "journal": "Earth System Science Data",
+      "volume": "13",
+      "pages": "4349–4383",
+      "doi": "10.5194/essd-13-4349-2021",
+      "url": "https://doi.org/10.5194/essd-13-4349-2021",
+      "verified_source": "https://essd.copernicus.org/articles/13/4349/2021/",
+      "verification_note": "Publisher full text and metadata read, including abstract, production method and data-grid description."
+    },
+    {
+      "id": "cds2019",
+      "authors": "Copernicus Climate Change Service (C3S)",
+      "year": 2019,
+      "title": "ERA5-Land hourly data from 1950 to present",
+      "publisher": "Copernicus Climate Change Service Climate Data Store (CDS)",
+      "doi": "10.24381/cds.e2161bac",
+      "url": "https://doi.org/10.24381/cds.e2161bac",
+      "verified_source": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land",
+      "accessed": "2026-10-02",
+      "verification_note": "Official catalogue read. Publication date 12 July 2019; current catalogue lists 0.1° distributed grid, 9 km native resolution, and depths of four soil layers."
+    },
+    {
+      "id": "roberts2017",
+      "authors": "Roberts, D. R., Bahn, V., Ciuti, S., Boyce, M. S., Elith, J., Guillera-Arroita, G., Hauenstein, S., Lahoz-Monfort, J. J., Schröder, B., Thuiller, W., Warton, D. I., Wintle, B. A., Hartig, F., and Dormann, C. F.",
+      "year": 2017,
+      "title": "Cross-validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure",
+      "journal": "Ecography",
+      "volume": "40",
+      "issue": "8",
+      "pages": "913–929",
+      "doi": "10.1111/ecog.02881",
+      "url": "https://doi.org/10.1111/ecog.02881",
+      "verified_source": "https://nsojournals.onlinelibrary.wiley.com/doi/10.1111/ecog.02881",
+      "verification_note": "Publisher full text and metadata read. Issue year 2017 (online publication December 2016). Review includes simulations and case studies."
+    }
+  ],
+  "alignment_recommendations": [
+    "Use an Aral-only title centered on spatial soil-moisture reconstruction and paired-date land-surface conditions.",
+    "State the exact bounding coordinates, 0.1° grid, 2,193 cells, and 10/18 August 2026 dates in Abstract and Methods.",
+    "Do not claim shoreline-only sampling or field-validated soil moisture; the experiment uses the rectangular supplied grid and a reanalysis target.",
+    "Describe model performance as reproducing held-out reanalysis values. Environmental associations do not identify causes of desiccation or a degradation rate.",
+    "Remove entire unperformed Sentinel-2 salinity, profile-stratification, CSI/SDRI, trend, SHAP and other-region modules rather than retaining their outcomes.",
+    "Retain the two-date/eight-day scope as part of the scientific design. A missing-data inventory is unnecessary after narrowing the scope.",
+    "Check local file metadata before calling supplied fields ERA5-Land definitively; the literature can describe ERA5-Land while methods identify the verified source family.",
+    "If evaluating spatial reconstruction on a single August date, report that date and distinguish the paired-change analysis across both dates."
+  ]
+}

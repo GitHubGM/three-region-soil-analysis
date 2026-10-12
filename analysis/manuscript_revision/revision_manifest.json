@@ -1,0 +1,21 @@
+{
+  "source": "C:\\proj\\papers\\ERA-5\\Hybrid_Early_Warning_Soil_Degradation_Kazakhstan_EcolInform.docx",
+  "source_sha256": "1fded99bd0d7202d8458395caf9ff36d5cfb2327813f590532bbd03710c81711",
+  "output": "C:\\proj\\papers\\ERA-5\\Aral_Sea_Soil_Moisture_Revised.docx",
+  "output_sha256": "c3855db576c58086886f1a503bc583c760869e8567dc13ecd5d666410118a557",
+  "scope": "Aral Sea and surroundings; two-date reanalysis spatial reconstruction",
+  "dates": [
+    "2026-08-10",
+    "2026-08-18"
+  ],
+  "paragraphs": 90,
+  "tables": 4,
+  "figures": 2,
+  "changes": [
+    "Rewrote literature review and discussion around Aral Sea sources and verified results",
+    "Replaced other-region and unperformed fusion modules with the completed experiments",
+    "Removed missing-data inventories and retained the scientific scope in methods and conclusions",
+    "Preserved source page geometry, typography and author metadata"
+  ],
+  "source_unchanged": true
+}

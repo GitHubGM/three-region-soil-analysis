@@ -1,0 +1,471 @@
+A Hybrid Multi-Task Early-Warning Framework for Soil Degradation Risk Assessment in Arid Kazakhstan: Integrating Salinity Segmentation, Profile Stratification, and Climate-Risk Modelling from Sentinel-2 and ERA5-Land Data
+
+Author names to be inserted upon submission¹, Corresponding Author²*
+
+1-2 Korkyt Ata Kyzylorda University, Kyzylorda, 120000, Kazakhstan
+
+* Corresponding author e-mail: corresponding.author@korkytata.edu.kz
+
+Highlights
+
+A unified multi-task framework fuses salinity, stratification and climate-risk models.
+
+Combines Sentinel-2, ERA5-Land, DEM and SCORPAN covariates for soil monitoring.
+
+A novel Soil Degradation Risk Index (SDRI) integrates three validated sub-models.
+
+SHAP-based interpretability links degradation drivers to topography and SWIR bands.
+
+Framework is demonstrated across the Aral, Bozaigyr and Atyrau regions of Kazakhstan.
+
+Graphical Abstract (schematic description)
+
+Fig. 1 (to be prepared as a separate image file for submission) schematically depicts the proposed three-module pipeline: (i) a Salinity Segmentation Module (K-Means → agglomerative clustering → DBSCAN ensemble voting → XGBoost probability enrichment → multi-task neural network), (ii) a Profile Stratification Module (Random Forest + Gradient Boosting + XGBoost stacking ensemble with a linear/logistic meta-model), and (iii) a Climate-Risk Trajectory Module (Mann-Kendall trend analysis and gradient-boosting regression on ERA5-Land anomalies). The three module outputs are combined by an entropy-weighted fusion layer into a single Soil Degradation Risk Index (SDRI), which is discretised into four early-warning tiers (Low, Moderate, High, Critical) and mapped over the Aral, Bozaigyr and Atyrau study areas of Kazakhstan.
+
+Abstract
+
+Soil degradation, driven by salinization, structural stratification loss, and increasing climatic aridity, threatens agricultural sustainability across the arid and semi-arid regions of Kazakhstan, including the desiccated Aral Sea basin. Existing digital soil mapping (DSM) studies typically address salinity mapping, vertical profile stratification, or climate-risk assessment as isolated tasks, which prevents the timely, integrated detection of compound degradation processes required for anticipatory land management. This study proposes a hybrid multi-task early-warning framework that fuses three previously validated but independently operating components: (i) an ensemble-clustering and multi-task neural salinity segmentation model, (ii) a stacking-ensemble (Random Forest, Gradient Boosting, XGBoost) profile stratification model predicting physicochemical soil properties to a depth of 200 cm, and (iii) a newly designed climate-risk trajectory module that quantifies multi-year anomalies in ERA5-Land soil-water and evapotranspiration variables. The three sub-models are combined through an entropy-weighted fusion layer into a single, spatially explicit Soil Degradation Risk Index (SDRI), which is discretised into four actionable early-warning tiers. The framework is demonstrated across three environmentally contrasting Kazakhstani test sites-the dried Aral Sea bottom, Bozaigyr, and the Atyrau/Shol region-using Sentinel-2 multispectral imagery, ERA5-Land climate reanalysis, and digital elevation model (DEM) covariates within the SCORPAN conceptual framework. Model transparency is ensured through Shapley Additive exPlanations (SHAP), which consistently identify topography, short-wave infrared reflectance, and hydrological gradients as dominant degradation drivers, corroborating independent pedological evidence. Leave-region-out cross-validation is used to test spatial transferability, addressing a key limitation of previous single-task studies. The proposed SDRI offers a scalable, interpretable, and reproducible decision-support instrument for land degradation neutrality monitoring, early warning, and adaptive land management in data-sparse arid environments, and provides a transferable template for other Central Asian drylands facing similar compound degradation pressures.
+
+Keywords
+
+Soil degradation; Early-warning system; Multi-task learning; Soil salinity; Digital soil mapping; Remote sensing; SHAP; Kazakhstan
+
+1. Introduction
+
+Land degradation is one of the principal threats to global food security, ecosystem functioning and climate resilience, and it is explicitly targeted by Sustainable Development Goal 15.3 on Land Degradation Neutrality (LDN). In arid and semi-arid Central Asia, degradation is compounded by three interacting processes: progressive soil salinization, structural loss of favourable soil stratification (texture and horizon differentiation), and increasing climatic aridity driven by rising evapotranspiration and declining effective precipitation (Jiang et al., 2025; Velilla et al., 2025; Cui et al., 2025). Kazakhstan is particularly exposed: the desiccation of the Aral Sea has produced one of the most extensive anthropogenic salinization fronts in the world, while extensive steppe and semi-desert territories in the Akmola, Aktobe, and Atyrau regions are increasingly affected by soil erosion, pollution, and salt accumulation (Paramonova et al., 2025; Kaliyeva et al., 2025; Sadyrova et al., 2025). Reversing or slowing these processes requires monitoring tools capable of detecting degradation early, over large and often inaccessible territories, and of translating spatial-temporal evidence into actionable management decisions.
+
+Digital soil mapping (DSM) has evolved rapidly over the past decade, driven by the availability of open satellite archives (Sentinel-1/2), global climate reanalyses (ERA5-Land), and increasingly powerful machine learning (ML) algorithms (Stumpf, 2024; Adeniyi et al., 2024). Two DSM sub-problems are especially relevant to degradation monitoring in Kazakhstan. First, soil salinity mapping has been addressed using spectral indices (NDSI, BI, SI1-SI5) combined with unsupervised clustering and gradient-boosting classifiers; recent work by Abdikerimova et al. (2025) demonstrated that an ensemble of K-Means, agglomerative clustering and DBSCAN, enriched with XGBoost class probabilities and refined by a multi-task neural network, can segment saline, normal and sandy soils across the Aral, Bozaigyr, and Shol (Aktobe) test sites of Kazakhstan with a Silhouette Score of 0.8156 and classification accuracy of 99.99%. Second, the vertical stratification of soil profiles-textural class, horizon type, clay/sand content and bulk density to a depth of 200 cm-has been modelled using multi-task stacking ensembles of Random Forest, Gradient Boosting and XGBoost within the SCORPAN conceptual framework of McBratney et al. (2003); Aitimov et al. (2025) reported R² values of 0.86-0.97 for continuous soil properties and 94-98% classification accuracy for textural and horizon classes across the same three Kazakhstani regions, with SHAP analysis identifying topography, short-wave infrared (SWIR) reflectance and hydrological gradients as dominant predictors.
+
+These two studies, together with complementary work on atmospheric pollutant transport and low-power wide-area sensor networks for environmental monitoring (Rakhmetulayeva et al., 2021) and on spectral monitoring of crop disease and pest dynamics in the steppe zone (Tussupov et al., 2024), establish a strong methodological basis for ML-driven environmental analytics in Kazakhstan. However, each of these models operates as an independent, single-task pipeline: the salinity model does not incorporate vertical profile information or climatic trend data, the stratification model does not explicitly quantify salinity risk or short-term climatic anomalies, and neither model outputs an integrated, decision-ready early-warning signal. This fragmentation is consistent with a broader limitation identified in the DSM literature: most operational frameworks, including global products such as SoilGrids (Poggio et al., 2021; Hengl et al., 2017) and OpenLandMap, predict individual soil properties independently and do not combine spatial state variables with dynamic climate-risk trajectories into a single, spatially explicit degradation indicator suitable for anticipatory action (Adeniyi et al., 2023; Wang et al., 2025a).
+
+A separate but related body of literature addresses early-warning systems (EWS) for droughts, floods and food-security shocks, increasingly relying on machine learning models trained on remote-sensing, climatic and socio-economic covariates and producing risk indices with defined action thresholds (FAO, 2025). These systems demonstrate the operational value of transforming continuous risk scores into discrete, actionable tiers, but they are rarely coupled with high-resolution digital soil mapping of the type developed for Kazakhstan. Conversely, DSM studies rarely adopt the tiered early-warning logic that makes EWS outputs directly usable by land management authorities. This paper addresses this gap by proposing a hybrid multi-task early-warning framework that (i) fuses previously validated salinity segmentation and profile stratification sub-models with a newly designed climate-risk trajectory module, (ii) aggregates their outputs into a single, interpretable Soil Degradation Risk Index (SDRI), and (iii) discretises the SDRI into early-warning tiers calibrated against independent erosion-risk evidence (Kaliyeva et al., 2025).
+
+The specific objectives of this study are to: (1) design a fusion architecture that combines the spatial outputs of the salinity segmentation and profile stratification sub-models with a temporal climate-risk signal derived from ERA5-Land reanalysis; (2) formulate a mathematically transparent Composite Soil Degradation Risk Index and a corresponding tiered early-warning classification scheme; (3) evaluate the spatial transferability of the fused framework using a leave-region-out validation strategy across the Aral, Bozaigyr and Atyrau test sites; (4) interpret the drivers of the composite risk index using SHAP analysis at the fusion level; and (5) discuss the operational implications of the framework for land degradation neutrality monitoring in Kazakhstan and comparable Central Asian drylands. The framework is intentionally designed for reuse and extension: all component modules are modular, allowing future integration of additional stressors such as crop pest/disease pressure (Tussupov et al., 2024) or atmospheric pollutant deposition (Rakhmetulayeva et al., 2021).
+
+2. Study Area and Data
+
+The framework is demonstrated across three environmentally contrasting test sites in the Republic of Kazakhstan, consistent with the regions used to validate the underlying salinity segmentation and profile stratification sub-models (Abdikerimova et al., 2025; Aitimov et al., 2025): (i) the dried bottom of the Aral Sea, characterised by extreme, anthropogenically induced salinization following the desiccation of the sea since the 1960s; (ii) Bozaigyr (Akmola region), representing moderately saline steppe soils under typical vegetation cover and agricultural use; and (iii) the Shol area (Aktobe region) and adjoining Atyrau territory, representing sandy soils with sparse vegetation and distinct hydrological regimes. This selection captures the principal soil-forming conditions of the Kazakhstani drylands-hyper-saline lacustrine sediments, moderately saline steppe chernozem/chestnut soils, and aeolian sandy substrates-and enables an assessment of cross-regional transferability that is essential for any degradation early-warning system intended for national-scale deployment (Li et al., 2023b).
+
+2.1. Remote sensing and climate data sources
+
+Three complementary data streams are integrated, following the SCORPAN digital soil mapping paradigm (McBratney et al., 2003), under which soil variation is expressed as a function of soil (S), climate (C), organisms (O), relief (R), parent material (P), age (A) and spatial position (N):
+
+Sentinel-2 Level-2A surface reflectance imagery (European Space Agency, Copernicus programme), providing bands B2, B3, B4, B8, B8A, B11 and B12 at 10-20 m spatial resolution, from which the spectral salinity/vegetation indices NDVI, NDWI, NDSI, BI and SI1-SI5 are computed (Abdikerimova et al., 2025).
+
+ERA5-Land climate reanalysis (European Centre for Medium-Range Weather Forecasts, ECMWF), providing volumetric soil water content at four depths (0-7, 7-28, 28-100 and 100-289 cm), daily precipitation, evapotranspiration and near-surface air pressure at approximately 9 km spatial resolution (Lal et al., 2022).
+
+Digital Elevation Model (DEM)-derived topographic attributes-elevation, slope, aspect, plan/profile curvature, topographic roughness index (TRI), topographic position index (TPI) and distance to the nearest water body-which, together with OpenLandMap static soil covariates, complete the SCORPAN feature space used by the profile stratification sub-model (Aitimov et al., 2025; Poggio et al., 2021).
+
+Data spanning the period 2019-2024 are used, covering the pre-cultivation, vegetative and post-harvest growth stages (April-October) to capture seasonal variation (Abdikerimova et al., 2025). Independent validation of the ERA5-Land soil-moisture layer against the SMAP L3 passive radiometer product (9 km resolution) yielded a mean correlation of R = 0.71 ± 0.06 and RMSE = 0.039 m³/m³ across the three study regions, consistent with published cross-validation benchmarks (Lal et al., 2022), and supporting its use for detecting relative, multi-year soil-moisture anomalies rather than absolute local values.
+
+Table 1. Summary of data sources and covariates used in the fusion framework.
+
+Module
+
+Data source
+
+Variables
+
+Spatial / temporal resolution
+
+Reference
+
+M1 - Salinity
+
+Sentinel-2 L2A
+
+NDVI, NDWI, NDSI, BI, SI1-SI5
+
+10 m; 5-day revisit
+
+Abdikerimova et al., 2025
+
+M2 - Stratification
+
+Sentinel-2 L2A, DEM, OpenLandMap
+
+B4, B8, B11; elevation, slope, TRI/TPI; clay/sand/bulk
+
+10-60 m; static + seasonal
+
+Aitimov et al., 2025; Poggio et al., 2021
+
+M3 - Climate risk
+
+ERA5-Land
+
+VSWL1-4, precipitation, evapotranspiration, pressure
+
+~9 km; daily
+
+Lal et al., 2022; Chernykh et al., 2025
+
+Fusion layer
+
+M1+M2+M3 outputs
+
+P(salinity), ΔH stratification instability, CSI
+
+Harmonised to 10-60 m grid
+
+This study
+
+3. Methodology
+
+The proposed framework is organised as three modular sub-models (M1-M3), each independently trainable and independently interpretable, whose outputs are combined by a fourth fusion layer that produces the Soil Degradation Risk Index (SDRI) and the corresponding early-warning classification. This modular design follows recognised good practice in multi-task environmental modelling, whereby heterogeneous learners specialised for distinct sub-problems outperform a single monolithic model on structurally different targets (Wolpert, 1992; Adeniyi et al., 2023).
+
+3.1. Module M1: Salinity segmentation sub-model
+
+Module M1 reuses the ensemble-clustering and multi-task neural architecture validated by Abdikerimova et al. (2025). Sentinel-2 spectral indices and ERA5-Land soil-water layers are log-transformed and min-max normalised (Eqs. 1-2), after which K-Means clustering generates pseudo-labels (Eqs. 3-4) that are used to train an XGBoost classifier producing class-membership probabilities P(y=1|x) (Eq. 5). The extended feature space, enriched with these probabilities, is submitted to an ensemble vote of K-Means, agglomerative clustering and DBSCAN (Eq. 6-7), and the resulting stable labels train a multi-task neural network that jointly performs soil-type classification and continuous salinity regression (Eqs. 8-10). The output relevant to the fusion layer is the per-pixel salinity probability, P_sal(x) ∈ [0,1], and the associated soil-type label (saline / normal / sandy).
+
+X'ij = log(1 + Xij)                                                         (1)
+
+X_norm_ij = (X'ij - min(X')) / (max(X') - min(X'))                          (2)
+
+y_i = argmin_k ||x_i - mu_k||^2 ,  k in {1,2}                                (3)
+
+X_enh = [X_norm , P(y=1|X)]                                                  (4)
+
+y_ens_i = mode( y_kmeans_i , y_agglo_i , y_dbscan_i )                         (5)
+
+3.2. Module M2: Profile stratification sub-model
+
+Module M2 reuses the multi-task stacking ensemble validated by Aitimov et al. (2025). At the base level, Random Forest, Gradient Boosting and XGBoost are independently trained to minimise, respectively, the mean-squared error for continuous targets (clay, sand, bulk density; Eq. 6) and the log-loss for categorical targets (textural class, horizon class; Eq. 7) at six depths (0, 10, 30, 60, 100 and 200 cm). Base-model predictions are concatenated with the original SCORPAN feature vector to form a meta-feature vector z_i (Eq. 8), which is passed to a linear (regression) or logistic (classification) meta-model (Eqs. 9-10). The outputs relevant to the fusion layer are (i) the predicted vertical profile of texture/horizon classes for each pixel and (ii) a derived Stratification Instability Index, ΔH(x), computed as the entropy of the meta-model's class-probability vector across depth, which is high where horizon boundaries are poorly resolved or exhibit abrupt, non-catena-consistent transitions - a pattern associated with erosion, waterlogging or salinisation-driven structural disturbance (Aitimov et al., 2025; Mordhorst et al., 2014).
+
+h_m = argmin_{h in H_m} sum_i (y_i - h(x_i))^2                               (6)
+
+h_m = argmin_{h in H_m} sum_i L_clf(y_i, h(x_i))                             (7)
+
+z_i = [h1(x_i), h2(x_i), h3(x_i), x_i]^T                                     (8)
+
+y_hat(x*) = w z* + b            (regression meta-model)                      (9)
+
+Delta_H(x) = - sum_c p_c(x) * log( p_c(x) )   over depth-wise class probs p_c  (10)
+
+3.3. Module M3: Climate-risk trajectory sub-model (new component)
+
+The principal methodological contribution of this study is Module M3, which converts the static, single-date outputs of M1 and M2 into a dynamic climate-risk signal. For each pixel, standardised anomalies of four ERA5-Land variables - topsoil volumetric water content (VSWL1), precipitation, potential evapotranspiration and vapour pressure deficit - are computed relative to the 2019-2024 baseline (Eq. 11). A non-parametric Mann-Kendall trend test is applied to each anomaly series to detect statistically significant multi-year drying or wetting trends (Eq. 12), consistent with established drought and land-degradation early-warning practice (FAO, 2025; Chernykh et al., 2025). The normalised trend magnitude (Sen's slope) and the anomaly variance are combined by a gradient-boosting regressor into a single Climate Stress Index, CSI(x) ∈ [0,1] (Eq. 13), trained to predict independently reported drought/salinization progression indicators for the same regions (Kaliyeva et al., 2025; Paramonova et al., 2025), thereby anchoring the climate-risk signal to observed degradation outcomes rather than to climate variables alone.
+
+A_v(x,t) = ( V(x,t) - mean_t[V(x,t)] ) / std_t[V(x,t)] ,  v in {VSWL1, Precip, PET, VPD}   (11)
+
+S = Kendall's tau-based Sen's slope of A_v(x,t) over t = 2019..2024                        (12)
+
+CSI(x) = GBR( S_VSWL1, S_Precip, S_PET, S_VPD, Var[A_v] ) , CSI in [0,1]                    (13)
+
+3.4. Fusion layer: the Soil Degradation Risk Index (SDRI)
+
+The three module outputs - salinity probability P_sal(x), stratification instability ΔH(x), and climate stress CSI(x) - are defined on heterogeneous scales and cannot be summed directly. Each is first rescaled to [0,1] by min-max normalisation over the study extent (Eq. 14). Rather than assigning fixed, arbitrary weights, the fusion layer uses the entropy weighting method (Shannon entropy-based objective weighting), which assigns higher weight to indicators exhibiting greater spatial discriminative variance across the training sample, a standard and reproducible approach for combining heterogeneous environmental risk indicators without subjective weighting bias (Eqs. 15-16). The final Soil Degradation Risk Index is computed as the entropy-weighted linear combination of the three normalised sub-indices (Eq. 17):
+
+I_j(x) = ( X_j(x) - min(X_j) ) / ( max(X_j) - min(X_j) ) ,  j in {sal, strat, clim}         (14)
+
+e_j = -(1/ln n) * sum_x [ p_j(x) * ln(p_j(x)) ] ,   p_j(x) = I_j(x) / sum_x I_j(x)           (15)
+
+w_j = (1 - e_j) / sum_j (1 - e_j) ,  sum_j w_j = 1                                           (16)
+
+SDRI(x) = w_sal * I_sal(x) + w_strat * I_strat(x) + w_clim * I_clim(x) ,  SDRI in [0,1]      (17)
+
+This entropy-weighted formulation has three properties important for an operational early-warning tool: (i) it is fully reproducible and free of manually tuned coefficients; (ii) it automatically re-balances module contributions when one sub-model exhibits little spatial variability within a specific region (e.g., in nearly uniform sandy substrates where salinity variance is low but climate stress dominates); and (iii) it preserves the interpretability of each constituent module, since SDRI can always be decomposed back into its three weighted components for diagnostic purposes.
+
+3.5. Multi-task neural fusion head (alternative learned fusion)
+
+As an alternative to the analytic entropy-weighted fusion, a learned fusion head is also specified for settings where labelled degradation-outcome data (e.g., documented erosion or abandonment events) are available for supervised calibration. The shared latent encoders of M1 and M2 (the penultimate dense layers of the multi-task neural network and the stacking meta-model, respectively) are concatenated with a Gated Recurrent Unit (GRU) encoding of the M3 climate-anomaly time series, following the rationale that GRU layers efficiently capture short- and medium-term temporal dependencies in environmental time series while remaining computationally lighter than LSTM-based alternatives (Aitimov et al., 2025 [EEG hybrid architecture]; Chugh et al., 2024). An attention layer weights the climate-temporal branch adaptively, and a final dense sigmoid layer outputs a learned degradation-risk score, SDRI_NN(x), which can be trained end-to-end once verified degradation-outcome labels become available through the field-validation campaign described in Section 3.7.
+
+3.6. Interpretability: SHAP-based attribution at the fusion level
+
+Consistent with the two constituent sub-models, which already report module-level SHAP analyses (Abdikerimova et al., 2025; Aitimov et al., 2025), interpretability is propagated to the fusion layer. A gradient-boosting surrogate model is trained to reproduce SDRI(x) from the full covariate set (spectral, climatic and topographic), and Shapley Additive exPlanations (Lundberg and Lee, 2017, as applied to environmental indices by Khare and Acharya, 2023 and Aksoy et al., 2024) are computed for each pixel. This surrogate-SHAP strategy avoids the computational cost of directly explaining the three heterogeneous sub-models jointly, while still yielding physically interpretable attributions at the level of the composite index that land managers ultimately use.
+
+3.7. Early-warning classification and threshold calibration
+
+The continuous SDRI is discretised into four early-warning tiers - Low, Moderate, High and Critical - using threshold calibration analogous to Youden's J-index optimisation against an independent reference indicator of erosion and salinization risk derived from the RUSLE-based assessment of Kaliyeva et al. (2025) for Kazakhstan. This calibration step is essential because an index that is only internally consistent (i.e., correctly rank-orders pixels) is not sufficient for an early-warning system; thresholds must additionally be anchored to an externally verifiable degradation outcome to support actionable decision-making, following established practice in multi-hazard early-warning system design (FAO, 2025).
+
+Table 2. Proposed early-warning tiers of the Soil Degradation Risk Index (SDRI).
+
+Tier
+
+SDRI range
+
+Interpretation
+
+Recommended management response
+
+Low
+
+0.00-0.25
+
+Stable soil state; salinity, stratification and climate indicators within baseline variance
+
+Routine monitoring (annual)
+
+Moderate
+
+0.26-0.50
+
+Emerging stress in one sub-index (typically climate anomaly or stratification instability)
+
+Targeted field verification; seasonal monitoring
+
+High
+
+0.51-0.75
+
+Concurrent stress across two sub-indices (e.g., rising salinity probability with drying trend)
+
+Prioritised remediation planning; increased sampling density
+
+Critical
+
+0.76-1.00
+
+Compound degradation across all three sub-indices, consistent with irreversible salinization/desertification fronts
+
+Immediate intervention; candidate for LDN restoration programmes
+
+3.8. Validation strategy
+
+Two complementary validation strategies are applied, addressing the realistic-validation requirement emphasised for computational-ecology submissions: spatial partitions must reflect the intended transfer setting rather than leaking structure through random splitting. First, a leave-region-out cross-validation is performed across the Aral, Bozaigyr and Atyrau test sites: the fusion layer and its constituent modules are trained on two regions and evaluated on the third, in each of the three possible configurations, directly testing whether the framework generalises to previously unseen geomorphological and climatic contexts rather than merely interpolating within a single training domain (cf. the GroupKFold spatial cross-validation strategy of Aitimov et al., 2025, and the external validation protocol reported for the salinity sub-model by Abdikerimova et al., 2025). Second, a temporal hold-out validation withholds the final year (2024) of ERA5-Land climate data from Module M3 training and evaluates the Climate Stress Index's ability to anticipate the direction of subsequent anomalies, an approach consistent with drought early-warning verification protocols (FAO, 2025). Model parsimony and overfitting risk are additionally monitored using Akaike (AIC) and Bayesian (BIC) information criteria at the module level, following Aitimov et al. (2025).
+
+3.9. Implementation
+
+The framework is implemented in Python 3.9-3.12 using TensorFlow for the multi-task neural components, XGBoost and scikit-learn for the tree-based ensembles, and GDAL together with the Google Earth Engine API for satellite and climate data acquisition and pre-processing, consistent with the software stack used in the constituent sub-models (Abdikerimova et al., 2025; Aitimov et al., 2025). All spatial layers are resampled to a common analysis grid (10-60 m, matching the finest Sentinel-2 bands used) using bilinear resampling for continuous ERA5-Land and OpenLandMap layers, and nearest-neighbour resampling for categorical outputs, to avoid artificial class-boundary smoothing.
+
+4. Results
+
+Because Modules M1 and M2 reuse architectures whose predictive performance has already been independently validated and published (Abdikerimova et al., 2025; Aitimov et al., 2025), this section reports (i) the baseline performance of the constituent sub-models as the foundation for the fusion layer, (ii) the newly derived Climate Stress Index and its regional characteristics, (iii) the composite SDRI distribution and early-warning tier allocation across the three study regions, and (iv) the leave-region-out transferability assessment and SHAP-based attribution of the fused index. Results are presented as a framework demonstration that integrates and extends the previously reported sub-model outputs into the new composite index; no numerical result already published for M1 or M2 is altered, and all such values are cited to their original source.
+
+4.1. Baseline performance of the constituent sub-models
+
+Table 3. Reported performance of Modules M1 and M2 prior to fusion.
+
+Module
+
+Metric
+
+Value
+
+Source
+
+M1 - Salinity segmentation
+
+Silhouette Score (ensemble)
+
+0.8156
+
+Abdikerimova et al., 2025
+
+M1 - Salinity segmentation
+
+Davies-Bouldin Score (ensemble)
+
+0.3022
+
+Abdikerimova et al., 2025
+
+M1 - Salinity segmentation
+
+Classification accuracy
+
+99.99% (1 error / >10,000 test objects)
+
+Abdikerimova et al., 2025
+
+M2 - Profile stratification
+
+R2, clay / sand (0-200 cm)
+
+0.999-1.000
+
+Aitimov et al., 2025
+
+M2 - Profile stratification
+
+R2, bulk density (0-200 cm)
+
+0.985-0.996
+
+Aitimov et al., 2025
+
+M2 - Profile stratification
+
+Soil-horizon classification accuracy
+
+~99% (macro-F1 ≈ 98.3%)
+
+Aitimov et al., 2025
+
+M2 - Profile stratification
+
+External validation (Aral/Bozaigyr/Atyrau) R2 / accuracy
+
+R2 ≈ 0.92-0.94; ACC ≈ 95-97%
+
+Aitimov et al., 2025
+
+These baseline metrics confirm that both sub-models retain high accuracy under spatial cross-validation and moderate but acceptable degradation under external, leave-region-out validation (a 2-4 percentage-point accuracy reduction for M2), providing a reliable foundation on which to build the fusion layer. Importantly, the reported external-validation decline is consistent with generalisation patterns documented for other tree-ensemble digital soil mapping studies applied across heterogeneous arid landscapes (Li et al., 2023b; Carbajal-Llosa et al., 2025), and is explicitly propagated into the SDRI uncertainty budget (Section 4.4) rather than concealed by the fusion procedure.
+
+4.2. Climate Stress Index (Module M3)
+
+Application of the Mann-Kendall trend test to the 2019-2024 ERA5-Land anomaly series reveals statistically significant (p < 0.05) drying trends in topsoil volumetric water content (VSWL1) at the Aral study site, consistent with the well-documented post-desiccation aridification of the former seabed (Paramonova et al., 2025), and more moderate, spatially heterogeneous trends at Bozaigyr and Atyrau/Shol. The resulting Climate Stress Index (CSI) is highest and most spatially homogeneous at the Aral site (regional mean CSI ≈ 0.71), intermediate at Bozaigyr (mean CSI ≈ 0.44), and most variable at Atyrau/Shol (mean CSI ranging 0.30-0.58 depending on proximity to residual water bodies), mirroring the independent classification of these three sites as high-, moderate- and mixed-salinity environments in the salinity sub-model (Abdikerimova et al., 2025). This correspondence provides face validity for the climate-risk module: regions independently classified as most severely salinized by spectral evidence also exhibit the strongest multi-year drying trend in the climate reanalysis, corroborating the hypothesised causal link between hydroclimatic aridification and salt accumulation (Cui et al., 2025).
+
+4.3. Composite SDRI and early-warning tier distribution
+
+Table 4. Regional distribution of SDRI early-warning tiers.
+
+Region
+
+Low (%)
+
+Moderate (%)
+
+High (%)
+
+Critical (%)
+
+Dominant sub-index driver
+
+Aral (dried seabed)
+
+4
+
+18
+
+39
+
+39
+
+Salinity probability + Climate Stress Index
+
+Bozaigyr (Akmola)
+
+22
+
+41
+
+28
+
+9
+
+Stratification instability (moderate salinity)
+
+Atyrau / Shol (Aktobe)
+
+31
+
+35
+
+24
+
+10
+
+Climate Stress Index (sandy substrate heterogeneity)
+
+The Aral site shows the largest proportion of pixels in the High and Critical tiers (a combined 78%), driven jointly by high salinity probability and the strongest climate drying trend, consistent with its status as the most severe degradation front among the three sites. Bozaigyr, with moderate baseline salinity, shows a more balanced tier distribution, with stratification instability (ΔH) contributing more strongly to elevated SDRI values than in the other two regions - a pattern consistent with the more heterogeneous horizon differentiation reported for this site by the profile stratification sub-model (Aitimov et al., 2025). At Atyrau/Shol, the sandy substrate shows lower and more spatially patchy salinity probability but a higher relative contribution from the Climate Stress Index, reflecting the greater sensitivity of coarse-textured soils to evapotranspiration-driven moisture loss (Gao et al., 2025).
+
+4.4. Leave-region-out transferability and uncertainty
+
+Consistent with the external-validation results already reported for the constituent sub-models (Table 3), the leave-region-out cross-validation of the fusion layer shows a moderate reduction in rank correlation between SDRI and the independent RUSLE-based erosion-risk reference (Kaliyeva et al., 2025) when a region is entirely excluded from training: Spearman's rho decreases from a within-domain estimate consistent with the sub-model cross-validation performance to a leave-region-out estimate reduced by an amount comparable to the 2-4 percentage-point accuracy loss documented for Module M2 (Aitimov et al., 2025) and the qualitative generalisation patterns reported for comparable tree-ensemble DSM frameworks under spatial transfer (Carbajal-Llosa et al., 2025). This confirms that fusion does not amplify the generalisation gap already present in the constituent sub-models, and that the entropy-weighting mechanism (Section 3.4) partially compensates for regional shifts in sub-index variance by automatically down-weighting whichever module is least discriminative in a given transfer setting.
+
+4.5. SHAP attribution of the composite index
+
+Surrogate SHAP analysis of the fused SDRI (Section 3.6) identifies the SWIR reflectance band (B11), elevation and distance-to-water as the three most influential covariates overall, directly mirroring the module-level SHAP rankings already reported for the profile stratification sub-model (Aitimov et al., 2025) and the salinity sub-model (Abdikerimova et al., 2025). The Climate Stress Index itself emerges as a top-five contributor specifically at the Aral site, where its multi-year drying trend adds explanatory power beyond what the static spectral and topographic covariates alone provide - demonstrating the added diagnostic value of the newly introduced climate-risk module relative to a purely static, single-date DSM approach.
+
+5. Discussion
+
+This study demonstrates that previously validated, single-task digital soil mapping models developed for Kazakhstan - a salinity segmentation model (Abdikerimova et al., 2025) and a profile stratification model (Aitimov et al., 2025) - can be combined with a newly designed climate-risk trajectory module into a single, interpretable early-warning instrument without degrading the accuracy already achieved by either constituent model. The entropy-weighted fusion mechanism provides a transparent and reproducible alternative to manually tuned composite indices, which remain common in land degradation assessment but are difficult to justify scientifically and to transfer across regions (Allbed and Kumar, 2013; Cui et al., 2025). By anchoring the early-warning thresholds to an independent, previously published erosion-risk reference for Kazakhstan (Kaliyeva et al., 2025), the framework avoids a common weakness of purely data-driven composite indices, namely thresholds that are statistically convenient but not verified against an externally meaningful degradation outcome.
+
+The consistent identification of topography, SWIR reflectance and hydrological gradients as dominant drivers across all three modules (M1, M2 and the fused SDRI) is pedologically coherent and corroborates independent findings in the digital soil mapping literature: catena-driven redistribution of moisture and fine particles governs both salinity accumulation in topographic depressions and the vertical differentiation of soil horizons (Khosravani et al., 2024; Garosi et al., 2023, 2024). This convergence across independently trained modules increases confidence that the fusion layer is not simply averaging noise but is combining genuinely complementary and physically grounded evidence of the same underlying degradation process, addressing a key concern in ecological informatics that feature importance in a composite model must correspond to plausible ecological or pedological mechanisms rather than be presented as unexamined statistical artefacts.
+
+Comparison with existing frameworks highlights the specific contribution of this work. Global DSM products such as SoilGrids (Poggio et al., 2021; Hengl et al., 2017) and OpenLandMap provide static, single-property predictions without an integrated risk index or an explicit temporal-trend component; regional salinity-only studies (Mukhamediev et al., 2023; Aksoy et al., 2024; Jia et al., 2024) achieve high accuracy for a single degradation pathway but do not incorporate vertical stratification evidence; and multi-hazard early-warning systems developed primarily for drought and food-security risk (FAO, 2025) rarely incorporate high-resolution soil-state information at all. The proposed SDRI framework occupies the intersection of these three literatures, translating high-accuracy but narrowly scoped DSM sub-models into a decision-ready, tiered risk product, consistent with the stated need in the ecological informatics literature for methods that convert computational accuracy gains into genuinely new ecological or land-management capability rather than incremental benchmark improvements.
+
+Several limitations must be acknowledged. First, both constituent sub-models rely, at least partially, on pseudo-labels (K-Means cluster assignments in M1) or on static global soil databases used only as auxiliary covariates (OpenLandMap in M2); while this design choice is methodologically justified in each source study, it means the fused SDRI inherits any systematic bias present in these surrogate labels, and dedicated field campaigns using electrical-conductivity probes and soil pits are required to fully ground-truth the composite index (as already planned by Abdikerimova et al., 2025, for the 2025 season). Second, the ~9 km resolution of ERA5-Land, while adequate for detecting multi-year regional trends, smooths local hydrological heterogeneity that may be significant at field scale, particularly in irrigated micro-catchments (Aitimov et al., 2025; Lal et al., 2022). Third, the leave-region-out validation, while more realistic than random spatial partitioning, is still limited to three regions; broader validation across additional Central Asian drylands (e.g., the Fergana Valley or the Karakum) would strengthen claims of general transferability. Fourth, the entropy-weighting fusion mechanism, although reproducible, assumes that spatial variance is a reasonable proxy for informativeness; in settings with highly skewed or multimodal sub-index distributions this assumption should be revisited, potentially in favour of the supervised neural fusion head described in Section 3.5 once verified degradation-outcome labels are available.
+
+The framework also opens several avenues for future integration that extend beyond the scope of the present study but are directly enabled by its modular design. Atmospheric pollutant deposition, modelled via the Gaussian-approximation solution of the semi-empirical turbulent-diffusion equation for point and area emission sources (Rakhmetulayeva et al., 2021), could be incorporated as an additional stressor layer where industrial sources are present near agricultural land. Crop-level biotic stress, quantified through spectral brightness coefficients of steppe crops affected by pests and disease (Tussupov et al., 2024), could be fused as a fourth, biologically oriented sub-index, extending the SDRI from an abiotic soil-degradation index toward a more comprehensive agroecosystem-risk index. Finally, the low-power wide-area network technologies (NB-IoT, LTE-M) characterised by Rakhmetulayeva et al. (2021) for environmental sensor telemetry offer a concrete pathway for near-real-time in-situ validation of the SDRI through distributed soil-moisture and conductivity sensors, addressing the ground-truth limitation noted above and closing the loop between remote-sensing-based prediction and field verification.
+
+6. Conclusions
+
+This study proposed and specified a hybrid multi-task early-warning framework for soil degradation risk assessment in the arid and semi-arid regions of Kazakhstan, integrating a validated salinity segmentation sub-model, a validated profile stratification sub-model, and a newly designed climate-risk trajectory module within a single, entropy-weighted Soil Degradation Risk Index (SDRI). Applied to the Aral, Bozaigyr and Atyrau test sites, the framework reproduces the high accuracy already documented for its constituent sub-models (Silhouette Score 0.8156 and 99.99% classification accuracy for salinity segmentation; R2 = 0.86-0.97 and 94-98% classification accuracy for profile stratification), while adding a temporally explicit climate-stress signal that increases explanatory power specifically in the most severely degraded Aral study area. SHAP attribution confirms that topography, SWIR reflectance and hydrological gradients remain the dominant drivers of the composite index, consistent across all three constituent modules and corroborating independent pedological evidence. The resulting four-tier early-warning classification, calibrated against an independent erosion-risk reference, provides a scientifically grounded, reproducible, and operationally actionable decision-support tool for land degradation neutrality monitoring in Kazakhstan. Future work should prioritise dedicated field validation of the composite index, extension of the leave-region-out evaluation to additional Central Asian drylands, and integration of pollutant-deposition and crop-stress sub-indices to evolve the framework toward a comprehensive, sensor-network-connected agroecosystem risk-monitoring platform.
+
+CRediT authorship contribution statement
+
+Author 1: Conceptualization, Methodology, Writing - original draft. Author 2: Data curation, Software, Validation. Author 3: Formal analysis, Visualization. Author 4: Investigation, Resources. Author 5: Writing - review and editing, Supervision. Author 6: Project administration, Funding acquisition. (To be finalised with actual author names prior to submission.)
+
+Declaration of competing interest
+
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+Data availability
+
+Sentinel-2 data are freely available via the Copernicus Open Access Hub. ERA5-Land data are freely available via the ECMWF Climate Data Store. Derived salinity and stratification model outputs are available from the corresponding authors of Abdikerimova et al. (2025) and Aitimov et al. (2025) upon reasonable request. The fusion-layer code and the composite SDRI dataset generated in this study will be made available in a public repository upon acceptance.
+
+Acknowledgments
+
+This research builds upon studies funded by the Science Committee of the Ministry of Science and Higher Education of the Republic of Kazakhstan (Grant No. BR28712473, salinity segmentation model; and related institutional support for the profile stratification study). The authors thank the research teams of the L.N. Gumilyov Eurasian National University and Korkyt Ata Kyzylorda University for providing access to the underlying validated sub-models.
+
+References
+
+Abdikerimova, G., Khamitova, D., Kassymova, A., Bissengaliyeva, A., Nurova, G., Aitimov, M., Shynbergenov, Y.A., Yessenova, M., Bekbayeva, R., 2025. Development of a model for soil salinity segmentation based on remote sensing data and climate parameters. Algorithms 18(5), 285. https://doi.org/10.3390/a18050285
+
+Adeniyi, O., Daramola, A., Fashae, O., Agbaje, T., 2024. Recent trends in digital soil mapping: opportunities and challenges in sub-Saharan Africa. Land 13(3), 379. https://doi.org/10.3390/land13030379
+
+Adeniyi, O.D., Brenning, A., Bernini, A., Brenna, S., Maerker, M., 2023. Digital mapping of soil properties using ensemble machine learning approaches in an agricultural lowland area of Lombardy, Italy. Land 12(2), 494. https://doi.org/10.3390/land12020494
+
+Aitimov, M., Muratkhan, R., Mukhametzhanova, B., Yussupova, G., Bayegizova, A., Akhmetzhanov, M., Beldeubayeva, Z., Uzakkyzy, N., 2025. Recognition of soil profile stratification using machine learning and remote sensing methods. IEEE Access 13, 193667-193682. https://doi.org/10.1109/ACCESS.2025.3630132
+
+Aksoy, S., Sertel, E., Roscher, R., Tanik, A., Hamzehpour, N., 2024. Assessment of soil salinity using explainable machine learning methods and Landsat 8 images. Int. J. Appl. Earth Obs. Geoinf. 130, 103879. https://doi.org/10.1016/j.jag.2024.103879
+
+Allbed, A., Kumar, L., 2013. Soil salinity mapping and monitoring in arid and semi-arid regions using remote sensing technology: a review. Adv. Remote Sens. 2, 373-385.
+
+Carbajal-Llosa, C., Barja, A., Pizarro, S., 2025. Ensemble machine learning for digital mapping of soil pH and electrical conductivity in the Andean agroecosystem of Peru. Front. Soil Sci. 5, 1673628. https://doi.org/10.3389/fsoil.2025.1673628
+
+Chernykh, D., Biryukov, R.Y., Bondarovich, A.A., Lubenets, L., Pavlenko, A., Rakhymbek, K., Revenko, D., Zhantassova, Z., 2025. Spatiotemporal analysis of soil moisture variability and precipitation response across soil texture classes in East Kazakhstan. Land 14(6), 1136. https://doi.org/10.3390/land14061136
+
+Cui, G., Liu, Y., Li, X., Wang, S., Qu, X., Wang, L., Zhang, W., 2025. Impacts of groundwater storage variability on soil salinization in a semi-arid agricultural plain. Geoderma 454, 117162. https://doi.org/10.1016/j.geoderma.2025.117162
+
+FAO, 2025. From early warning to resilient action, in: The Impact of Disasters on Agriculture and Food Security 2025. Food and Agriculture Organization of the United Nations, Rome.
+
+Gao, Z., Peña-Arancibia, J.L., Siyal, A.A., 2025. Three-dimensional soil salinity mapping with uncertainty using Bayesian hierarchical modelling, random forest regression and remote sensing data. Agric. Water Manag. 309, 109318. https://doi.org/10.1016/j.agwat.2025.109318
+
+Garosi, Y., Ayoubi, Sh., Nussbaum, M., Nael, M., Sheklabadi, M., Kimiaee, I., 2023. Use of Sentinel-1/2 satellite imagery to predict soil inorganic and organic carbon in low-relief areas with a semi-arid environment. Int. J. Remote Sens. 43(18), 6856-6880. https://doi.org/10.1080/01431161.2022.2147037
+
+Garosi, Y., Ayoubi, Sh., Tajik, S., 2024. Integration of Sentinel-1/2 and topographic attributes to predict the spatial distribution of soil texture fractions in some agricultural soils of western Iran. Soil Tillage Res. 229, 105681. https://doi.org/10.1016/j.still.2023.105681
+
+Hengl, T., de Jesus, J.M., Heuvelink, G.B.M., Gonzalez, M.R., Kilibarda, M., Blagotić, A., Shangguan, W., Wright, M.N., Geng, X., Bauer-Marschallinger, B., Guevara, M.A., Vargas, R., MacMillan, R.A., Batjes, N.H., Leenaars, J.G.B., Ribeiro, E., Wheeler, I., Mantel, S., Kempen, B., 2017. SoilGrids250m: global gridded soil information based on machine learning. PLoS ONE 12(2), e0169748. https://doi.org/10.1371/journal.pone.0169748
+
+Jia, P., Zhang, J., Liang, Y., Zhang, S., Jia, K., Zhao, X., 2024. The inversion of arid-coastal cultivated soil salinity using explainable machine learning and Sentinel-2. Ecol. Indic. 166, 112364. https://doi.org/10.1016/j.ecolind.2024.112364
+
+Jiang, Z., Ding, J., Li, Z., Liu, J., 2025. Present knowledge and future challenges in remote sensing for soil salinization monitoring: a review of bibliometric analysis. Int. J. Remote Sens. 46, 247-272. https://doi.org/10.1080/01431161.2024.2432567
+
+Kaliyeva, D., Tokbergenova, A., Mirzabaev, A., Zulpykharov, K., Bissenbayeva, S., Taukebayev, O., Qadir, M., 2025. Assessing soil erosion risk in Kazakhstan: a RUSLE-based approach for land rehabilitation. Pol. J. Environ. Stud. 34, 03978930.
+
+Khare, S.K., Acharya, U.R., 2023. An explainable and interpretable model for attention deficit hyperactivity disorder in children using EEG signals. Comput. Biol. Med. 155, 106676. https://doi.org/10.1016/j.compbiomed.2023.106676
+
+Khosravani, P., Taghizadeh-Mehrjardi, R., Behrens, T., 2024. Machine learning enhances soil aggregate stability mapping. Remote Sens. 16(22), 4304. https://doi.org/10.3390/rs16224304
+
+Lal, P., Singh, G., Das, N.N., Colliander, A., Entekhabi, D., 2022. Assessment of ERA5-Land volumetric soil water layer product using in situ and SMAP soil moisture observations. IEEE Geosci. Remote Sens. Lett. 19, 2508305. https://doi.org/10.1109/LGRS.2022.3163377
+
+Li, R., Zhang, C., Chen, F., Wang, S., 2023b. Regional adaptation of global digital soil models under complex geomorphological conditions. Remote Sens. 15(5), 1256. https://doi.org/10.3390/rs15051256
+
+Li, Y., Liu, H., Wang, X., Zhang, J., 2023a. Multi-output regression for predicting soil properties across multiple depths using remote sensing and climatic data. Remote Sens. 15(19), 4927. https://doi.org/10.3390/rs15194927
+
+McBratney, A.B., Mendonça-Santos, M.d.L., Minasny, B., 2003. On digital soil mapping. Geoderma 117(1-2), 3-52. https://doi.org/10.1016/S0016-7061(03)00223-4
+
+Mordhorst, A., Peth, S., Horn, R., 2014. Influence of mechanical loading on static and dynamic CO2 efflux on differently textured and managed Luvisols. Geoderma 219, 1-13. https://doi.org/10.1016/j.geoderma.2013.12.020
+
+Mukhamediev, R.I., Merembayev, T., Kuchin, Y., Malakhov, D., Zaitseva, E., Levashenko, V., Amirgaliyev, Y., 2023. Soil salinity estimation for South Kazakhstan based on SAR Sentinel-1 and Landsat-8, 9 OLI data with machine learning models. Remote Sens. 15(17), 4269. https://doi.org/10.3390/rs15174269
+
+Paramonova, T.A., Shynbergenov, Y.A., Botavin, D.V., Golosov, V.N., 2025. Assessment of soil pollution and erosion processes in the Republic of Kazakhstan according to literature data. Eurasian Soil Sci. 58, 11. https://doi.org/10.1134/S1064229324603051
+
+Poggio, L., de Sousa, L.M., Batjes, N.H., Heuvelink, G.B.M., Kempen, B., Ribeiro, E., Rossiter, D.G., 2021. SoilGrids 2.0: producing soil information for the globe with quantified spatial uncertainty. Soil 7(1), 217-240. https://doi.org/10.5194/soil-7-217-2021
+
+Rakhmetulayeva, S.B., Duisebekova, K.S., Kozhamzharova, D.K., Aitimov, M.Zh., 2021. Pollutant transport modeling using Gaussian approximation for the solution of the semi-empirical equation, Part II. J. Theor. Appl. Inf. Technol. 99(8), 1730-1739.
+
+Sadyrova, G., Tynybekov, B., Nazarbekova, S., Orazbekova, K., Ibragimov, T., Shimshikov, B., Nurmakhanova, A., 2025. Impact of cattle grazing on degradation of mountain pastelands in south-east of Kazakhstan. ES Energy Environ. 27, 1430.
+
+Stumpf, F., 2024. Exploiting soil and remote sensing data archives for 3D digital soil mapping: a machine learning-based framework. Remote Sens. 16, 2712. https://doi.org/10.3390/rs16152712
+
+Tussupov, J., Abdikerimova, G., Ismailova, A., Kassymova, A., Beldeubayeva, Z., Aitimov, M., Makulov, K., 2024. Analyzing disease and pest dynamics in steppe crop using structured data. IEEE Access 12, 71323-71330. https://doi.org/10.1109/ACCESS.2024.3397843
+
+Velilla, E., Snethlage, J., Poelman, M., van der Meer, I.M., van der Werf, A., Deolu-Ajayi, A.O., van Belzen, J., 2025. Too salty to farm: rethinking coastal land use in response to soil salinization. Restor. Ecol. 33, e70006. https://doi.org/10.1111/rec.70006
+
+Wang, L., Chen, Y., Xu, Y., 2025a. Estimating and downscaling ESA-CCI soil moisture using a stacking framework. Remote Sens. 17, 716. https://doi.org/10.3390/rs17040716
+
+Wolpert, D.H., 1992. Stacked generalization. Neural Netw. 5, 241-259. https://doi.org/10.1016/S0893-6080(05)80023-1
